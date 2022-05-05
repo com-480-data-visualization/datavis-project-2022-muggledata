@@ -77,9 +77,26 @@ The dataset choice was inspired by a visualization project done in COM-480 on Th
 Click [here](https://com-480-data-visualization.github.io/datavis-project-2022-muggledata/) to see our project prototype.
 
 ## Sketches
-###
+
+### Genealogy visualization
+For this interactive tree representation, we aim to vizualize all families link of our character dataset. For each of them, we would have his parents/
+![genealogy](./Figs/genealogy.jpeg)
+
+### Spells visualization
+![spells](./Figs/spells.jpeg)
+
+### Words visualization
+![words](./Figs/words.jpeg)
+
+
 
 ## Tools
+We choose to use the framework Vue js for the project.
+
+For the genealogy tree, we thought about using amCharts 5 library that propose a nice way to build tree. Also, Vue js propose 
+
+
+To implement the visualisation of spells we aim to create a bubble chart using D3. Each spell will belong to a cell, depending on his effect. The radius will depend on the number of times the spell is used.
 
 ### Javascript framework
 
