@@ -8,7 +8,7 @@
 
 **[Website](#https://com-480-data-visualization.github.io/datavis-project-2022-muggledata/index.html)**
 
-[Milestone 1](#milestone-1-friday-8th-april-5pm) • [Milestone 2] • [Milestone 3]
+[Milestone 1](#milestone-1-friday-8th-april-5pm) • [Milestone 2](#milestone-2-friday-6th-may-5pm) • [Milestone 3]
 
 # Milestone 1 (Friday 8th April, 5pm)
 
@@ -69,5 +69,21 @@ The dataset choice was inspired by a visualization project done in COM-480 on Th
 * [6] https://com-480-data-visualization.github.io/com-480-project-bkh/
 
 
+# Milestone 2 (Friday 6th May, 5pm)
 
+
+## Muggle data website
+
+Click [here](https://com-480-data-visualization.github.io/datavis-project-2022-muggledata/) to see our project prototype.
+
+## Sketches
+###
+Y'a des 
+
+## Tools
+
+### Javascript framework
+
+
+## Goals
 
