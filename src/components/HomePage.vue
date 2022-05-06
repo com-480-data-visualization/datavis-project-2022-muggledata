@@ -5,7 +5,7 @@
 <script>
 export default {
   name: 'HomePage',
-  props: {}
+  props: {},
 }
 </script>
 

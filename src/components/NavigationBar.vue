@@ -1,7 +1,7 @@
 <template>
     <div class="topnavbar">
-        <a class="title" href="index.html"> Muggle Data Project </a>
-        <a class ="navbutton" href="genealogy.html">Genealogy</a>
+        <a class="title" v-on:click="changeComponent('HomePage')"> Muggle Data Project </a>
+        <a class ="navbutton" v-on:click="changeComponent('HelloWorld')">Genealogy</a>
         <a class ="navbutton" href="spells.html">Spells</a>
         <a class ="navbutton" @click="showConfetti">Potions</a>
     </div>
@@ -9,10 +9,21 @@
 
 <script>
 export default {
-  name: "NavigationBar",
-  props: {
-    msg: String,
-  },
+	name: "NavigationBar",
+	props: {
+		msg: String,
+	},
+	select_component() {
+		return {
+			selected_component: "HomePage"
+		}
+	},
+	methods: {
+		changeComponent : function (component){
+			// this.selected_component = component
+			this.$emit("nextComponent", component)
+		},
+	}
 };
 </script>
 

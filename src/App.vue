@@ -6,12 +6,19 @@
 <script>
 import NavigationBar from './components/NavigationBar.vue'
 import HomePage from './components/HomePage.vue'
+//import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
     NavigationBar,
-    HomePage
+    HomePage,
+    //HelloWorld
+  },
+  methods: {
+    changeComponent(component){
+      this.component = component
+    },
   }
 }
 </script>
