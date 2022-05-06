@@ -44,7 +44,7 @@ export default {
     // Add wrapper container
     var container = root.container.children.push(am5.Container.new(root, {
       width: am5.percent(100),
-      height: am5.percent(70),
+      height: am5.percent(100),
       layout: root.verticalLayout
     }));
 
