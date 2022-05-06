@@ -1,13 +1,13 @@
 <template>
   <NavigationBar/>
-  <HomePage/>
   <GenealogyGraph/>
+  <SpellsChart/>
   <WordsCloud/>
 </template>
 
 <script>
 import NavigationBar from './components/NavigationBar.vue'
-import HomePage from './components/HomePage.vue'
+import SpellsChart from './components/SpellsChart.vue'
 import GenealogyGraph from './components/GenealogyGraph.vue'
 import WordsCloud from './components/WordsCloud.vue'
 
@@ -16,7 +16,7 @@ export default {
   components: {
     NavigationBar,
     GenealogyGraph,
-    HomePage,
+    SpellsChart,
     WordsCloud
 },
   methods: {

@@ -121,6 +121,6 @@ a {
 
 #genediv {
   width: 100%;
-  height: 550px;
+  height: 1100px;
 }
 </style>

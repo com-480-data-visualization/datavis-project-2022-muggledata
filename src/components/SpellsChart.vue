@@ -1,5 +1,5 @@
 <template>
-  <div id="chartdiv"></div>
+  <div id="spelldiv"></div>
 </template>
 
 
@@ -14,7 +14,7 @@ export default {
   mounted(){
     am5.ready(function() {
 
-    var root = am5.Root.new("chartdiv");
+    var root = am5.Root.new("spelldiv");
     root.setThemes([
       am5themes_Animated.new(root)
     ]);
@@ -42,16 +42,6 @@ export default {
       am5.color(0x740001)
     ]);
 
-    // series.set("heatRules", [{
-    //   target: series.labels.template,
-    //   dataField: "value",
-    //   min: ,
-    //   max: am5.color(0xFF621F),
-    //   key: "fill"
-    // }]);
-
-    // var maxLevels = 2;
-    // var maxNodes = 3;
     var maxValue = 100;
 
     var data = {
@@ -93,40 +83,13 @@ export default {
         ];
         data.children.push(child);
       });
-      
-
-      
-      // var nodeName = name + "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-      // var child;
-      // if (level < maxLevels) {
-      //   child = {
-      //     name: nodeName + level
-      //   }
-
-      //   if (level > 0 && Math.random() < 0.5) {
-      //     child.value = Math.round(Math.random() * maxValue);
-      //   }
-      //   else {
-      //     child.children = [];
-      //     generateLevel(child, nodeName, level + 1)
-      //   }
-      // }
-      // else {
-      //   child = {
-      //     name: name,
-      //     value: Math.round(Math.random() * maxValue)
-      //   }
-      // }
-      // data.children.push(child);
-    
+     
       return data;
     }
 
-
-    // Make stuff animate on load
     series.appear(1000, 100);
 
-    }); // end am5.ready()
+    });
   }
 }
 
@@ -136,8 +99,8 @@ export default {
 
 
 <style scoped>
-#chartdiv {
+#spelldiv {
   width: 100%;
-  height: 500px;
+  height: 1100px;
 }
 </style>
