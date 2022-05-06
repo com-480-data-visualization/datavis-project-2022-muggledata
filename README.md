@@ -71,35 +71,36 @@ The dataset choice was inspired by a visualization project done in COM-480 on Th
 
 # Milestone 2 (Friday 6th May, 5pm)
 
-
-## Muggle data website
+## Muggle Data Website
 
 Click [here](https://com-480-data-visualization.github.io/datavis-project-2022-muggledata/) to see our project prototype.
 
 ## Sketches
 
-### Genealogy visualization
-For this interactive tree representation, we aim to vizualize all families link of our character dataset. For each of them, we would have his parents/
+### Genealogy Visualization
+For this interactive tree representation, we aim to visualize all family links of our character dataset. For each of them, we would have his parents/husband-wife/children if it exists. Moreover, we could click on one character and have a side window that contain more specific information about him. We are currently discussing if we add character that aren't included in our dataset but have link with other person of our data. For those ones, we won't be able to click on them since we don't have any informations, except for their names (and the link for our character).
 ![genealogy](./Figs/genealogy.jpeg)
 
-### Spells visualization
+### Spells Visualization
+The goal of this bubble visualisation is to see which type of spell is the most common in the Harry Potter universe and which is the most used. Each spell will belong to a cell, depending on his type. The radius will depend on the number of different spell in this type categorie. And when we click on one bubble type, another bubble chart will appear. This chart contain now all different spell in this category and each of those bubble radius will depend on the number of time this particular spell is cast in all books. Finally, by clicking on one of the spell, a side window will open with the description of this particular spell and more information about it.
 ![spells](./Figs/spells.jpeg)
 
-### Words visualization
+### Words Occurrences Visualization
+Here we want to display the amount of word occurrence in books. In our sketch, obviously the size of the word will depend on the occurrence in book but we want to add more interaction about this. For this, we will add the option to select which book we want to take into account. One extra idea we could add is to use option like : select only character to display, clicking on a word and get it's exact occurrence and even its positive or negative sense using a dataset we found.
 ![words](./Figs/words.jpeg)
 
 
 
-## Tools
-We choose to use the framework Vue js for the project.
+## Tools And Related Lectures
 
-For the genealogy tree, we thought about using amCharts 5 library that propose a nice way to build tree. Also, Vue js propose 
-
-
-To implement the visualisation of spells we aim to create a bubble chart using D3. Each spell will belong to a cell, depending on his effect. The radius will depend on the number of times the spell is used.
-
-### Javascript framework
+* **Vue js**: Our website is a Vue js application which simplifies the deployement and the integration of libraries. 
 
 
-## Goals
+* **amCharts 5**: For the genealogy tree, we thought about using the amCharts 5 library that propose a nice way to build trees. We take our inspiration from the following lecture: *Graphs* (9 May - 15 May).
+
+
+* **d3.js**: To implement the visualisation of spells we aim to create a bubble chart using the d3 library which offers a . 
+
+
+
 
