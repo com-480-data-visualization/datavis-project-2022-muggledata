@@ -1,21 +1,18 @@
 <template>
   <NavigationBar/>
-  <HomePage/>
-  <SpellsChart/>
+  <WordsCloud/>
 </template>
 
 <script>
 import NavigationBar from './components/NavigationBar.vue'
-import HomePage from './components/HomePage.vue'
-import SpellsChart from './components/SpellsChart.vue'
+import WordsCloud from './components/WordsCloud.vue'
 
 export default {
   name: 'App',
   components: {
     NavigationBar,
-    HomePage,
-    SpellsChart,
-  },
+    WordsCloud,
+},
   methods: {
     changeComponent(component){
       this.component = component
