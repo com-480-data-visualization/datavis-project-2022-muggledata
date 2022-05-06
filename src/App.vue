@@ -1,17 +1,23 @@
 <template>
   <NavigationBar/>
+  <HomePage/>
+  <GenealogyGraph/>
   <WordsCloud/>
 </template>
 
 <script>
 import NavigationBar from './components/NavigationBar.vue'
+import HomePage from './components/HomePage.vue'
+import GenealogyGraph from './components/GenealogyGraph.vue'
 import WordsCloud from './components/WordsCloud.vue'
 
 export default {
   name: 'App',
   components: {
     NavigationBar,
-    WordsCloud,
+    GenealogyGraph,
+    HomePage,
+    WordsCloud
 },
   methods: {
     changeComponent(component){
