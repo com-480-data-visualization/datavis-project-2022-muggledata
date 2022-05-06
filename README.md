@@ -99,7 +99,7 @@ Here we want to display the amount of word occurrence in books. In our sketch, o
 * **amCharts 5**: For the genealogy tree, we thought about using the amCharts 5 library that propose a nice way to build trees. We take our inspiration from the following lecture: *Graphs* (9 May - 15 May).
 
 
-* **d3.js**: To implement the visualisation of spells we aim to create a bubble chart using the d3 library which offers a . 
+* **d3.js**: To implement the visualisation of spells we aim to create a bubble chart using the d3 library. We will also use this library for a tag cloud visualization based on the lecture *Text Viz* (2 May - 8 May).
 
 
 
