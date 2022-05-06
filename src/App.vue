@@ -1,20 +1,20 @@
 <template>
   <NavigationBar/>
   <HomePage/>
-  <SpellsChart/>
+  <GenealogyGraph/>
 </template>
 
 <script>
 import NavigationBar from './components/NavigationBar.vue'
 import HomePage from './components/HomePage.vue'
-import SpellsChart from './components/SpellsChart.vue'
+import GenealogyGraph from './components/GenealogyGraph.vue'
 
 export default {
   name: 'App',
   components: {
     NavigationBar,
     HomePage,
-    SpellsChart,
+    GenealogyGraph
   },
   methods: {
     changeComponent(component){
