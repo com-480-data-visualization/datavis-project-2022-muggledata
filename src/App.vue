@@ -1,19 +1,20 @@
 <template>
   <NavigationBar/>
   <HomePage/>
+  <SpellsChart/>
 </template>
 
 <script>
 import NavigationBar from './components/NavigationBar.vue'
 import HomePage from './components/HomePage.vue'
-//import HelloWorld from './components/HelloWorld.vue'
+import SpellsChart from './components/SpellsChart.vue'
 
 export default {
   name: 'App',
   components: {
     NavigationBar,
     HomePage,
-    //HelloWorld
+    SpellsChart,
   },
   methods: {
     changeComponent(component){
