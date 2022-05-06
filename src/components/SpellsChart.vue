@@ -5,98 +5,132 @@
 
 <script>
 import * as am5 from "@amcharts/amcharts5";
-import * as am5themes_Animated from "@amcharts/amcharts5/themes/animated";
+import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 
 export default {
   name: 'SpellsChart',
   props: {},
-}
+  mounted(){
+    am5.ready(function() {
 
-am5.ready(function() {
+    var root = am5.Root.new("chartdiv");
+    root.setThemes([
+      am5themes_Animated.new(root)
+    ]);
 
-// Create root element
-// https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root = am5.Root.new("chartdiv");
+    var container = root.container.children.push(am5.Container.new(root, {
+      width: am5.percent(100),
+      height: am5.percent(100),
+      layout: root.verticalLayout
+    }));
 
+    var series = container.children.push(am5hierarchy.Pack.new(root, {
+      singleBranchOnly: false,
+      downDepth: 1,
+      initialDepth: 10,
+      valueField: "value",
+      categoryField: "name",
+      childDataField: "children"
+    }));
 
-// Set themes
-// https://www.amcharts.com/docs/v5/concepts/themes/
-root.setThemes([
-  am5themes_Animated.new(root)
-]);
+    series.get("colors").set("colors", [
+      am5.color(0xC0C0C0),
+      am5.color(0xAE0001),
+      am5.color(0xD3A625),
+      am5.color(0xEEBA30),
+      am5.color(0x740001)
+    ]);
 
+    // series.set("heatRules", [{
+    //   target: series.labels.template,
+    //   dataField: "value",
+    //   min: ,
+    //   max: am5.color(0xFF621F),
+    //   key: "fill"
+    // }]);
 
-// Create wrapper container
-var container = root.container.children.push(am5.Container.new(root, {
-  width: am5.percent(100),
-  height: am5.percent(100),
-  layout: root.verticalLayout
-}));
+    // var maxLevels = 2;
+    // var maxNodes = 3;
+    var maxValue = 100;
 
-
-// Create series
-// https://www.amcharts.com/docs/v5/charts/hierarchy/#Adding
-var series = container.children.push(am5hierarchy.Pack.new(root, {
-  singleBranchOnly: false,
-  downDepth: 1,
-  initialDepth: 10,
-  valueField: "value",
-  categoryField: "name",
-  childDataField: "children"
-}));
-
-
-// Generate and set data
-// https://www.amcharts.com/docs/v5/charts/hierarchy/#Setting_data
-var maxLevels = 2;
-var maxNodes = 3;
-var maxValue = 100;
-
-var data = {
-  name: "Root",
-  children: []
-}
-generateLevel(data, "", 0);
-
-series.data.setAll([data]);
-series.set("selectedDataItem", series.dataItems[0]);
-
-function generateLevel(data, name, level) {
-  for (var i = 0; i < Math.ceil(maxNodes * Math.random()) + 1; i++) {
-    var nodeName = name + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[i];
-    var child;
-    if (level < maxLevels) {
-      child = {
-        name: nodeName + level
-      }
-
-      if (level > 0 && Math.random() < 0.5) {
-        child.value = Math.round(Math.random() * maxValue);
-      }
-      else {
-        child.children = [];
-        generateLevel(child, nodeName + i, level + 1)
-      }
+    var data = {
+      name: "Spells",
+      children: [],
     }
-    else {
-      child = {
-        name: name + i,
-        value: Math.round(Math.random() * maxValue)
-      }
+    generateLevel(data, "Spell ", 0);
+
+    series.data.setAll([data]);
+    series.set("selectedDataItem", series.dataItems[0]);
+
+    function generateLevel(data) {
+
+      let types = ['Charm', 'Jinx', 'Transfiguration'];
+      types.forEach(type => {
+        var value = Math.round(Math.random() * maxValue);
+        var child = {
+          name: type,
+          value: value,
+        }
+
+        child.children = [
+          {
+            name: 'Spell 1',
+            value: Math.round(Math.random() * maxValue)
+          }, 
+          {
+            name: 'Spell 2',
+            value: Math.round(Math.random() * maxValue)
+          }, 
+          {
+            name: 'Spell 3',
+            value: Math.round(Math.random() * maxValue)
+          }, 
+          {
+            name: 'Spell 4',
+            value: Math.round(Math.random() * maxValue)
+          }, 
+        ];
+        data.children.push(child);
+      });
+      
+
+      
+      // var nodeName = name + "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      // var child;
+      // if (level < maxLevels) {
+      //   child = {
+      //     name: nodeName + level
+      //   }
+
+      //   if (level > 0 && Math.random() < 0.5) {
+      //     child.value = Math.round(Math.random() * maxValue);
+      //   }
+      //   else {
+      //     child.children = [];
+      //     generateLevel(child, nodeName, level + 1)
+      //   }
+      // }
+      // else {
+      //   child = {
+      //     name: name,
+      //     value: Math.round(Math.random() * maxValue)
+      //   }
+      // }
+      // data.children.push(child);
+    
+      return data;
     }
-    data.children.push(child);
+
+
+    // Make stuff animate on load
+    series.appear(1000, 100);
+
+    }); // end am5.ready()
   }
-
-  level++;
-  return data;
 }
 
 
-// Make stuff animate on load
-series.appear(1000, 100);
-
-}); // end am5.ready()
 
 </script>
 
@@ -104,6 +138,6 @@ series.appear(1000, 100);
 <style scoped>
 #chartdiv {
   width: 100%;
-  height: 550px;
+  height: 500px;
 }
 </style>
