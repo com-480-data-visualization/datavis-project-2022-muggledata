@@ -1,9 +1,9 @@
 <template>
     <div class="topnavbar">
         <a class="title" v-on:click="changeComponent('HomePage')"> Muggle Data Project </a>
-        <a class ="navbutton" v-on:click="changeComponent('HelloWorld')">Genealogy</a>
+        <!-- <a class ="navbutton" v-on:click="changeComponent('HelloWorld')">Genealogy</a>
         <a class ="navbutton" href="spells.html">Spells</a>
-        <a class ="navbutton" @click="showConfetti">Potions</a>
+        <a class ="navbutton" @click="showConfetti">Potions</a> -->
     </div>
 </template>
 
