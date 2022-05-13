@@ -57,15 +57,17 @@ export default {
     //   centerX: am5.percent(50)
     // }));
 
-
+    // sourceText = "kjwef wef qwefsd few f wef ww ef wef wef wef  fe f we dcas df"
+    
     // Add series
     // https://www.amcharts.com/docs/v5/charts/word-cloud/
     var series = container.children.push(am5wc.WordCloud.new(root, {
       categoryField: "tag",
       valueField: "weight",
-      calculateAggregates: true // this is needed for heat rules to work
+      calculateAggregates: true, // this is needed for heat rules to work
+      legendLabelText: "legends",
     }));
-
+    
 
     // Set up heat rules
     // https://www.amcharts.com/docs/v5/charts/word-cloud/#Via_heat_rules
@@ -100,22 +102,42 @@ export default {
     // Data from:
     // https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-programming-scripting-and-markup-languages
     series.data.setAll([
-      { tag: "Harry", weight: 70. },
-      { tag: "Hermione", weight: 50. },
-      { tag: "Dumbeldore", weight: 35 },
-      { tag: "looked", weight: 33 },
-      { tag: "Proffessor", weight: 31},
-      { tag: "Hagrid", weight: 30.5},
-      { tag: "time", weight: 30.2},
-      { tag: "Snape", weight: 30.1},
-      { tag: "eyes", weight: 30.05},
-      { tag: "wand", weight: 29.9},
-      { tag: "Potter", weight: 29.8},
-      { tag: "face", weight: 29.5},
-      { tag: "Weasley", weight: 29.5},
-      { tag: "voice", weight: 29.5},
-      { tag: "again", weight: 29.5},
+      { tag: "Harry", weight: 70., legends: "2"},
+      { tag: "Hermione", weight: 50. , legends: "1"},
+      { tag: "Dumbeldore", weight: 35 , legends: "1"},
+      { tag: "looked", weight: 33 , legends: "1"},
+      { tag: "Proffessor", weight: 31, legends: "1"},
+      { tag: "Hagrid", weight: 30.5, legends: "1"},
+      { tag: "time", weight: 30.2, legends: "1"},
+      { tag: "Snape", weight: 30.1, legends: "1"},
+      { tag: "eyes", weight: 30.05, legends: "1"},
+      { tag: "wand", weight: 29.9, legends: "1"},
+      { tag: "Potter", weight: 29.8, legends: "1"},
+      { tag: "face", weight: 29.5, legends: "1"},
+      { tag: "Weasley", weight: 29.5, legends: "1"},
+      { tag: "voice", weight: 29.5, legends: "1"},
+      { tag: "again", weight: 29.5, legends: "2"},
     ]);
+
+    // console.log(series.data.getIndex(0))
+
+    var legend = series.children.push(am5.Legend.new(root, {
+      nameField: "legends",
+      x: am5.percent(50),
+      centerX: am5.percent(50),
+      layout: am5.GridLayout.new(root, {
+        maxColumns: 4,
+        fixedWidthGrid: true
+      })
+    }));
+    legend.data.setAll(series.data.values);
+
+    // var legend = container.children.push(am5.Legend.new(root, {
+    //   nameField: "legends",
+    //   centerX: am5.percent(50),
+    //   x: am5.percent(50),
+    // }));
+    // legend.data.setAll(series.dataItems);
 
     }); // end am5.ready()
   }
