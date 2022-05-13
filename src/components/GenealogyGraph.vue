@@ -46,6 +46,22 @@ export default {
       childDataField: "children"
     }));
 
+    am5.net.load("/data/Spells.csv").then(function(result) {
+      series.data.setAll(am5.CSVParser.parse(result.response, {
+        delimiter: ";",
+        reverse: true,
+        skipEmpty: true,
+        useColumnNames: true
+      }));
+      console.log(result.response);
+    }).catch(function(result) {
+      // This gets executed if there was an error loading URL
+      // ... handle error
+      console.log("Error loading " + result.xhr.responseURL);
+    });
+
+    console.log(series.data);
+
 
     // Generate and set data
     // https://www.amcharts.com/docs/v5/charts/hierarchy/#Setting_data
@@ -59,7 +75,7 @@ export default {
     }
     generateLevel(data, "", 0);
 
-    series.data.setAll([data]);
+    //series.data.setAll([data]);
     series.set("selectedDataItem", series.dataItems[0]);
 
     function generateLevel(data, name, level) {
