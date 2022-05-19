@@ -77,7 +77,7 @@ def words_in_books():
         for char in word:
             if char not in punctuation:
                 new_word += char
-        if new_word != "" and len(new_word) > 3:
+        if new_word != "":
             new_words.append(new_word)
     wordsSet = set(new_words)
     wordsCounter = Counter(new_words)
