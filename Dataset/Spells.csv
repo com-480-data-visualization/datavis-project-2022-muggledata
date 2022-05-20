@@ -19,7 +19,7 @@ Apparition;None;Transportation;Magically transports the caster;None
 Aqua Eructo Charm;Aqua Eructo;Charm;Jet of water;Ice Blue
 Spider repelling spell;Arania Exumai;Spell;Repels spiders;Blue
 Slowing Charm;Arresto Momentum;Charm;Slows or stops target's velocity;None
-Arrow-shooting spell;;Conjuration;Fires arrows from the caster's wand;
+Arrow-shooting spell;Unknown;Conjuration;Fires arrows from the caster's wand;
 Ascendio;Ascendio;Charm;Lifts caster;None
 Killing Curse;Avada Kedavra;Curse;Instantaneous death;Green
 Avifors Spell;Avifors ;Transfiguration;Transforms the target into a bird.;Blue
@@ -49,8 +49,8 @@ Extension Charm;Capacious extremis;Charm;Increases interior space;
 Seize and Pull Charm;Carpe Retractum;Charm;Pull caster towards object, Pull object towards caster;Orange or Purple
 Cascading Jinx;Unknown;Jinx;Attacks multiple enemies;Blue
 Caterwauling Charm;Unknown;Charm;Sets off a high-pitched shriek if entered;
-Cauldron to Sieve;;Transfiguration;Turns a cauldron into a sieve;
-Cauldron to badger;;Transformation;Transforms a cauldron into a badger.;
+Cauldron to Sieve;Unknown;Transfiguration;Turns a cauldron into a sieve;
+Cauldron to badger;Unknown;Transformation;Transforms a cauldron into a badger.;
 Cave inimicum;Cave inimicum;Charm;Concealment;None
 Cheering Charm;Unknown;Charm;Creates joy;
 Circumrota;Circumrota;Charm;Rotates an object;
@@ -73,7 +73,7 @@ Densaugeo;Densaugeo;Hex ;Elongates teeth;Violet
 Deprimo;Deprimo;Charm;Blasts holes in ground;Green
 Banishing Charm;Depulso;Charm;Sends target away;White or Red
 Descendo;Descendo;Charm;Lowers target;Blue
-Desk Into Pig;;Transfiguration;Transfigures desks into pigs;
+Desk Into Pig;Unknown;Transfiguration;Transfigures desks into pigs;
 Deterioration Hex;Unknown;Hex;Impairs foes;
 Severing Charm;Diffindo;Charm;Cuts objects;Light green, pink or red
 Diminuendo;Diminuendo;Charm;Shrinks objects;White
@@ -84,7 +84,7 @@ Drought Charm;Unknown;Charm;Dries up small bodies of water;
 Ducklifors Jinx;Ducklifors;Transfiguration;Turns organisms to ducks;Yellow or Purple
 Ducklifors Jinx;Ducklifors;Jinx;Turns organisms to ducks;Yellow or Purple
 Hardening Charm;Duro;Charm;Turns object to stone;None
-Ears to kumquats;;Transfiguration;Transfigures target's ears into kumquats;
+Ears to kumquats;Unknown;Transfiguration;Transfigures target's ears into kumquats;
 Ear-shrivelling Curse;Unknown;Curse;Causes ears to wither;
 Ebublio Jinx;Ebublio;Jinx;Traps target in giant bubble;Blue
 Engorgement Charm;Engorgio;Charm;Causes swelling;Icy blue
@@ -209,7 +209,7 @@ Orchideous;Orchideous;Conjuration;Conjures flowers;Pink
 Oscausi;Oscausi;Dark charm;Seals mouth;White
 Pack;Pack;Charm;Packs luggage;None
 Papyrus Reparo;Papyrus Reparo;Charm;Mends torn paper;None
-Patented Daydream Charm;;Charm;Makes the user daydream for 30 minutes;
+Patented Daydream Charm;Unknown;Charm;Makes the user daydream for 30 minutes;
 Partis Temporus;Partis Temporus;Charm;Parts the target;None
 Pepper breath hex;Unknown;Hex;Inflicts fiery hot breath;
 Periculum;Periculum;Charm;Burst of red sparks;Red
@@ -285,7 +285,7 @@ Surgito;Surgito;Counter-charm;Removes enchantments;
 Switching Spell;Unknown;Transfiguration;Switches two objects;White
 Taboo;Unknown;Curse;When a word is spoken, the caster is alerted and protective enchantments around the speaker are weakened.;None
 Tail-growing hex;Unknown;Hex;Gives the victim a tail;
-Dancing Feet Spell;Tarantallegra ;Jinx;Sends legs out of control;
+Dancing Feet Spell;Tarantallegra;Jinx;Sends legs out of control;
 Teacup to tortoise;Unknown;Transfiguration;Transforms a teacup into a tortoise;Blue
 Teapot to tortoise;Unknown;Transfiguration;Transforms a teapot into a tortoise;Orange
 Teeth-straightening spell;Unknown;Charm;Straightens teeth;
