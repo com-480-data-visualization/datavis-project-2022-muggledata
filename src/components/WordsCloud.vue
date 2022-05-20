@@ -105,7 +105,7 @@ export default {
     // https://www.amcharts.com/docs/v5/charts/word-cloud/#Events
     series.labels.template.events.on("click", function(ev) {
       const category = ev.target.dataItem.get("category");
-      window.open("https://stackoverflow.com/questions/tagged/" + encodeURIComponent(category));
+      window.open("https://fr.wikipedia.org/wiki/" + encodeURIComponent(category));
     });
 
 
