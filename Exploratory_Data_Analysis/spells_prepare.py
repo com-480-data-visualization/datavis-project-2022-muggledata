@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from random import randrange
 
-spells = pd.read_csv("../Dataset/Spells.csv", sep=';')
+spells = pd.read_csv("../Dataset/spell_counting.csv", sep=',')
 
 df = pd.DataFrame(spells)
 df = df.drop('Light', 1)
@@ -16,7 +16,7 @@ for type in df['Type'].unique():
     for i, spell in df_type.iterrows():
         s = {
             'name': spell['Name'],
-            'value': randrange(5, 40)
+            'value': spell['Count']
         }
         children.append(s)
     child = {
