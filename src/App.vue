@@ -1,8 +1,8 @@
 <template>
-  <NavigationBar/>
   <GenealogyGraph/>
   <SpellsChart/>
   <WordsCloud/>
+  <NavigationBar/>
 </template>
 
 <script>
