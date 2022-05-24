@@ -53,7 +53,7 @@ export default {
       width: am5.percent(80),
       height: am5.percent(80),
       //layout: root.verticalLayout,
-      layout: root.horizontalLayout
+      layout: root.verticalLayout
     }));
 
 
@@ -65,154 +65,44 @@ export default {
     //   centerX: am5.percent(50)
     // }));
 
-    let button1 = container.children.push(am5.Button.new(root, {
-      dx: 10,
-      dy: 10,
-      label: am5.Label.new(root, {
-        text: "Harry Potter and \n the Philosophers Stone",
-        textAlign: "center",
-        marginLeft: -10,
-        marginRight: -10,
-        fontSize: 12,
-      }),
-    }));
-    console.log(button1.width())
-    button1.events.on("click", function(ev) {
-      console.log(ev)
-      am5.net.load("/data/2_gram_words_specific_book1.json").then(function(result) {
-        series.data.setAll(am5.JSONParser.parse(result.response));
-      }).catch(function(result) {
-        // This gets executed if there was an error loading URL
-        // ... handle error
-        console.log("Error loading " + result.xhr.responseURL);
+    function buttons(book_nb) {
+      let button = container.children.push(am5.Button.new(root, {
+        dx: 10,
+        dy: 10,
+        label: am5.Label.new(root, {
+          text: books_name[book_nb],
+          textAlign: "center",
+          marginLeft: -10,
+          marginRight: -10,
+          fontSize: 12,
+        })
+      }));
+      button.events.on("click", function() {
+        am5.net.load("/data/2_gram_words_specific_book" + (book_nb + 1) + ".json").then(function(result) {
+          series.data.setAll(am5.JSONParser.parse(result.response));
+        }).catch(function(result) {
+          // This gets executed if there was an error loading URL
+          // ... handle error
+          console.log("Error loading " + result.xhr.responseURL);
+        });
       });
-    });
-    let button2 = container.children.push(am5.Button.new(root, {
-      dx: 10,
-      dy: 10,
-      label: am5.Label.new(root, {
-        text: "Harry Potter and \n the Chamber of Secrets",
-        textAlign: "center",
-        marginLeft: -10,
-        marginRight: -10,
-        fontSize: 12,
-      }),
-    }));
-    button2.events.on("click", function(ev) {
-      console.log(ev)
-      am5.net.load("/data/2_gram_words_specific_book2.json").then(function(result) {
-        series.data.setAll(am5.JSONParser.parse(result.response));
-      }).catch(function(result) {
-        // This gets executed if there was an error loading URL
-        // ... handle error
-        console.log("Error loading " + result.xhr.responseURL);
-      });
-    });
-    let button3 = container.children.push(am5.Button.new(root, {
-      dx: 10,
-      dy: 10,
-      label: am5.Label.new(root, {
-        text: "Harry Potter and \n the Prisoner of Azkaban",
-        textAlign: "center",
-        marginLeft: -10,
-        marginRight: -10,
-        fontSize: 12,
-      }),
-    }));
-    button3.events.on("click", function(ev) {
-      console.log(ev)
-      am5.net.load("/data/2_gram_words_specific_book3.json").then(function(result) {
-        series.data.setAll(am5.JSONParser.parse(result.response));
-      }).catch(function(result) {
-        // This gets executed if there was an error loading URL
-        // ... handle error
-        console.log("Error loading " + result.xhr.responseURL);
-      });
-    });
-    let button4 = container.children.push(am5.Button.new(root, {
-      dx: 10,
-      dy: 10,
-      label: am5.Label.new(root, {
-        text: "Harry Potter and \n the Goblet of Fire",
-        textAlign: "center",
-        marginLeft: -10,
-        marginRight: -10,
-        fontSize: 12,
-      }),
-    }));
-    button4.events.on("click", function(ev) {
-      console.log(ev)
-      am5.net.load("/data/2_gram_words_specific_book4.json").then(function(result) {
-        series.data.setAll(am5.JSONParser.parse(result.response));
-      }).catch(function(result) {
-        // This gets executed if there was an error loading URL
-        // ... handle error
-        console.log("Error loading " + result.xhr.responseURL);
-      });
-    });
-    let button5 = container.children.push(am5.Button.new(root, {
-      dx: 10,
-      dy: 10,
-      label: am5.Label.new(root, {
-        text: "Harry Potter and \n the Order of the Phoenix",
-        textAlign: "center",
-        marginLeft: -10,
-        marginRight: -10,
-        fontSize: 12,
-      }),
-    }));
-    button5.events.on("click", function(ev) {
-      console.log(ev)
-      am5.net.load("/data/2_gram_words_specific_book5.json").then(function(result) {
-        series.data.setAll(am5.JSONParser.parse(result.response));
-      }).catch(function(result) {
-        // This gets executed if there was an error loading URL
-        // ... handle error
-        console.log("Error loading " + result.xhr.responseURL);
-      });
-    });
-    let button6 = container.children.push(am5.Button.new(root, {
-      dx: 10,
-      dy: 10,
-      label: am5.Label.new(root, {
-        text: "Harry Potter and \n the Half Blood Prince",
-        textAlign: "center",
-        marginLeft: -10,
-        marginRight: -10,
-        fontSize: 12,
-      }),
-    }));
-    button6.events.on("click", function(ev) {
-      console.log(ev)
-      am5.net.load("/data/2_gram_words_specific_book6.json").then(function(result) {
-        series.data.setAll(am5.JSONParser.parse(result.response));
-      }).catch(function(result) {
-        // This gets executed if there was an error loading URL
-        // ... handle error
-        console.log("Error loading " + result.xhr.responseURL);
-      });
-    });
-    let button7 = container.children.push(am5.Button.new(root, {
-      dx: 10,
-      dy: 10,
-      label: am5.Label.new(root, {
-        text: "Harry Potter and \n the Deathly Hallows",
-        textAlign: "center",
-        marginLeft: -10,
-        marginRight: -10,
-        fontSize: 12,
-      }),
-    }));
-    button7.events.on("click", function(ev) {
-      console.log(ev)
-      am5.net.load("/data/2_gram_words_specific_book7.json").then(function(result) {
-        series.data.setAll(am5.JSONParser.parse(result.response));
-      }).catch(function(result) {
-        // This gets executed if there was an error loading URL
-        // ... handle error
-        console.log("Error loading " + result.xhr.responseURL);
-      });
-    });
+      return button;
+    }
+
+    let books_name = ["Harry Potter and \n the Philosophers Stone",
+                      "Harry Potter and \n the Chamber of Secrets",
+                      "Harry Potter and \n the Prisoner of Azkaban",
+                      "Harry Potter and \n the Goblet of Fire",
+                      "Harry Potter and \n the Order of the Phoenix",
+                      "Harry Potter and \n the Half Blood Prince",
+                      "Harry Potter and \n the Deathly Hallows"];
+    buttons(0);
+    buttons(1);
+    buttons(2);
+    buttons(3);
+    buttons(4);
+    buttons(5);
+    buttons(6);
     
     // Add series
     // https://www.amcharts.com/docs/v5/charts/word-cloud/
@@ -224,9 +114,9 @@ export default {
       minFontSize: 15,
       maxFontSize: 60,
       marginTop: 100,
-      layout: root.verticalLayout,
+      layout: root.verticalLayout
     }));
-    
+
 
     // Set up heat rules
     // https://www.amcharts.com/docs/v5/charts/word-cloud/#Via_heat_rules
@@ -246,7 +136,8 @@ export default {
       paddingLeft: 5,
       paddingRight: 5,
       fontFamily: "Courier New",
-      cursorOverStyle: "pointer"
+      cursorOverStyle: "pointer",
+      tooltipText: "This word appear {value} time in the book"
     });
 
 
@@ -256,6 +147,10 @@ export default {
       const category = ev.target.dataItem.get("category");
       window.open("https://fr.wikipedia.org/wiki/" + encodeURIComponent(category));
     });
+    // series.labels.template.events.on("hover", function(ev) {
+    //   const value = ev.target.dataItem.get("value");
+    //   window;
+    // });
 
     }); // end am5.ready()
   }
