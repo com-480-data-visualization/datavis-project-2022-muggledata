@@ -78,7 +78,7 @@ export default {
         })
       }));
       button.events.on("click", function() {
-        am5.net.load("/data/2_gram_words_specific_book" + (book_nb + 1) + ".json").then(function(result) {
+        am5.net.load("./data/2_gram_words_specific_book" + (book_nb + 1) + ".json").then(function(result) {
           series.data.setAll(am5.JSONParser.parse(result.response));
         }).catch(function(result) {
           // This gets executed if there was an error loading URL
@@ -114,7 +114,7 @@ export default {
       minFontSize: 15,
       maxFontSize: 60,
       marginTop: 100,
-      layout: root.verticalLayout
+      layout: root.verticalLayout,
     }));
 
 
@@ -137,7 +137,8 @@ export default {
       paddingRight: 5,
       fontFamily: "Courier New",
       cursorOverStyle: "pointer",
-      tooltipText: "This word appear {value} time in the book"
+      tooltipText: "'{category}' appear {value} time in the book",
+      tooltipPosition: "pointer"
     });
 
 
