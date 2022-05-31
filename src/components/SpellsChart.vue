@@ -70,7 +70,7 @@ export default {
 
       series.circles.template.setAll({
         fillOpacity: 1,
-        strokeWidth: .5,
+        strokeWidth: 1,
         strokeOpacity: 1,
       });
       
