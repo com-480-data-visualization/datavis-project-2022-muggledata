@@ -1,29 +1,16 @@
 <template>
-  <GenealogyGraph/>
-  <SpellsChart/>
-  <WordsCloud/>
   <NavigationBar/>
+  <router-view />
 </template>
 
 <script>
 import NavigationBar from './components/NavigationBar.vue'
-import SpellsChart from './components/SpellsChart.vue'
-import GenealogyGraph from './components/GenealogyGraph.vue'
-import WordsCloud from './components/WordsCloud.vue'
 
 export default {
   name: 'App',
   components: {
     NavigationBar,
-    GenealogyGraph,
-    SpellsChart,
-    WordsCloud
-},
-  methods: {
-    changeComponent(component){
-      this.component = component
-    },
-  }
+  },
 }
 </script>
 

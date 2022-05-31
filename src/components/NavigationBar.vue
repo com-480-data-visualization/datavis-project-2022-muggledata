@@ -1,9 +1,8 @@
 <template>
     <div class="topnavbar">
-        <a class="title" v-on:click="changeComponent('HomePage')"> Muggle Data Project </a>
-        <a class ="navbutton">Genealogy</a>
-        <a class ="navbutton">Spells</a>
-        <a class ="navbutton">Words</a>
+		<router-link :to="{name: 'home'}"><a class="title"> Muggle Data Project </a></router-link>
+		<router-link :to="{name: 'spells'}"><a class ="navbutton">Spells</a></router-link> 
+		<router-link :to="{name: 'words'}"><a class ="navbutton">Words</a></router-link> 
     </div>
 </template>
 
@@ -13,17 +12,6 @@ export default {
 	props: {
 		msg: String,
 	},
-	select_component() {
-		return {
-			selected_component: "HomePage"
-		}
-	},
-	methods: {
-		changeComponent : function (component){
-			// this.selected_component = component
-			this.$emit("nextComponent", component)
-		},
-	}
 };
 </script>
 
@@ -41,6 +29,7 @@ h1 {
 	padding: 0px 10px;
 	position: fixed;
 	width: 100%;
+	z-index: 500;
 }
 
 /* Style of the title inside the box */
@@ -55,6 +44,7 @@ h1 {
 }
 
 .topnavbar .navbutton {
+	top: 0;
 	float: left;
 	color: var(--light_silver);
 	background-color: var(--navbar_background);
