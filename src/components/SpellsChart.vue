@@ -1,5 +1,6 @@
 <template>
   <div id="spelldiv"></div>
+  <div id="spellchart"></div>
 </template>
 
 
@@ -7,6 +8,7 @@
 import * as am5 from "@amcharts/amcharts5";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
+import * as am5xy from "@amcharts/amcharts5/xy"
 
 export default {
   name: 'SpellsChart',
@@ -78,8 +80,181 @@ export default {
         text: "{category}"
       });
 
-      series.appear(1000, 100);
 
+
+
+
+      // Create root element
+      // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+      var root2 = am5.Root.new("spellchart");
+
+      // Set themes
+      // https://www.amcharts.com/docs/v5/concepts/themes/
+      root2.setThemes([
+        am5themes_Animated.new(root2)
+      ]);
+      root2.interfaceColors.set("grid", am5.color(0xffffff))
+
+      // Create chart
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/
+      var chart = root2.container.children.push(
+        am5xy.XYChart.new(root2, {
+          panX: true,
+          panY: true,
+          wheelX: "panX",
+          wheelY: "zoomX",
+          layout: root2.verticalLayout,
+          pinchZoomX:true
+        })
+      );
+      chart.get("colors").set("colors", [
+        am5.color(0xffffff),
+        am5.color(0xf00fff),
+        am5.color(0xfff00f),
+      ]);
+
+      // Add cursor
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+      var cursor = chart.set("cursor", am5xy.XYCursor.new(root2, {
+        behavior: "none"
+      }));
+      cursor.lineY.set("visible", false);
+
+      // The data
+      var data2 = [
+        {
+          year: "1930",
+          italy: -5,
+          germany: 5,
+          uk: 3
+        },
+        {
+          year: "1934",
+          italy: 1,
+          germany: 2,
+          uk: 6
+        },
+        {
+          year: "1938",
+          italy: 2,
+          germany: 3,
+          uk: 1
+        }
+      ];
+
+      // Create axes
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+      var xRenderer = am5xy.AxisRendererX.new(root2, {});
+      xRenderer.grid.template.set("location", 0.5);
+      xRenderer.labels.template.setAll({
+        location: 0.5,
+        multiLocation: 0.5,
+        fill: am5.color(0xffffff)
+      });
+
+      var xAxis = chart.xAxes.push(
+        am5xy.CategoryAxis.new(root2, {
+          categoryField: "year",
+          renderer: xRenderer,
+          tooltip: am5.Tooltip.new(root2, {})
+        })
+      );
+
+      xAxis.data.setAll(data2);
+
+      var yRenderer = am5xy.AxisRendererY.new(root2, {});
+      yRenderer.grid.template.set("location", 0.5);
+      yRenderer.labels.template.setAll({
+        location: 0.5,
+        multiLocation: 0.5,
+        fill: am5.color(0xffffff),
+      });
+
+      var yAxis = chart.yAxes.push(
+        am5xy.ValueAxis.new(root2, {
+          maxPrecision: 0,
+          renderer: yRenderer,
+          min: 0
+        })
+      );
+
+      // Add series
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+
+      function createSeries(name, field) {
+        var series = chart.series.push(
+          am5xy.LineSeries.new(root2, {
+            name: name,
+            xAxis: xAxis,
+            yAxis: yAxis,
+            valueYField: field,
+            categoryXField: "year",
+            tooltip: am5.Tooltip.new(root2, {
+              pointerOrientation: "horizontal",
+              labelText: "[bold]{name}[/]\n{categoryX}: {valueY}"
+            })
+          })
+        );
+
+
+        series.bullets.push(function() {
+          return am5.Bullet.new(root2, {
+            sprite: am5.Circle.new(root2, {
+              radius: 5,
+              fill: series.get("fill")
+            })
+          });
+        });
+
+        // create hover state for series and for mainContainer, so that when series is hovered,
+        // the state would be passed down to the strokes which are in mainContainer.
+        series.set("setStateOnChildren", true);
+        series.states.create("hover", {});
+
+        series.mainContainer.set("setStateOnChildren", true);
+        series.mainContainer.states.create("hover", {});
+
+        series.strokes.template.states.create("hover", {
+          strokeWidth: 4
+        });
+
+        series.data.setAll(data2);
+        series.appear(1000);
+      }
+
+      createSeries("Italy", "italy");
+      createSeries("Germany", "germany");
+      createSeries("UK", "uk");
+
+      // Add scrollbar
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
+      chart.set("scrollbarX", am5.Scrollbar.new(root2, {
+        orientation: "horizontal",
+        marginBottom: 20
+      }));
+
+      var legend = chart.children.push(
+        am5.Legend.new(root2, {
+          centerX: am5.p50,
+          x: am5.p50
+        })
+      );
+
+      // Make series change state when legend item is hovered
+      legend.itemContainers.template.states.create("hover", {});
+
+      legend.itemContainers.template.events.on("pointerover", function(e) {
+        e.target.dataItem.dataContext.hover();
+      });
+      legend.itemContainers.template.events.on("pointerout", function(e) {
+        e.target.dataItem.dataContext.unhover();
+      });
+
+      legend.data.setAll(chart.series.values);
+
+      // Make stuff animate on load
+      // https://www.amcharts.com/docs/v5/concepts/animations/
+      chart.appear(1000, 100);
     });
   }
 }
@@ -90,6 +265,11 @@ export default {
 
 
 <style scoped>
+#spellchart {
+  width: 80%;
+  height: 700px;
+}
+
 #spelldiv {
   width: 100%;
   height: 1100px;
