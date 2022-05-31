@@ -8,7 +8,9 @@ import json
 def word_to_json_total():
     book_list = ['1', '2', '3', '4', '5', '6', '7']
     #with open("../Dataset/Books/word_counting_total.json", 'w') as f:
-    spells = pd.DataFrame(pd.read_csv("../Dataset/spell_counting.csv", sep=','))
+    spells = pd.DataFrame(pd.read_csv("../Dataset/spell_counting.csv", sep=',', usecols=['Name', 'Incantation']))
+    spells_names = spells['Name']
+    spells_incantation = spells['Incantation']
     for nb in book_list:
         allLines = []
         spell_book_counter = []
@@ -20,8 +22,6 @@ def word_to_json_total():
         lines = [segments for segments in allLines]
         #words = [w for segments in allLines for w in segments.split()]
 
-        spells_names = spells['Name']
-        spells_incantation = spells['Incantation']
         # spells_incantation.drop(spells_incantation[spells_incantation == 'Unknown'])
         #punctuation = '''!()-[]{};:'"“”\,<>./?@#$%^&*_~0123456789—|•■□'''
         spells_list = []
@@ -32,17 +32,20 @@ def word_to_json_total():
                     spells_list.append(sname)
         print("spell list done finish")
         spellCounter = Counter(spells_list)
-        spellCounter  = {k: v for k, v in sorted(spellCounter.items(), key=lambda item: item[1], reverse=True)}
+        spellCounter  = {k: int(v) for k, v in sorted(spellCounter.items(), key=lambda item: item[1], reverse=True)}
         for (s, c) in spellCounter.items():
             spell_book_counter.append([s, c])
         df = pd.DataFrame(spell_book_counter, columns=['Name', 'Book' + nb])
-        spells = spells.set_index('Name').join(df.set_index('Name'), how="right", on='Name')
-        spells.to_csv('../Dataset/spell_counting2.csv')
+        print(df)
+        #print(spells)
+        spells = spells.join(df.set_index('Name'), on='Name')
+    spells.to_csv('../Dataset/spell_counting2.csv', index=False)
 
         # json.dump(df[:200].to_json(orient='records'), f)
 
 #words_in_books()
 word_to_json_total()
+
 
 # df = pd.DataFrame(pd.read_csv('../Dataset/Books/word_counting.csv'))
 # print(df.loc[df['Book'].isin([1, 4, 5])].groupby(['Word']).sum().sort_values('Count', ascending=False))

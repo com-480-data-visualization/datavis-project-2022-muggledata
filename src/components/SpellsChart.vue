@@ -121,26 +121,27 @@ export default {
       cursor.lineY.set("visible", false);
 
       // The data
-      var data2 = [
-        {
-          year: "1930",
-          italy: -5,
-          germany: 5,
-          uk: 3
-        },
-        {
-          year: "1934",
-          italy: 1,
-          germany: 2,
-          uk: 6
-        },
-        {
-          year: "1938",
-          italy: 2,
-          germany: 3,
-          uk: 1
-        }
-      ];
+      // var data2 = [
+      //   {
+      //     year: "1930",
+      //     italy: -5,
+      //     germany: 5,
+      //     uk: 3
+      //   },
+      //   {
+      //     year: "1934",
+      //     italy: 1,
+      //     germany: 2,
+      //     uk: 6
+      //   },
+      //   {
+      //     year: "1938",
+      //     italy: 2,
+      //     germany: 3,
+      //     uk: 1
+      //   }
+      // ];
+      var data2 = [{"book": "Book1", "Stunning Spell": 2, "Killing Curse": 3, "Apparition": 1, "Summoning Charm": 1, "Shield Charm": 2, "Imperius Curse": 1}, {"book": "Book2", "Stunning Spell": 2, "Killing Curse": 4, "Apparition": 2, "Summoning Charm": 1, "Shield Charm": 1, "Imperius Curse": 5, "Disarming Charm": 1}, {"book": "Book3", "Stunning Spell": 8, "Killing Curse": 4, "Apparition": 1, "Summoning Charm": 4, "Shield Charm": 1, "Imperius Curse": 1, "Disarming Charm": 1, "Cruciatus Curse": 1}, {"book": "Book4", "Stunning Spell": 10, "Killing Curse": 9, "Apparition": 9, "Summoning Charm": 15, "Shield Charm": 2, "Imperius Curse": 18, "Disarming Charm": 3, "Cruciatus Curse": 15, "Fidelius Charm": 3, "Wand-Lighting Charm": 2, "Disillusionment Charm": 1, "Severing Charm": 28, "Water-Making Spell": 1, "Muffliato Charm": 3, "Revulsion Jinx": 2, "Taboo": 1, "Dark Mark": 1}, {"book": "Book5", "Stunning Spell": 11, "Killing Curse": 2, "Apparition": 14, "Summoning Charm": 11, "Shield Charm": 6, "Imperius Curse": 9, "Disarming Charm": 8, "Cruciatus Curse": 7, "Fidelius Charm": 3, "Wand-Lighting Charm": 3, "Disillusionment Charm": 1, "Severing Charm": 1, "Water-Making Spell": 6, "Muffliato Charm": 1, "Revulsion Jinx": 1, "Taboo": 3, "Dark Mark": 9, "Blasting Curse": 2, "Hover Charm": 3, "Patronus Charm": 4, "Caterwauling Charm": 1, "Confundus Charm": 2, "Levitation Charm": 9}, {"book": "Book6", "Stunning Spell": 1, "Killing Curse": 6, "Apparition": 34, "Summoning Charm": 3, "Shield Charm": 4, "Imperius Curse": 9, "Disarming Charm": 2, "Cruciatus Curse": 3, "Fidelius Charm": 3, "Wand-Lighting Charm": 1, "Disillusionment Charm": 1, "Severing Charm": 14, "Water-Making Spell": 3, "Muffliato Charm": 1, "Revulsion Jinx": 14, "Taboo": 1, "Dark Mark": 1, "Blasting Curse": 4, "Hover Charm": 3, "Patronus Charm": 6, "Caterwauling Charm": 5, "Confundus Charm": 1, "Levitation Charm": 5, "Tergeo": 1}, {"book": "Book7", "Stunning Spell": 21, "Killing Curse": 18, "Apparition": 17, "Summoning Charm": 15, "Shield Charm": 13, "Imperius Curse": 9, "Disarming Charm": 8, "Cruciatus Curse": 7, "Fidelius Charm": 6, "Wand-Lighting Charm": 6, "Disillusionment Charm": 5, "Severing Charm": 4, "Water-Making Spell": 4, "Muffliato Charm": 4, "Revulsion Jinx": 4, "Taboo": 4, "Dark Mark": 4, "Blasting Curse": 3, "Hover Charm": 3, "Patronus Charm": 3, "Caterwauling Charm": 3, "Confundus Charm": 2, "Levitation Charm": 2, "Tergeo": 2, "Descendo": 2, "General Counter-Spell": 2, "Meteolojinx Recanto": 2, "Mending Charm": 2, "Stinging Jinx": 2, "Fiendfyre": 2, "Impediment Jinx": 1, "Sectumsempra": 1, "Extension Charm": 1, "Expulso Curse": 1, "Full Body-Bind Curse": 1, "Memory Charm": 1, "Tongue-Tying Curse": 1, "Permanent Sticking Charm": 1, "Unlocking Charm": 1, "Impervius Charm": 1, "Doubling Charm": 1, "Muggle-Repelling Charm": 1, "Erecto": 1, "Obscuro": 1, "Engorgement Charm": 1, "Shrinking Charm": 1, "Bedazzling Hex": 1, "Deprimo": 1, "Cushioning Charm": 1, "Flagrante Curse": 1, "Levicorpus": 1, "Liberacorpus": 1, "Gouging Spell": 1, "Locomotion Charm": 1, "Piertotum Locomotor": 1, "Glisseo": 1, "Hardening Charm": 1, "Wand-Extinguishing Charm": 1, "Silencing Charm": 1, "Supersensory Charm": 1}];
 
       // Create axes
       // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
@@ -154,7 +155,7 @@ export default {
 
       var xAxis = chart.xAxes.push(
         am5xy.CategoryAxis.new(root2, {
-          categoryField: "year",
+          categoryField: "book",
           renderer: xRenderer,
           tooltip: am5.Tooltip.new(root2, {})
         })
@@ -188,7 +189,7 @@ export default {
             xAxis: xAxis,
             yAxis: yAxis,
             valueYField: field,
-            categoryXField: "year",
+            categoryXField: "book",
             tooltip: am5.Tooltip.new(root2, {
               pointerOrientation: "horizontal",
               labelText: "[bold]{name}[/]\n{categoryX}: {valueY}"
@@ -221,10 +222,18 @@ export default {
         series.data.setAll(data2);
         series.appear(1000);
       }
+      const spells = new Set();
+      data2.forEach(function(item){
+        const keys = Object.keys(item);
+        spells.push(keys);
+      });
 
-      createSeries("Italy", "italy");
-      createSeries("Germany", "germany");
-      createSeries("UK", "uk");
+      spells.forEach(function(item){
+        createSeries(item.toString(), item.toString());
+      });
+
+      // createSeries("Stunning Spell", "Stunning Spell");
+      // createSeries("Killing Curse", "Killing Curse");
 
       // Add scrollbar
       // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
@@ -236,8 +245,8 @@ export default {
       var legend = chart.children.push(
         am5.Legend.new(root2, {
           centerX: am5.p50,
-          x: am5.p50
-        })
+          x: am5.p50,
+        }),
       );
 
       // Make series change state when legend item is hovered

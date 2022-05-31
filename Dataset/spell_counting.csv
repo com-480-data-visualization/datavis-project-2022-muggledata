@@ -1,63 +1,63 @@
-,Name,Incantation,Type,Effect,Light,Count
-0,Stunning Spell,Stupefy,Charm,Knocks out target,Red,21
-1,Killing Curse,Avada Kedavra,Curse,Instantaneous death,Green,18
-2,Apparition,None,Transportation,Magically transports the caster,None,17
-3,Summoning Charm,Accio,Charm,Summons an object,None,15
-4,Shield Charm,Protego,Charm,Reflects spells and blocks physical forces,"Invisible on its own, reflects light of spell",13
-5,Imperius Curse,Imperio,Curse,Total control over the victim,None,9
-6,Disarming Charm,Expelliarmus,Charm,Disarms an opponent,Scarlet,8
-7,Cruciatus Curse,Crucio,Curse,Excruciating pain,Red or None,7
-8,Fidelius Charm,Unknown,Charm,Conceals a secret,,6
-9,Wand-Lighting Charm,Lumos,Charm,Illuminates the wand tip,White,6
-10,Disillusionment Charm,Unknown,Charm,Disguises target as surroundings,White,5
-11,Severing Charm,Diffindo,Charm,Cuts objects,"Light green, pink or red",4
-12,Water-Making Spell,Aguamenti,Charm,Conjures water,Icy blue,4
-13,Water-Making Spell,Aguamenti,Conjuration,Conjures water,Icy blue,4
-14,Muffliato Charm,Muffliato ,Charm,Conceals sound,None,4
-15,Revulsion Jinx,Relashio,Jinx,Forces target to let go,Purple,4
-16,Taboo,Unknown,Curse,"When a word is spoken, the caster is alerted and protective enchantments around the speaker are weakened.",None,4
-17,Dark Mark,Morsmordre,Curse,Conjures Dark Mark,Green,4
-18,Blasting Curse,Confringo,Curse,Explosion,Fiery Orange,3
-19,Hover Charm,Unknown,Charm,Makes objects hover,Pink,3
-20,Patronus Charm,Expecto Patronum,Charm,Conjures a spirit guardian,Silver,3
-21,Caterwauling Charm,Unknown,Charm,Sets off a high-pitched shriek if entered,,3
-22,Confundus Charm,Confundo,Charm,Confuses the target,Pink,2
-23,Levitation Charm,Wingardium Leviosa,Charm,Makes objects fly,None,2
-24,Tergeo,Tergeo,Charm,Cleans up objects,None,2
-25,Descendo,Descendo,Charm,Lowers target,Blue,2
-26,General Counter-Spell,Finite,Counter-spell,Terminates all spell effects,Red,2
-27,Meteolojinx Recanto,Meteolojinx Recanto,Counter-charm,Causes weather effects caused by incantations to cease,None,2
-28,Mending Charm,Reparo,Charm,Fixes broken objects,None,2
-29,Stinging Jinx,Unknown,Jinx,Stings flesh,White,2
-30,Stinging Jinx,Unknown,Hex,Stings flesh,White,2
-31,Fiendfyre,Unknown,Curse,Unleashes cursed fire,Fire,2
-32,Impediment Jinx,Impedimenta,Jinx,Hinders movement,Turquoise,1
-33,Sectumsempra,Sectumsempra,Curse,Lacerates target,White,1
-34,Extension Charm,Capacious extremis,Charm,Increases interior space,,1
-35,Expulso Curse,Expulso,Curse,Blows things up,Blue,1
-36,Full Body-Bind Curse,Petrificus Totalus,Curse,Temporary Paralysis,White,1
-37,Memory Charm,Obliviate ,Charm,Erases memories,Green,1
-38,Tongue-Tying Curse,Mimblewimble,Curse,Ties tongue in knot,Blue,1
-39,Permanent Sticking Charm,Unknown,Charm,Sticks object permanently in place,,1
-40,Unlocking Charm,Alohomora,Charm,Unlocks target,"Invisible, blue, yellow, or purple",1
-41,Impervius Charm,Impervius ,Charm,Waterproofs an object,None,1
-42,Doubling Charm,Geminio,Charm,Duplicates an object,None,1
-43,Muggle-Repelling Charm,Repello Muggletum,Charm,Repels Muggles,None (haze),1
-44,Erecto,Erecto,Charm,Erects a structure,None,1
-45,Obscuro,Obscuro,Conjuration,Blindfolds target,None,1
-46,Engorgement Charm,Engorgio,Charm,Causes swelling,Icy blue,1
-47,Shrinking Charm,Reducio,Charm,Shrinks target,Purple,1
-48,Bedazzling Hex,Unknown,Hex,Disguises things,,1
-49,Deprimo,Deprimo,Charm,Blasts holes in ground,Green,1
-50,Cushioning Charm,Molliare,Charm,Invisible cushion,,1
-51,Flagrante Curse,Flagrante,Curse,Causes objects to burn on contact,,1
-52,Levicorpus,Levicorpus,Jinx,Suspends people by the ankles,Green,1
-53,Liberacorpus,Liberacorpus,Counter-jinx,Counteracts Levicorpus,None,1
-54,Gouging Spell,Defodio,Charm,Carves through material,,1
-55,Locomotion Charm,Locomotor,Charm,Moves objects in midair,None,1
-56,Piertotum Locomotor,Piertotum Locomotor,Charm,Animates target,None or Green,1
-57,Glisseo,Glisseo,Charm,Turns stairs into a slide,None,1
-58,Hardening Charm,Duro,Charm,Turns object to stone,None,1
-59,Wand-Extinguishing Charm,Nox,Charm,Extinguishes wandlight,,1
-60,Silencing Charm,Silencio,Charm,Silences target,None,1
-61,Supersensory Charm,Unknown,Charm,Superior perception,,1
+Name,Incantation,Type,Effect,Light,Count
+Stunning Spell,Stupefy,Charm,Knocks out target,Red,21
+Killing Curse,Avada Kedavra,Curse,Instantaneous death,Green,18
+Apparition,None,Transportation,Magically transports the caster,None,17
+Summoning Charm,Accio,Charm,Summons an object,None,15
+Shield Charm,Protego,Charm,Reflects spells and blocks physical forces,"Invisible on its own, reflects light of spell",13
+Imperius Curse,Imperio,Curse,Total control over the victim,None,9
+Disarming Charm,Expelliarmus,Charm,Disarms an opponent,Scarlet,8
+Cruciatus Curse,Crucio,Curse,Excruciating pain,Red or None,7
+Fidelius Charm,Unknown,Charm,Conceals a secret,,6
+Wand-Lighting Charm,Lumos,Charm,Illuminates the wand tip,White,6
+Disillusionment Charm,Unknown,Charm,Disguises target as surroundings,White,5
+Severing Charm,Diffindo,Charm,Cuts objects,"Light green, pink or red",4
+Water-Making Spell,Aguamenti,Charm,Conjures water,Icy blue,4
+Water-Making Spell,Aguamenti,Conjuration,Conjures water,Icy blue,4
+Muffliato Charm,Muffliato ,Charm,Conceals sound,None,4
+Revulsion Jinx,Relashio,Jinx,Forces target to let go,Purple,4
+Taboo,Unknown,Curse,"When a word is spoken, the caster is alerted and protective enchantments around the speaker are weakened.",None,4
+Dark Mark,Morsmordre,Curse,Conjures Dark Mark,Green,4
+Blasting Curse,Confringo,Curse,Explosion,Fiery Orange,3
+Hover Charm,Unknown,Charm,Makes objects hover,Pink,3
+Patronus Charm,Expecto Patronum,Charm,Conjures a spirit guardian,Silver,3
+Caterwauling Charm,Unknown,Charm,Sets off a high-pitched shriek if entered,,3
+Confundus Charm,Confundo,Charm,Confuses the target,Pink,2
+Levitation Charm,Wingardium Leviosa,Charm,Makes objects fly,None,2
+Tergeo,Tergeo,Charm,Cleans up objects,None,2
+Descendo,Descendo,Charm,Lowers target,Blue,2
+General Counter-Spell,Finite,Counter-spell,Terminates all spell effects,Red,2
+Meteolojinx Recanto,Meteolojinx Recanto,Counter-charm,Causes weather effects caused by incantations to cease,None,2
+Mending Charm,Reparo,Charm,Fixes broken objects,None,2
+Stinging Jinx,Unknown,Jinx,Stings flesh,White,2
+Stinging Jinx,Unknown,Hex,Stings flesh,White,2
+Fiendfyre,Unknown,Curse,Unleashes cursed fire,Fire,2
+Impediment Jinx,Impedimenta,Jinx,Hinders movement,Turquoise,1
+Sectumsempra,Sectumsempra,Curse,Lacerates target,White,1
+Extension Charm,Capacious extremis,Charm,Increases interior space,,1
+Expulso Curse,Expulso,Curse,Blows things up,Blue,1
+Full Body-Bind Curse,Petrificus Totalus,Curse,Temporary Paralysis,White,1
+Memory Charm,Obliviate ,Charm,Erases memories,Green,1
+Tongue-Tying Curse,Mimblewimble,Curse,Ties tongue in knot,Blue,1
+Permanent Sticking Charm,Unknown,Charm,Sticks object permanently in place,,1
+Unlocking Charm,Alohomora,Charm,Unlocks target,"Invisible, blue, yellow, or purple",1
+Impervius Charm,Impervius ,Charm,Waterproofs an object,None,1
+Doubling Charm,Geminio,Charm,Duplicates an object,None,1
+Muggle-Repelling Charm,Repello Muggletum,Charm,Repels Muggles,None (haze),1
+Erecto,Erecto,Charm,Erects a structure,None,1
+Obscuro,Obscuro,Conjuration,Blindfolds target,None,1
+Engorgement Charm,Engorgio,Charm,Causes swelling,Icy blue,1
+Shrinking Charm,Reducio,Charm,Shrinks target,Purple,1
+Bedazzling Hex,Unknown,Hex,Disguises things,,1
+Deprimo,Deprimo,Charm,Blasts holes in ground,Green,1
+Cushioning Charm,Molliare,Charm,Invisible cushion,,1
+Flagrante Curse,Flagrante,Curse,Causes objects to burn on contact,,1
+Levicorpus,Levicorpus,Jinx,Suspends people by the ankles,Green,1
+Liberacorpus,Liberacorpus,Counter-jinx,Counteracts Levicorpus,None,1
+Gouging Spell,Defodio,Charm,Carves through material,,1
+Locomotion Charm,Locomotor,Charm,Moves objects in midair,None,1
+Piertotum Locomotor,Piertotum Locomotor,Charm,Animates target,None or Green,1
+Glisseo,Glisseo,Charm,Turns stairs into a slide,None,1
+Hardening Charm,Duro,Charm,Turns object to stone,None,1
+Wand-Extinguishing Charm,Nox,Charm,Extinguishes wandlight,,1
+Silencing Charm,Silencio,Charm,Silences target,None,1
+Supersensory Charm,Unknown,Charm,Superior perception,,1
