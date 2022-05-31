@@ -223,12 +223,13 @@ export default {
         series.appear(1000);
       }
       const spells = new Set();
-      data2.forEach(function(item){
-        const keys = Object.keys(item);
-        spells.push(keys);
+      data2.forEach(function(k){
+        const keys = Object.keys(k);
+        keys.forEach(k => spells.add(k))
       });
 
       spells.forEach(function(item){
+        console.log(item);
         createSeries(item.toString(), item.toString());
       });
 
@@ -246,6 +247,7 @@ export default {
         am5.Legend.new(root2, {
           centerX: am5.p50,
           x: am5.p50,
+          forceHidden: true
         }),
       );
 
