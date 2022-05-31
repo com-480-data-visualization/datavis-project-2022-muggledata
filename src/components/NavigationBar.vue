@@ -3,7 +3,7 @@
         <a class="title" v-on:click="changeComponent('HomePage')"> Muggle Data Project </a>
         <a class ="navbutton">Genealogy</a>
         <a class ="navbutton">Spells</a>
-        <a class ="navbutton">Potions</a>
+        <a class ="navbutton">Words</a>
     </div>
 </template>
 
