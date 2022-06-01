@@ -1,1 +1,303 @@
-[{"book": "Book1", "Unlocking Charm": 1, "Apparition": 3, "Leg-Locker Curse": 4, "Curse of the Bogies": 2, "Levitation Charm": 5}, {"book": "Book2", "Apparition": 3, "Disarming Charm": 4, "Wand-Lighting Charm": 1, "Memory Charm": 5, "Tickling Charm": 2}, {"book": "Book3", "Apparition": 4, "Cheering Charm": 3, "Disarming Charm": 1, "Wand-Lighting Charm": 2, "Boggart-Banishing Spell": 5}, {"book": "Book4", "Summoning Charm": 3, "Cruciatus Curse": 2, "Imperius Curse": 4, "Dark Mark": 5, "Stunning Spell": 1}, {"book": "Book5", "Summoning Charm": 4, "Apparition": 5, "Vanishing Spell": 2, "Imperius Curse": 1, "Stunning Spell": 3}, {"book": "Book6", "Water-Making Spell": 3, "Apparition": 5, "Killing Curse": 1, "Imperius Curse": 2, "Dark Mark": 4}, {"book": "Book7", "Summoning Charm": 2, "Apparition": 3, "Killing Curse": 4, "Shield Charm": 1, "Stunning Spell": 5}]
+[
+    {
+        "book": "Book1",
+        "Unlocking Charm": {
+            "incantation": "Alohomora",
+            "position": 1,
+            "count": 2,
+            "type": "Charm",
+            "effect": "Unlocks target",
+            "light": null
+        },
+        "Apparition": {
+            "incantation": "None",
+            "position": 3,
+            "count": 2,
+            "type": "Transportation",
+            "effect": "Magically transports the caster",
+            "light": null
+        },
+        "Leg-Locker Curse": {
+            "incantation": "Locomotor Mortis",
+            "position": 4,
+            "count": 3,
+            "type": "Curse",
+            "effect": "Sticks legs together",
+            "light": null
+        },
+        "Curse of the Bogies": {
+            "incantation": "Mucus ad Nauseam",
+            "position": 2,
+            "count": 2,
+            "type": "Curse",
+            "effect": "Nasty cold & runny nose",
+            "light": null
+        },
+        "Levitation Charm": {
+            "incantation": "Wingardium Leviosa",
+            "position": 5,
+            "count": 3,
+            "type": "Charm",
+            "effect": "Makes objects fly",
+            "light": null
+        }
+    },
+    {
+        "book": "Book2",
+        "Apparition": {
+            "incantation": "None",
+            "position": 3,
+            "count": 2,
+            "type": "Transportation",
+            "effect": "Magically transports the caster",
+            "light": null
+        },
+        "Disarming Charm": {
+            "incantation": "Expelliarmus",
+            "position": 4,
+            "count": 4,
+            "type": "Charm",
+            "effect": "Disarms an opponent",
+            "light": null
+        },
+        "Wand-Lighting Charm": {
+            "incantation": "Lumos",
+            "position": 1,
+            "count": 2,
+            "type": "Charm",
+            "effect": "Illuminates the wand tip",
+            "light": null
+        },
+        "Memory Charm": {
+            "incantation": "Obliviate ",
+            "position": 5,
+            "count": 5,
+            "type": "Charm",
+            "effect": "Erases memories",
+            "light": null
+        },
+        "Tickling Charm": {
+            "incantation": "Rictusempra",
+            "position": 2,
+            "count": 2,
+            "type": "Charm",
+            "effect": "Tickles and weakens",
+            "light": null
+        }
+    },
+    {
+        "book": "Book3",
+        "Apparition": {
+            "incantation": "None",
+            "position": 4,
+            "count": 8,
+            "type": "Transportation",
+            "effect": "Magically transports the caster",
+            "light": null
+        },
+        "Cheering Charm": {
+            "incantation": "Unknown",
+            "position": 3,
+            "count": 7,
+            "type": "Charm",
+            "effect": "Creates joy",
+            "light": null
+        },
+        "Disarming Charm": {
+            "incantation": "Expelliarmus",
+            "position": 1,
+            "count": 4,
+            "type": "Charm",
+            "effect": "Disarms an opponent",
+            "light": null
+        },
+        "Wand-Lighting Charm": {
+            "incantation": "Lumos",
+            "position": 2,
+            "count": 4,
+            "type": "Charm",
+            "effect": "Illuminates the wand tip",
+            "light": null
+        },
+        "Boggart-Banishing Spell": {
+            "incantation": "Riddikulus",
+            "position": 5,
+            "count": 9,
+            "type": "Charm",
+            "effect": "Turns a Boggart into something amusing",
+            "light": null
+        }
+    },
+    {
+        "book": "Book4",
+        "Summoning Charm": {
+            "incantation": "Accio",
+            "position": 3,
+            "count": 15,
+            "type": "Charm",
+            "effect": "Summons an object",
+            "light": null
+        },
+        "Cruciatus Curse": {
+            "incantation": "Crucio",
+            "position": 2,
+            "count": 15,
+            "type": "Curse",
+            "effect": "Excruciating pain",
+            "light": null
+        },
+        "Imperius Curse": {
+            "incantation": "Imperio",
+            "position": 4,
+            "count": 18,
+            "type": "Curse",
+            "effect": "Total control over the victim",
+            "light": null
+        },
+        "Dark Mark": {
+            "incantation": "Morsmordre",
+            "position": 5,
+            "count": 28,
+            "type": "Curse",
+            "effect": "Conjures Dark Mark",
+            "light": null
+        },
+        "Stunning Spell": {
+            "incantation": "Stupefy",
+            "position": 1,
+            "count": 10,
+            "type": "Charm",
+            "effect": "Knocks out target",
+            "light": null
+        }
+    },
+    {
+        "book": "Book5",
+        "Summoning Charm": {
+            "incantation": "Accio",
+            "position": 4,
+            "count": 11,
+            "type": "Charm",
+            "effect": "Summons an object",
+            "light": null
+        },
+        "Apparition": {
+            "incantation": "None",
+            "position": 5,
+            "count": 14,
+            "type": "Transportation",
+            "effect": "Magically transports the caster",
+            "light": null
+        },
+        "Vanishing Spell": {
+            "incantation": "Evanesco",
+            "position": 2,
+            "count": 9,
+            "type": "Transfiguration",
+            "effect": "Vanishes things",
+            "light": null
+        },
+        "Imperius Curse": {
+            "incantation": "Imperio",
+            "position": 1,
+            "count": 9,
+            "type": "Curse",
+            "effect": "Total control over the victim",
+            "light": null
+        },
+        "Stunning Spell": {
+            "incantation": "Stupefy",
+            "position": 3,
+            "count": 11,
+            "type": "Charm",
+            "effect": "Knocks out target",
+            "light": null
+        }
+    },
+    {
+        "book": "Book6",
+        "Water-Making Spell": {
+            "incantation": "Aguamenti",
+            "position": 3,
+            "count": 14,
+            "type": "Conjuration",
+            "effect": "Conjures water",
+            "light": null
+        },
+        "Apparition": {
+            "incantation": "None",
+            "position": 5,
+            "count": 34,
+            "type": "Transportation",
+            "effect": "Magically transports the caster",
+            "light": null
+        },
+        "Killing Curse": {
+            "incantation": "Avada Kedavra",
+            "position": 1,
+            "count": 6,
+            "type": "Curse",
+            "effect": "Instantaneous death",
+            "light": null
+        },
+        "Imperius Curse": {
+            "incantation": "Imperio",
+            "position": 2,
+            "count": 9,
+            "type": "Curse",
+            "effect": "Total control over the victim",
+            "light": null
+        },
+        "Dark Mark": {
+            "incantation": "Morsmordre",
+            "position": 4,
+            "count": 14,
+            "type": "Curse",
+            "effect": "Conjures Dark Mark",
+            "light": null
+        }
+    },
+    {
+        "book": "Book7",
+        "Summoning Charm": {
+            "incantation": "Accio",
+            "position": 2,
+            "count": 15,
+            "type": "Charm",
+            "effect": "Summons an object",
+            "light": null
+        },
+        "Apparition": {
+            "incantation": "None",
+            "position": 3,
+            "count": 17,
+            "type": "Transportation",
+            "effect": "Magically transports the caster",
+            "light": null
+        },
+        "Killing Curse": {
+            "incantation": "Avada Kedavra",
+            "position": 4,
+            "count": 18,
+            "type": "Curse",
+            "effect": "Instantaneous death",
+            "light": null
+        },
+        "Shield Charm": {
+            "incantation": "Protego",
+            "position": 1,
+            "count": 13,
+            "type": "Charm",
+            "effect": "Reflects spells and blocks physical forces",
+            "light": null
+        },
+        "Stunning Spell": {
+            "incantation": "Stupefy",
+            "position": 5,
+            "count": 21,
+            "type": "Charm",
+            "effect": "Knocks out target",
+            "light": null
+        }
+    }
+]

@@ -8,7 +8,7 @@ import json
 def word_to_json_total():
     book_list = ['1', '2', '3', '4', '5', '6', '7']
     #with open("../Dataset/Books/word_counting_total.json", 'w') as f:
-    spells = pd.DataFrame(pd.read_csv("../Dataset/spell_counting.csv", sep=',', usecols=['Name', 'Incantation']))
+    spells = pd.DataFrame(pd.read_csv("../Dataset/spell_counting.csv", sep=','))
     spells_names = spells['Name']
     spells_incantation = spells['Incantation']
     for nb in book_list:
@@ -89,7 +89,7 @@ def spells_total_count():
 def spells_sorting():
     book_list = ['1', '2', '3', '4', '5', '6', '7']
     #with open("../Dataset/Books/word_counting_total.json", 'w') as f:
-    spells = pd.DataFrame(pd.read_csv("../Dataset/Spells.csv", sep=';', usecols=['Name', 'Incantation']))
+    spells = pd.DataFrame(pd.read_csv("../Dataset/Spells.csv", sep=';'))
     spells_names = spells['Name']
     spells_incantation = spells['Incantation']
     for nb in book_list:

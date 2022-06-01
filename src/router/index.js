@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../components/HomePage.vue'
-import SpellsChart from '../components/SpellsChart.vue'
+import Spells from '../components/Spells.vue'
 import WordsCloud from '../components/WordsCloud.vue'
 import NotFound from '../components/NotFound.vue'
 
@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/spells',
     name: 'spells',
-    component: SpellsChart
+    component: Spells
   },
   {
     path: '/words',
