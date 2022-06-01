@@ -206,16 +206,15 @@ export default {
   }
 }
 
-
-
 </script>
 
 
 <style scoped>
 #spells_graph {
-  width: 70%;
+  width: 68%;
   height: 700px;
   margin-left: 32%;
+  margin-right: 50px;
 }
 
 #spelltextbox {

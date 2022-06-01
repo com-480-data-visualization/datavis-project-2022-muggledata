@@ -3,12 +3,24 @@
 <div>
   <div id="switchbtn"></div>
   <div id="chartdiv"></div>
+  <div id="spelltextbox">
+    <h1 style="text-align: center; color: var(--light_silver);"> Spell Graph</h1>
+    Here we put the explanation of the spell graph. <br><br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+  </div>
 </div>
   
 </template>
 
 <!-- Styles -->
-<style>
+<style scoped>
 #chartdiv {
   width: 80%;
   height: 1100px;
@@ -21,6 +33,19 @@
   padding: 2.5em 0em;
   text-align: center;
   color: white;
+}
+#spelltextbox {
+  margin-left: 70%;
+  color: var(--light_silver);
+  margin-top: -1100px;
+  height: 1000px;
+  z-index: 500;
+  background-color: var(--navbar_background);
+  padding: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+  text-align: justify;
+  margin-bottom: 100px;
 }
 </style>
 
