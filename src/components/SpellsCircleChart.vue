@@ -1,9 +1,21 @@
 <template>
   <div id="spells_circle_chart"></div>
+  <div id="spelltextbox">
+    <h1 style="text-align: center; color: var(--light_silver);"> Bubble Chart</h1>
+    Here we put the explanation of the bubble chart. <br><br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+  </div>
 </template>
 
-
 <script>
+
 import * as am5 from "@amcharts/amcharts5";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
@@ -13,6 +25,7 @@ export default {
   props: {},
   mounted(){
     am5.ready(function() {
+      //document.getElementById("spelltextbox").textContent += "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
 
       var root = am5.Root.new("spells_circle_chart");
       root.setThemes([
@@ -89,7 +102,21 @@ export default {
 
 <style scoped>
 #spells_circle_chart {
-  width: 100%;
+  width: 70%;
   height: 1100px;
+}
+
+#spelltextbox {
+  margin-left: 70%;
+  color: var(--light_silver);
+  margin-top: -1100px;
+  height: 1000px;
+  z-index: 500;
+  background-color: var(--navbar_background);
+  padding: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+  text-align: justify;
+  margin-bottom: 100px;
 }
 </style>

@@ -1,5 +1,17 @@
 <template>
   <div id="spells_graph"></div>
+  <div id="spelltextbox">
+    <h1 style="text-align: center; color: var(--light_silver);"> Spell Graph</h1>
+    Here we put the explanation of the spell graph. <br><br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+  </div>
 </template>
 
 
@@ -201,7 +213,22 @@ export default {
 
 <style scoped>
 #spells_graph {
-  width: 80%;
+  width: 70%;
   height: 700px;
+  margin-left: 32%;
+}
+
+#spelltextbox {
+  color: var(--light_silver);
+  margin-top: -700px;
+  height: 600px;
+  width: 22%;
+  z-index: 500;
+  background-color: var(--navbar_background);
+  padding: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+  text-align: justify;
+  margin-bottom: 50px;
 }
 </style>
