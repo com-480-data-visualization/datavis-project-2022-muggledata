@@ -3,11 +3,9 @@ import numpy as np
 import pandas as pd
 from random import randrange
 
-spells = pd.read_csv("../Dataset/spell_counting.csv", sep=',')
+spells = pd.read_csv("../Dataset/spell_counting3.csv", sep=',')
 
 df = pd.DataFrame(spells)
-df = df.drop('Light', 1)
-
 j = []
 
 for type in df['Type'].unique():
@@ -16,7 +14,7 @@ for type in df['Type'].unique():
     for i, spell in df_type.iterrows():
         s = {
             'name': spell['Name'],
-            'value': spell['Count']
+            'value': int(spell['Count'])
         }
         children.append(s)
     child = {
@@ -26,6 +24,6 @@ for type in df['Type'].unique():
     }
     j.append(child)
 
-with open('spells.json', 'w') as outfile:
+with open('../Dataset/spells.json', 'w') as outfile:
     json.dump(json.dumps(j), outfile)
 

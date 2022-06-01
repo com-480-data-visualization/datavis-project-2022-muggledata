@@ -1,6 +1,6 @@
 <template>
   <NavigationBar/>
-  <router-view />
+  <router-view/>
 </template>
 
 <script>

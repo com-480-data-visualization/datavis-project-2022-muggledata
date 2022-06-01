@@ -58,13 +58,21 @@ export default {
 
       // var maxValue = 100;
 
-      var data = {
-        name: "",
-        children: [{"name": "Charm", "value": 38, "children": [{"name": "Stunning Spell", "value": 21}, {"name": "Summoning Charm", "value": 15}, {"name": "Shield Charm", "value": 13}, {"name": "Disarming Charm", "value": 8}, {"name": "Fidelius Charm", "value": 6}, {"name": "Wand-Lighting Charm", "value": 6}, {"name": "Disillusionment Charm", "value": 5}, {"name": "Severing Charm", "value": 4}, {"name": "Water-Making Spell", "value": 4}, {"name": "Muffliato Charm", "value": 4}, {"name": "Hover Charm", "value": 3}, {"name": "Patronus Charm", "value": 3}, {"name": "Caterwauling Charm", "value": 3}, {"name": "Confundus Charm", "value": 2}, {"name": "Levitation Charm", "value": 2}, {"name": "Tergeo", "value": 2}, {"name": "Descendo", "value": 2}, {"name": "Mending Charm", "value": 2}, {"name": "Extension Charm", "value": 1}, {"name": "Memory Charm", "value": 1}, {"name": "Permanent Sticking Charm", "value": 1}, {"name": "Unlocking Charm", "value": 1}, {"name": "Impervius Charm", "value": 1}, {"name": "Doubling Charm", "value": 1}, {"name": "Muggle-Repelling Charm", "value": 1}, {"name": "Erecto", "value": 1}, {"name": "Engorgement Charm", "value": 1}, {"name": "Shrinking Charm", "value": 1}, {"name": "Deprimo", "value": 1}, {"name": "Cushioning Charm", "value": 1}, {"name": "Gouging Spell", "value": 1}, {"name": "Locomotion Charm", "value": 1}, {"name": "Piertotum Locomotor", "value": 1}, {"name": "Glisseo", "value": 1}, {"name": "Hardening Charm", "value": 1}, {"name": "Wand-Extinguishing Charm", "value": 1}, {"name": "Silencing Charm", "value": 1}, {"name": "Supersensory Charm", "value": 1}]}, {"name": "Curse", "value": 12, "children": [{"name": "Killing Curse", "value": 18}, {"name": "Imperius Curse", "value": 9}, {"name": "Cruciatus Curse", "value": 7}, {"name": "Taboo", "value": 4}, {"name": "Dark Mark", "value": 4}, {"name": "Blasting Curse", "value": 3}, {"name": "Fiendfyre", "value": 2}, {"name": "Sectumsempra", "value": 1}, {"name": "Expulso Curse", "value": 1}, {"name": "Full Body-Bind Curse", "value": 1}, {"name": "Tongue-Tying Curse", "value": 1}, {"name": "Flagrante Curse", "value": 1}]}, {"name": "Transportation", "value": 1, "children": [{"name": "Apparition", "value": 17}]}, {"name": "Conjuration", "value": 2, "children": [{"name": "Water-Making Spell", "value": 4}, {"name": "Obscuro", "value": 1}]}, {"name": "Jinx", "value": 4, "children": [{"name": "Revulsion Jinx", "value": 4}, {"name": "Stinging Jinx", "value": 2}, {"name": "Impediment Jinx", "value": 1}, {"name": "Levicorpus", "value": 1}]}, {"name": "Counter-spell", "value": 1, "children": [{"name": "General Counter-Spell", "value": 2}]}, {"name": "Counter-charm", "value": 1, "children": [{"name": "Meteolojinx Recanto", "value": 2}]}, {"name": "Hex", "value": 2, "children": [{"name": "Stinging Jinx", "value": 2}, {"name": "Bedazzling Hex", "value": 1}]}, {"name": "Counter-jinx", "value": 1, "children": [{"name": "Liberacorpus", "value": 1}]}],
-      }
+      // var data = {
+      //   name: "",
+      //   children: [{"name": "Charm", "value": 38, "children": [{"name": "Stunning Spell", "value": 21}, {"name": "Summoning Charm", "value": 15}, {"name": "Shield Charm", "value": 13}, {"name": "Disarming Charm", "value": 8}, {"name": "Fidelius Charm", "value": 6}, {"name": "Wand-Lighting Charm", "value": 6}, {"name": "Disillusionment Charm", "value": 5}, {"name": "Severing Charm", "value": 4}, {"name": "Water-Making Spell", "value": 4}, {"name": "Muffliato Charm", "value": 4}, {"name": "Hover Charm", "value": 3}, {"name": "Patronus Charm", "value": 3}, {"name": "Caterwauling Charm", "value": 3}, {"name": "Confundus Charm", "value": 2}, {"name": "Levitation Charm", "value": 2}, {"name": "Tergeo", "value": 2}, {"name": "Descendo", "value": 2}, {"name": "Mending Charm", "value": 2}, {"name": "Extension Charm", "value": 1}, {"name": "Memory Charm", "value": 1}, {"name": "Permanent Sticking Charm", "value": 1}, {"name": "Unlocking Charm", "value": 1}, {"name": "Impervius Charm", "value": 1}, {"name": "Doubling Charm", "value": 1}, {"name": "Muggle-Repelling Charm", "value": 1}, {"name": "Erecto", "value": 1}, {"name": "Engorgement Charm", "value": 1}, {"name": "Shrinking Charm", "value": 1}, {"name": "Deprimo", "value": 1}, {"name": "Cushioning Charm", "value": 1}, {"name": "Gouging Spell", "value": 1}, {"name": "Locomotion Charm", "value": 1}, {"name": "Piertotum Locomotor", "value": 1}, {"name": "Glisseo", "value": 1}, {"name": "Hardening Charm", "value": 1}, {"name": "Wand-Extinguishing Charm", "value": 1}, {"name": "Silencing Charm", "value": 1}, {"name": "Supersensory Charm", "value": 1}]}, {"name": "Curse", "value": 12, "children": [{"name": "Killing Curse", "value": 18}, {"name": "Imperius Curse", "value": 9}, {"name": "Cruciatus Curse", "value": 7}, {"name": "Taboo", "value": 4}, {"name": "Dark Mark", "value": 4}, {"name": "Blasting Curse", "value": 3}, {"name": "Fiendfyre", "value": 2}, {"name": "Sectumsempra", "value": 1}, {"name": "Expulso Curse", "value": 1}, {"name": "Full Body-Bind Curse", "value": 1}, {"name": "Tongue-Tying Curse", "value": 1}, {"name": "Flagrante Curse", "value": 1}]}, {"name": "Transportation", "value": 1, "children": [{"name": "Apparition", "value": 17}]}, {"name": "Conjuration", "value": 2, "children": [{"name": "Water-Making Spell", "value": 4}, {"name": "Obscuro", "value": 1}]}, {"name": "Jinx", "value": 4, "children": [{"name": "Revulsion Jinx", "value": 4}, {"name": "Stinging Jinx", "value": 2}, {"name": "Impediment Jinx", "value": 1}, {"name": "Levicorpus", "value": 1}]}, {"name": "Counter-spell", "value": 1, "children": [{"name": "General Counter-Spell", "value": 2}]}, {"name": "Counter-charm", "value": 1, "children": [{"name": "Meteolojinx Recanto", "value": 2}]}, {"name": "Hex", "value": 2, "children": [{"name": "Stinging Jinx", "value": 2}, {"name": "Bedazzling Hex", "value": 1}]}, {"name": "Counter-jinx", "value": 1, "children": [{"name": "Liberacorpus", "value": 1}]}],
+      // }
+
+      am5.net.load("./data/spells.json").then(function(result) {
+        series.data.setAll(am5.JSONParser.parse(result.response));
+      }).catch(function(result) {
+        // This gets executed if there was an error loading URL
+        // ... handle error
+        console.log("Error loading " + result.xhr.responseURL);
+      })
 
 
-      series.data.setAll([data]);
+      //series.data.setAll([data]);
       series.set("selectedDataItem", series.dataItems[0]);
       series.nodes.template.set("tooltipText", null);
 
@@ -141,7 +149,8 @@ export default {
       //     uk: 1
       //   }
       // ];
-      var data2 = [{"book": "Book1", "Stunning Spell": 2, "Killing Curse": 3, "Apparition": 1, "Summoning Charm": 1, "Shield Charm": 2, "Imperius Curse": 1}, {"book": "Book2", "Stunning Spell": 2, "Killing Curse": 4, "Apparition": 2, "Summoning Charm": 1, "Shield Charm": 1, "Imperius Curse": 5, "Disarming Charm": 1}, {"book": "Book3", "Stunning Spell": 8, "Killing Curse": 4, "Apparition": 1, "Summoning Charm": 4, "Shield Charm": 1, "Imperius Curse": 1, "Disarming Charm": 1, "Cruciatus Curse": 1}, {"book": "Book4", "Stunning Spell": 10, "Killing Curse": 9, "Apparition": 9, "Summoning Charm": 15, "Shield Charm": 2, "Imperius Curse": 18, "Disarming Charm": 3, "Cruciatus Curse": 15, "Fidelius Charm": 3, "Wand-Lighting Charm": 2, "Disillusionment Charm": 1, "Severing Charm": 28, "Water-Making Spell": 1, "Muffliato Charm": 3, "Revulsion Jinx": 2, "Taboo": 1, "Dark Mark": 1}, {"book": "Book5", "Stunning Spell": 11, "Killing Curse": 2, "Apparition": 14, "Summoning Charm": 11, "Shield Charm": 6, "Imperius Curse": 9, "Disarming Charm": 8, "Cruciatus Curse": 7, "Fidelius Charm": 3, "Wand-Lighting Charm": 3, "Disillusionment Charm": 1, "Severing Charm": 1, "Water-Making Spell": 6, "Muffliato Charm": 1, "Revulsion Jinx": 1, "Taboo": 3, "Dark Mark": 9, "Blasting Curse": 2, "Hover Charm": 3, "Patronus Charm": 4, "Caterwauling Charm": 1, "Confundus Charm": 2, "Levitation Charm": 9}, {"book": "Book6", "Stunning Spell": 1, "Killing Curse": 6, "Apparition": 34, "Summoning Charm": 3, "Shield Charm": 4, "Imperius Curse": 9, "Disarming Charm": 2, "Cruciatus Curse": 3, "Fidelius Charm": 3, "Wand-Lighting Charm": 1, "Disillusionment Charm": 1, "Severing Charm": 14, "Water-Making Spell": 3, "Muffliato Charm": 1, "Revulsion Jinx": 14, "Taboo": 1, "Dark Mark": 1, "Blasting Curse": 4, "Hover Charm": 3, "Patronus Charm": 6, "Caterwauling Charm": 5, "Confundus Charm": 1, "Levitation Charm": 5, "Tergeo": 1}, {"book": "Book7", "Stunning Spell": 21, "Killing Curse": 18, "Apparition": 17, "Summoning Charm": 15, "Shield Charm": 13, "Imperius Curse": 9, "Disarming Charm": 8, "Cruciatus Curse": 7, "Fidelius Charm": 6, "Wand-Lighting Charm": 6, "Disillusionment Charm": 5, "Severing Charm": 4, "Water-Making Spell": 4, "Muffliato Charm": 4, "Revulsion Jinx": 4, "Taboo": 4, "Dark Mark": 4, "Blasting Curse": 3, "Hover Charm": 3, "Patronus Charm": 3, "Caterwauling Charm": 3, "Confundus Charm": 2, "Levitation Charm": 2, "Tergeo": 2, "Descendo": 2, "General Counter-Spell": 2, "Meteolojinx Recanto": 2, "Mending Charm": 2, "Stinging Jinx": 2, "Fiendfyre": 2, "Impediment Jinx": 1, "Sectumsempra": 1, "Extension Charm": 1, "Expulso Curse": 1, "Full Body-Bind Curse": 1, "Memory Charm": 1, "Tongue-Tying Curse": 1, "Permanent Sticking Charm": 1, "Unlocking Charm": 1, "Impervius Charm": 1, "Doubling Charm": 1, "Muggle-Repelling Charm": 1, "Erecto": 1, "Obscuro": 1, "Engorgement Charm": 1, "Shrinking Charm": 1, "Bedazzling Hex": 1, "Deprimo": 1, "Cushioning Charm": 1, "Flagrante Curse": 1, "Levicorpus": 1, "Liberacorpus": 1, "Gouging Spell": 1, "Locomotion Charm": 1, "Piertotum Locomotor": 1, "Glisseo": 1, "Hardening Charm": 1, "Wand-Extinguishing Charm": 1, "Silencing Charm": 1, "Supersensory Charm": 1}];
+      
+      //var data2 = [{"book": "Book1", "Stunning Spell": 2, "Killing Curse": 3, "Apparition": 1, "Summoning Charm": 1, "Shield Charm": 2, "Imperius Curse": 1}, {"book": "Book2", "Stunning Spell": 2, "Killing Curse": 4, "Apparition": 2, "Summoning Charm": 1, "Shield Charm": 1, "Imperius Curse": 5, "Disarming Charm": 1}, {"book": "Book3", "Stunning Spell": 8, "Killing Curse": 4, "Apparition": 1, "Summoning Charm": 4, "Shield Charm": 1, "Imperius Curse": 1, "Disarming Charm": 1, "Cruciatus Curse": 1}, {"book": "Book4", "Stunning Spell": 10, "Killing Curse": 9, "Apparition": 9, "Summoning Charm": 15, "Shield Charm": 2, "Imperius Curse": 18, "Disarming Charm": 3, "Cruciatus Curse": 15, "Fidelius Charm": 3, "Wand-Lighting Charm": 2, "Disillusionment Charm": 1, "Severing Charm": 28, "Water-Making Spell": 1, "Muffliato Charm": 3, "Revulsion Jinx": 2, "Taboo": 1, "Dark Mark": 1}, {"book": "Book5", "Stunning Spell": 11, "Killing Curse": 2, "Apparition": 14, "Summoning Charm": 11, "Shield Charm": 6, "Imperius Curse": 9, "Disarming Charm": 8, "Cruciatus Curse": 7, "Fidelius Charm": 3, "Wand-Lighting Charm": 3, "Disillusionment Charm": 1, "Severing Charm": 1, "Water-Making Spell": 6, "Muffliato Charm": 1, "Revulsion Jinx": 1, "Taboo": 3, "Dark Mark": 9, "Blasting Curse": 2, "Hover Charm": 3, "Patronus Charm": 4, "Caterwauling Charm": 1, "Confundus Charm": 2, "Levitation Charm": 9}, {"book": "Book6", "Stunning Spell": 1, "Killing Curse": 6, "Apparition": 34, "Summoning Charm": 3, "Shield Charm": 4, "Imperius Curse": 9, "Disarming Charm": 2, "Cruciatus Curse": 3, "Fidelius Charm": 3, "Wand-Lighting Charm": 1, "Disillusionment Charm": 1, "Severing Charm": 14, "Water-Making Spell": 3, "Muffliato Charm": 1, "Revulsion Jinx": 14, "Taboo": 1, "Dark Mark": 1, "Blasting Curse": 4, "Hover Charm": 3, "Patronus Charm": 6, "Caterwauling Charm": 5, "Confundus Charm": 1, "Levitation Charm": 5, "Tergeo": 1}, {"book": "Book7", "Stunning Spell": 21, "Killing Curse": 18, "Apparition": 17, "Summoning Charm": 15, "Shield Charm": 13, "Imperius Curse": 9, "Disarming Charm": 8, "Cruciatus Curse": 7, "Fidelius Charm": 6, "Wand-Lighting Charm": 6, "Disillusionment Charm": 5, "Severing Charm": 4, "Water-Making Spell": 4, "Muffliato Charm": 4, "Revulsion Jinx": 4, "Taboo": 4, "Dark Mark": 4, "Blasting Curse": 3, "Hover Charm": 3, "Patronus Charm": 3, "Caterwauling Charm": 3, "Confundus Charm": 2, "Levitation Charm": 2, "Tergeo": 2, "Descendo": 2, "General Counter-Spell": 2, "Meteolojinx Recanto": 2, "Mending Charm": 2, "Stinging Jinx": 2, "Fiendfyre": 2, "Impediment Jinx": 1, "Sectumsempra": 1, "Extension Charm": 1, "Expulso Curse": 1, "Full Body-Bind Curse": 1, "Memory Charm": 1, "Tongue-Tying Curse": 1, "Permanent Sticking Charm": 1, "Unlocking Charm": 1, "Impervius Charm": 1, "Doubling Charm": 1, "Muggle-Repelling Charm": 1, "Erecto": 1, "Obscuro": 1, "Engorgement Charm": 1, "Shrinking Charm": 1, "Bedazzling Hex": 1, "Deprimo": 1, "Cushioning Charm": 1, "Flagrante Curse": 1, "Levicorpus": 1, "Liberacorpus": 1, "Gouging Spell": 1, "Locomotion Charm": 1, "Piertotum Locomotor": 1, "Glisseo": 1, "Hardening Charm": 1, "Wand-Extinguishing Charm": 1, "Silencing Charm": 1, "Supersensory Charm": 1}];
 
       // Create axes
       // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
@@ -160,8 +169,14 @@ export default {
           tooltip: am5.Tooltip.new(root2, {})
         })
       );
-
-      xAxis.data.setAll(data2);
+      am5.net.load("./data/spells_book2.json").then(function(result) {
+        xAxis.data.setAll(am5.JSONParser.parse(result.response));
+      }).catch(function(result) {
+        // This gets executed if there was an error loading URL
+        // ... handle error
+        console.log("Error loading " + result.xhr.responseURL);
+      })
+      //xAxis.data.setAll(data2);
 
       var yRenderer = am5xy.AxisRendererY.new(root2, {});
       yRenderer.grid.template.set("location", 0.5);
@@ -175,7 +190,8 @@ export default {
         am5xy.ValueAxis.new(root2, {
           maxPrecision: 0,
           renderer: yRenderer,
-          min: 0
+          min: 0,
+          //max: 6
         })
       );
 
@@ -218,20 +234,33 @@ export default {
         series.strokes.template.states.create("hover", {
           strokeWidth: 4
         });
-
-        series.data.setAll(data2);
+        am5.net.load("./data/spells_book2.json").then(function(result) {
+          series.data.setAll(am5.JSONParser.parse(result.response));
+        }).catch(function(result) {
+          // This gets executed if there was an error loading URL
+          // ... handle error
+          console.log("Error loading " + result.xhr.responseURL);
+        })
+        //series.data.setAll(data2);
         series.appear(1000);
       }
       const spells = new Set();
-      data2.forEach(function(k){
-        const keys = Object.keys(k);
-        keys.forEach(k => spells.add(k))
-      });
+      am5.net.load("./data/spells_book2.json").then(function(result) {
+        am5.JSONParser.parse(result.response).forEach(function(k){
+          const keys = Object.keys(k);
+          keys.forEach(k => spells.add(k))
+        });
+        spells.delete("book")
 
-      spells.forEach(function(item){
-        console.log(item);
-        createSeries(item.toString(), item.toString());
-      });
+        spells.forEach(function(item){
+          //console.log(item);
+          createSeries(item.toString(), item.toString());
+        });
+      }).catch(function(result) {
+        // This gets executed if there was an error loading URL
+        // ... handle error
+        console.log("Error loading " + result.xhr.responseURL);
+      })
 
       // createSeries("Stunning Spell", "Stunning Spell");
       // createSeries("Killing Curse", "Killing Curse");

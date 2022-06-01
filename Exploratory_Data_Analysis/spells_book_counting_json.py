@@ -3,23 +3,24 @@ import numpy as np
 import pandas as pd
 from random import randrange
 
-spells = pd.read_csv("../Dataset/spell_counting2.csv", sep=',')
+spells = pd.read_csv("../Dataset/spell_sorting.csv", sep=',')
 
 df = pd.DataFrame(spells)
 spells_name = df['Name']
-#df = df.drop('Light', 1)
-columns = df.columns[2:]
+columns = df.columns[2::2]
+print(columns)
 
 j = []
 for col in columns:
-    count = df[col].dropna()
+    count = df[col]
     book = {'book': col}
     for name, c in zip(spells_name, count):
-        if c is not None:
+        if not pd.isna(c):
+            print(col, name, int(c))
             book[name] = int(c)
     j.append(book)
-print(j)
-with open('../Dataset/spells_book.json', 'w', encoding='utf-8') as outfile:
+#print(j)
+with open('../Dataset/spells_book2.json', 'w', encoding='utf-8') as outfile:
     outfile.write(json.dumps(j))
 # j = []
 
