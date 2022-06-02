@@ -69,6 +69,7 @@
   border-radius: 10px;
   text-align: justify;
   margin-bottom: 100px;
+  overflow: scroll;
 }
 #gramselector {
   margin-right: 30%;

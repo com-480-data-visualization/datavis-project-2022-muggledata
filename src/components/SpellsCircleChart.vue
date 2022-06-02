@@ -132,11 +132,12 @@ export default {
 
 <style scoped>
 #spells_circle_chart {
-  width: 70%;
+  width: 68%;
   height: 1100px;
   margin-left: 50px;
   background-color: rgb(0, 0, 0, 0.6);
   border-radius: 10px;
+  z-index: -1;
 }
 
 #spelltextbox {
@@ -151,5 +152,6 @@ export default {
   border-radius: 10px;
   text-align: justify;
   margin-bottom: 100px;
+  overflow: scroll;
 }
 </style>
