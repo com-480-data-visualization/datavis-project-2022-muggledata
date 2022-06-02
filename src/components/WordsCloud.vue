@@ -4,13 +4,13 @@
     <div id="bookselector">
       <form>
         <div class="radio-group">
-          <input type="radio" checked id="option-0" name="selector"><label for="option-0">Harry Potter and <br> the Philosophers Stone</label>
-          <input type="radio" id="option-1" name="selector"><label for="option-1">Harry Potter and <br> the Chamber of Secrets</label>
-          <input type="radio" id="option-2" name="selector"><label for="option-2">Harry Potter and <br> the Prisoner of Azkaban</label>
-          <input type="radio" id="option-3" name="selector"><label for="option-3">Harry Potter and <br> the Goblet of Fire</label>
-          <input type="radio" id="option-4" name="selector"><label for="option-4">Harry Potter and <br> the Order of the Phoenix</label>
-          <input type="radio" id="option-5" name="selector"><label for="option-5">Harry Potter and <br> the Half Blood Prince</label>
-          <input type="radio" id="option-6" name="selector"><label for="option-6">Harry Potter and <br> the Deathly Hallows</label>
+          <input type="radio" checked id="option-0" name="selector"><label for="option-0">Harry Potter and the Philosophers Stone</label>
+          <input type="radio" id="option-1" name="selector"><label for="option-1">Harry Potter and the Chamber of Secrets</label>
+          <input type="radio" id="option-2" name="selector"><label for="option-2">Harry Potter and the Prisoner of Azkaban</label>
+          <input type="radio" id="option-3" name="selector"><label for="option-3">Harry Potter and the Goblet of Fire</label>
+          <input type="radio" id="option-4" name="selector"><label for="option-4">Harry Potter and the Order of the Phoenix</label>
+          <input type="radio" id="option-5" name="selector"><label for="option-5">Harry Potter and the Half Blood Prince</label>
+          <input type="radio" id="option-6" name="selector"><label for="option-6">Harry Potter and the Deathly Hallows</label>
         </div>
       </form>
     </div>
@@ -183,7 +183,7 @@ html {
 }
 #bookselector {
   position: absolute;
-  width: 60%;
+  width: 55%;
   z-index: 300;
 }
 #bookselector body {
@@ -198,7 +198,7 @@ html {
 
 #bookselector label {
   color: var(--light_silver);
-  display: inline-block;
+  display: table-cell;
   cursor: pointer;
   font-weight: bold;
   padding: 5px 20px;
@@ -221,7 +221,7 @@ html {
   margin: 20px;
   border-radius: 10px;
   overflow: hidden;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 </style>
