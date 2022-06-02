@@ -37,14 +37,18 @@ export default {
   name: 'HomePage',
   props: {},
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #introduction {
   width: 70%;
-  padding-left: 15%;
-  color: var(--light_silver);
+  margin-left: 15%;
+  padding: 50px;
+  color: rgb(104, 1, 1);
   text-align: justify;
+  background-color: rgb(0, 0, 0, 0.8);
+
 }
 </style>

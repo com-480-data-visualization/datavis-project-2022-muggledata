@@ -54,6 +54,8 @@
   height: 1100px;
   margin-right: 20%;
   margin-left: 50px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0, 0.6);
 }
 #spelltextbox {
   margin-left: 70%;

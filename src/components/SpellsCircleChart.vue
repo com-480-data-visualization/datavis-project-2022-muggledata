@@ -25,6 +25,7 @@ export default {
   props: {},
   mounted(){
     am5.ready(function() {
+
       var root = am5.Root.new("spells_circle_chart");
       root.setThemes([
         am5themes_Animated.new(root)
@@ -126,8 +127,6 @@ export default {
   }
 }
 
-
-
 </script>
 
 
@@ -135,6 +134,9 @@ export default {
 #spells_circle_chart {
   width: 70%;
   height: 1100px;
+  margin-left: 50px;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 
 #spelltextbox {
