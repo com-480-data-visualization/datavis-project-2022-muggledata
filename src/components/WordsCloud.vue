@@ -1,6 +1,5 @@
 <!-- HTML -->
 <template>
-<div>
   <div id="switchbtn"></div>
   <div id="chartdiv"></div>
   <div id="spelltextbox">
@@ -15,7 +14,6 @@
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
   </div>
-</div>
   
 </template>
 
@@ -26,13 +24,6 @@
   height: 1100px;
   margin-right: 20%;
   margin-left: 50px;
-}
-#switchbtn {
-  width: 20%;
-  float: right;
-  padding: 2.5em 0em;
-  text-align: center;
-  color: white;
 }
 #spelltextbox {
   margin-left: 70%;
@@ -47,6 +38,118 @@
   text-align: justify;
   margin-bottom: 100px;
 }
+#gramselector {
+  margin-right: 30%;
+  right: 0px;
+  color: var(--light_silver);
+  position: absolute;
+  z-index: 300;
+}
+body,
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: table;
+  font-family: Helvetica;
+  color: white;
+  font-weight: bold;
+}
+body {
+  background: #092756;
+  background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), -webkit-linear-gradient(top, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), -o-linear-gradient(top, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4) 100%), -o-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), -ms-linear-gradient(top, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4) 100%), -ms-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4) 100%), linear-gradient(135deg, #670d10 0%, #092756 100%);
+}
+.wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+.wrap .RadioBtnsWrap {
+  display: inline-block;
+  position: relative;
+  width: 140px;
+}
+.wrap .RadioBtnsWrap label {
+  display: inline-block;
+  position: relative;
+  margin-left: 40px;
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
+  min-width: 100px;
+  font-size: 16px;
+}
+.wrap .RadioBtnsWrap label:not(:nth-of-type(1)) {
+  margin-top: 17px;
+}
+.wrap .Radio {
+  -webkit-appearance: none;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+}
+.wrap .RadioBtnsWrap label::after {
+  content: "x";
+  color: transparent;
+  position: absolute;
+  left: -44px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  background-color: var(--navbar_background);
+  display: inline-block;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-color: var(--light_silver);
+  border-style: solid;
+  border-width: 8px;
+  transition: background-color 0.6s, border-width 0.4s, width 0.6s, height 0.6s, left 0.6s;
+  -webkit-transition: background-color 0.6s, border-width 0.4s, width 0.6s, height 0.6s, left 0.6s;
+  -webkit-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75);
+}
+.wrap .Radio:checked + label::after {
+  background-color:#944141;
+  width: 20px;
+  height: 20px;
+  left: -47px;
+  border-width: 6px;
+  -webkit-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75), inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75), inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}
+.wrap .RadioBtnsWrap label:not(:nth-of-type(1))::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  height: 57px;
+  width: 8px;
+  display: inline-block;
+  background-color: var(--light_silver);
+  -webkit-box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+.wrap .RadioBtnsWrap label::before {
+  bottom: 28px;
+}
+.wrap .Radio:checked + label + input + label::before {
+  height: 52px;
+  transition: height 0s linear 0.3s;
+  -webkit-transition: height 0s linear 0.3s;
+}
+
 </style>
 
 <!-- Resources -->
@@ -122,29 +225,21 @@ export default {
       // })
       var switchState = 1;
       const switchStates = [1, 2, 3, 4]
-      const group = document.querySelector("#switchbtn");
-      group.innerHTML = switchStates
-          .map(
-            (state) => `<div>
-                          <input type="radio" name="state" value="${state}">
-                          <switchbtn for="${state}">${state}-gram words</label>
-                        </div>`
-          )
-          .join(' ');
-      const switchbtns = document.querySelectorAll('input[name="state"]');
-      for(const switchbtn of switchbtns){
-          switchbtn.addEventListener('change', function () {
-            switchState = this.value;
-            am5.net.load("./data/"+this.value.toString()+"_gram/"+this.value.toString()+"_gram_words_specific_book" + (book_state + 1) + ".json").then(function(result) {
+
+      // add listener on each option
+      switchStates.forEach(x => {
+        document.getElementById("radio1"+x.toString()).addEventListener('change', function () {
+            switchState = x;
+            am5.net.load("./data/"+switchState.toString()+"_gram/"+switchState.toString()+"_gram_words_specific_book" + (book_state + 1) + ".json").then(function(result) {
               series.data.setAll(am5.JSONParser.parse(result.response));
             }).catch(function(result) {
               // This gets executed if there was an error loading URL
               // ... handle error
               console.log("Error loading " + result.xhr.responseURL);
             })
-          });
-      }
-
+          })
+      })
+      
 
       var book_state = 0
       function buttons(book_nb) {
