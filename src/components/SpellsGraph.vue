@@ -2,15 +2,9 @@
   <div id="spells_graph"></div>
   <div id="spelltextbox">
     <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Spell Graph</h1>
-    Here we put the explanation of the spell graph. <br><br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+    On this graph, you can see the evolution of the popularity of different through books. For each book, we took the 
+    top five spells and order them such that the top 1 is above the 2 and so on. The dots that are not connected to 
+    other mean that they appear to be on the top 5 in only one book.
   </div>
 </template>
 
@@ -239,5 +233,17 @@ export default {
   border-radius: 10px;
   text-align: justify;
   margin-bottom: 50px;
+  font-family:fantasy;
+}
+
+p {
+  font-family: 'Harry Potter', sans-serif;
+  font-size: smaller;
+  display: inline-block;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: 'Harry Potter', sans-serif;
 }
 </style>

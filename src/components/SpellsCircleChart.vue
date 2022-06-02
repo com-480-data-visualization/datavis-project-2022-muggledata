@@ -2,15 +2,10 @@
   <div id="spells_circle_chart"></div>
   <div id="spelltextbox">
     <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Bubble Chart</h1>
-    Here we put the explanation of the bubble chart. <br><br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+    In this bubble chart, you see the popularity of each spells that appear in all Harry Potter's books.
+    The first bubble are the tye of spell, bigger are the number of different spell of this type, the bigger is the
+    bubble. By clicking on them, you could see every different spells of this particular type and the bigger they are
+    , the more they are used in the book.
   </div>
 </template>
 
@@ -151,5 +146,23 @@ export default {
   border-radius: 10px;
   text-align: justify;
   margin-bottom: 100px;
+  font-family: fantasy;
+}
+p {
+  font-family: 'Harry Potter', sans-serif;
+  font-size: smaller;
+  display: inline-block;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: 'Harry Potter', sans-serif;
+}
+
+h2 {
+  font-size: large;
+  font-family:fantasy;
+  background-color: rgb(0, 0, 0, 0.8);
+
 }
 </style>

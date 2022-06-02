@@ -33,7 +33,7 @@
     </div>
   </div>
   <div id="spelltextbox">
-    <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Spell Graph</h1>
+    <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> WordCloud</h1>
     Here we put the explanation of the spell graph. <br><br>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -69,6 +69,7 @@
   border-radius: 10px;
   text-align: justify;
   margin-bottom: 100px;
+  font-family: fantasy;
 }
 #gramselector {
   margin-right: 30%;
@@ -222,6 +223,18 @@ html {
   border-radius: 10px;
   overflow: hidden;
   font-size: 12px;
+  font-family: fantasy;
+}
+
+p {
+  font-family: 'Harry Potter', sans-serif;
+  font-size: smaller;
+  display: inline-block;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: 'Harry Potter', sans-serif;
 }
 
 </style>
