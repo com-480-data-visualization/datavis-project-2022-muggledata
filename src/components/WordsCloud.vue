@@ -53,7 +53,7 @@
   width: 80%;
   height: 1100px;
   margin-right: 20%;
-  margin-left: 50px;
+  margin-left: 1%;
   border-radius: 10px;
   background-color: rgb(0, 0, 0, 0.6);
 }

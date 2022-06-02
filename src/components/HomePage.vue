@@ -1,35 +1,16 @@
 <template>
-  <div id="introduction">
-    <h1 style="text-align: left; font-family: 'Harry Potter', sans-serif;"> Introduction</h1>
-    
-    Here we put the explanation of the bubble chart. <br><br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-        Here we put the explanation of the bubble chart. <br><br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-        Here we put the explanation of the bubble chart. <br><br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-  </div>
+    <div id="introduction">
+      <h1 style="text-align: left"> Introduction</h1>
+      The world of Harry Potter was created by J.K. Rowling in the 
+      beggining of the 21's century.It is a series of seven novels that 
+      chronicle the life a Harry Potter, a young wizard and his friends
+      Hermione Granger and Ron Weasly that learn magic in the famous 
+      <p>School of Witchcraft and Wizardy Hogwarts</p>. In this website, 
+      you will explore one fantasy part of this universe : the spells.
+      What are the most common spell and their evolution during the 
+      history. Also, you will found some visualisation that intend to 
+      resume books.
+    </div>
 </template>
 
 <script>
@@ -43,11 +24,29 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #introduction {
-  width: 70%;
-  margin-left: 15%;
+  width: 60%;
+  margin-left: 20%;
   padding: 50px;
-  color: rgb(104, 1, 1);
+  color: var(--light_silver);
   text-align: justify;
+  font-family: fantasy;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+p {
+  font-family: 'Harry Potter', sans-serif;
+  font-size: smaller;
+  display: inline-block;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: 'Harry Potter', sans-serif;
+}
+
+h2 {
+  font-size: large;
+  font-family:fantasy;
   background-color: rgb(0, 0, 0, 0.8);
 
 }
