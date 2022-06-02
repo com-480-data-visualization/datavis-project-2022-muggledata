@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../components/HomePage.vue'
 import Spells from '../components/Spells.vue'
-import WordsCloud from '../components/WordsCloud.vue'
+import Words from '../components/Words.vue'
 import NotFound from '../components/NotFound.vue'
 
 const routes = [
@@ -18,7 +18,7 @@ const routes = [
   {
     path: '/words',
     name: 'words',
-    component: WordsCloud
+    component: Words
   },
   {
     path: "/:catchAll(.*)",
