@@ -1,0 +1,318 @@
+[
+    {
+        "book": "Book1",
+        "data": [
+            {
+                "part": "Part0",
+                "count": 70,
+                "description": "TEST"
+            },
+            {
+                "part": "Part1",
+                "count": 0
+            },
+            {
+                "part": "Part2",
+                "count": 100
+            },
+            {
+                "part": "Part3",
+                "count": 87
+            },
+            {
+                "part": "Part4",
+                "count": 61
+            },
+            {
+                "part": "Part5",
+                "count": 42
+            },
+            {
+                "part": "Part6",
+                "count": 90
+            },
+            {
+                "part": "Part7",
+                "count": 55
+            },
+            {
+                "part": "Part8",
+                "count": 19
+            },
+            {
+                "part": "Part9",
+                "count": 66
+            }
+        ]
+    },
+    {
+        "book": "Book2",
+        "data": [
+            {
+                "part": "Part0",
+                "count": 70
+            },
+            {
+                "part": "Part1",
+                "count": 70
+            },
+            {
+                "part": "Part2",
+                "count": 43
+            },
+            {
+                "part": "Part3",
+                "count": 100
+            },
+            {
+                "part": "Part4",
+                "count": 53
+            },
+            {
+                "part": "Part5",
+                "count": 0
+            },
+            {
+                "part": "Part6",
+                "count": 43
+            },
+            {
+                "part": "Part7",
+                "count": 30
+            },
+            {
+                "part": "Part8",
+                "count": 17
+            },
+            {
+                "part": "Part9",
+                "count": 99
+            }
+        ]
+    },
+    {
+        "book": "Book3",
+        "data": [
+            {
+                "part": "Part0",
+                "count": 49
+            },
+            {
+                "part": "Part1",
+                "count": 66
+            },
+            {
+                "part": "Part2",
+                "count": 100
+            },
+            {
+                "part": "Part3",
+                "count": 43
+            },
+            {
+                "part": "Part4",
+                "count": 25
+            },
+            {
+                "part": "Part5",
+                "count": 88
+            },
+            {
+                "part": "Part6",
+                "count": 89
+            },
+            {
+                "part": "Part7",
+                "count": 45
+            },
+            {
+                "part": "Part8",
+                "count": 0
+            },
+            {
+                "part": "Part9",
+                "count": 92
+            }
+        ]
+    },
+    {
+        "book": "Book4",
+        "data": [
+            {
+                "part": "Part0",
+                "count": 12
+            },
+            {
+                "part": "Part1",
+                "count": 48
+            },
+            {
+                "part": "Part2",
+                "count": 26
+            },
+            {
+                "part": "Part3",
+                "count": 100
+            },
+            {
+                "part": "Part4",
+                "count": 72
+            },
+            {
+                "part": "Part5",
+                "count": 81
+            },
+            {
+                "part": "Part6",
+                "count": 50
+            },
+            {
+                "part": "Part7",
+                "count": 0
+            },
+            {
+                "part": "Part8",
+                "count": 28
+            },
+            {
+                "part": "Part9",
+                "count": 99
+            }
+        ]
+    },
+    {
+        "book": "Book5",
+        "data": [
+            {
+                "part": "Part0",
+                "count": 0
+            },
+            {
+                "part": "Part1",
+                "count": 100
+            },
+            {
+                "part": "Part2",
+                "count": 84
+            },
+            {
+                "part": "Part3",
+                "count": 100
+            },
+            {
+                "part": "Part4",
+                "count": 66
+            },
+            {
+                "part": "Part5",
+                "count": 53
+            },
+            {
+                "part": "Part6",
+                "count": 68
+            },
+            {
+                "part": "Part7",
+                "count": 98
+            },
+            {
+                "part": "Part8",
+                "count": 68
+            },
+            {
+                "part": "Part9",
+                "count": 79
+            }
+        ]
+    },
+    {
+        "book": "Book6",
+        "data": [
+            {
+                "part": "Part0",
+                "count": 43
+            },
+            {
+                "part": "Part1",
+                "count": 80
+            },
+            {
+                "part": "Part2",
+                "count": 90
+            },
+            {
+                "part": "Part3",
+                "count": 28
+            },
+            {
+                "part": "Part4",
+                "count": 97
+            },
+            {
+                "part": "Part5",
+                "count": 82
+            },
+            {
+                "part": "Part6",
+                "count": 79
+            },
+            {
+                "part": "Part7",
+                "count": 100
+            },
+            {
+                "part": "Part8",
+                "count": 55
+            },
+            {
+                "part": "Part9",
+                "count": 0
+            }
+        ]
+    },
+    {
+        "book": "Book7",
+        "data": [
+            {
+                "part": "Part0",
+                "count": 58
+            },
+            {
+                "part": "Part1",
+                "count": 89
+            },
+            {
+                "part": "Part2",
+                "count": 52
+            },
+            {
+                "part": "Part3",
+                "count": 31
+            },
+            {
+                "part": "Part4",
+                "count": 20
+            },
+            {
+                "part": "Part5",
+                "count": 44
+            },
+            {
+                "part": "Part6",
+                "count": 21
+            },
+            {
+                "part": "Part7",
+                "count": 32
+            },
+            {
+                "part": "Part8",
+                "count": 0
+            },
+            {
+                "part": "Part9",
+                "count": 100
+            }
+        ]
+    }
+]

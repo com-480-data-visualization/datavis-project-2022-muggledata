@@ -29,7 +29,7 @@ export default {
       var container = root.container.children.push(am5.Container.new(root, {
         width: am5.percent(100),
         height: am5.percent(100),
-        layout: root.verticalLayout
+        layout: root.verticalLayout,
       }));
 
       var series = container.children.push(am5hierarchy.Pack.new(root, {
@@ -55,45 +55,15 @@ export default {
         am5.color(0xbb9f06)
       ]);
 
-      // series.get("colors").set("colors", [
-
-      //   // am5.color(0x202124),
-      //   // am5.color(0x9c1203),
-      //   // am5.color(0x340601),
-      //   // am5.color(0x680C02),
-      //   // am5.color(0xe3a000),
-      //   // am5.color(0x97C000),
-      //   // am5.color(0x4BE000),
-      //   // am5.color(0x033807),
-      //   // am5.color(0x0112AD),
-      //   // am5.color(0x02255A),
-      //   // am5.color(0x00165e),
-      //   // am5.color(0x000774),
-      //   // am5.color(0x000EEA),
-      //   // am5.color(0x2d004d),
-      //   // am5.color(0x0F0019),
-      //   // am5.color(0x1E0034),
-      //   // am5.color(0x000034),
-      //   // am5.color(0x639112),
-      //   // am5.color(0x810293),
-      // ]);
-
       // series.set("heatRules", [{
       //   target: series.circles.template,
       //   dataField: "value",
-      //   // min: am5.color(0xAE0001),
-      //   // max: am5.color(0xD3A625),
-      //   minValue: 0,
-      //   maxValue: 50,
-      //   customFunction: function(sprite, min, max, value) {
-      //     let color_min = new am5.Color("white")
-      //     let color_max = new am5.Color("red")
-      //     let range = am5.Color.interpolate(null, color_min, color_max)
-      //     sprite.set("fill", );
-      //   }
+      //   min: am5.color(0xFFCCCC),
+      //   max: am5.color(0xFF0000),
+      //   key: "fill",
+      //     minValue: 10,
+      //     maxValue: 100,
       // }]);
-
-      // var maxValue = 100;
 
       am5.net.load("./data/spells.json").then(function(result) {
         series.data.setAll(am5.JSONParser.parse(result.response));
@@ -104,17 +74,18 @@ export default {
       })
 
       series.set("selectedDataItem", series.dataItems[0]);
-      series.nodes.template.set("tooltipText", null);
+      series.nodes.template.set("tooltipText", "{name}");
 
+      
       series.circles.template.setAll({
         fillOpacity: 1,
         strokeWidth: 1,
         strokeOpacity: 1,
-        minHeight: 1000
+        
       });
       
       series.labels.template.setAll({
-        fontSize: 20,
+        fontSize: 15,
         fill: am5.color(0xFFFFFF),
         text: "{category}",
       });
