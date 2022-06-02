@@ -1,11 +1,11 @@
 Name,Incantation,Type,Effect,Light,Book1,Book1count,Book2,Book2count,Book3,Book3count,Book4,Book4count,Book5,Book5count,Book6,Book6count,Book7,Book7count
-Summoning Charm,Accio,Charm,Summons an object,None,,,,,,,3.0,15.0,4.0,11.0,,3.0,2.0,15.0
+Summoning Charm,Accio,Charm,Summons an object,None,,,,,,,3.0,15.0,2.0,11.0,,3.0,4.0,15.0
 Age Line,Unknown,Charm,Prevents people above or below a certain age from access to a target,Blue,,,,,,,,8.0,,,,,,
 Water-Making Spell,Aguamenti,Charm,Conjures water,Icy blue,,,,,,,,,,,3.0,14.0,,4.0
 Water-Making Spell,Aguamenti,Conjuration,Conjures water,Icy blue,,,,,,,,,,,3.0,14.0,,4.0
 Launch an object up into the air,Alarte Ascendare,Charm,Rockets target upward,Red,,,,,,,,,,,,,,
 Albus Dumbledore's Forceful Spell,Unknown,Spell,Great Force,None,,,,,,,,,,,,,,
-Unlocking Charm,Alohomora,Charm,Unlocks target,"Invisible, blue, yellow, or purple",1.0,2.0,,,,1.0,,,,4.0,,1.0,,1.0
+Unlocking Charm,Alohomora,Charm,Unlocks target,"Invisible, blue, yellow, or purple",5.0,2.0,,,,1.0,,,,4.0,,1.0,,1.0
 Healing Spell,Anapneo,Healing spell,Clears airway,,,,,,,,,,,,,4.0,,
 Healing Spell,Anapneo,Vanishment,Clears airway,,,,,,,,,,,,,4.0,,
 Hex that grows antlers on the head,Anteoculatia,Hex,Grows antlers on head,Red,,,,,,,,,,,,,,
@@ -15,13 +15,13 @@ Anti-intruder jinx,Unknown,Jinx,Repels intruders,,,,,,,,,,,,,,,
 Antonin Dolohov's curse,Unknown,Curse,Injuries capable of killing,Purple,,,,,,,,,,,,,,
 Revealing Charm,Aparecium,Charm,Reveals hidden writing,,,,,1.0,,,,,,,,,,
 Tracking spell,Appare Vestigium,Charm,"Reveals traces of magic, including footprints and track marks",Swirl of gold,,,,,,,,,,,,,,
-Apparition,None,Transportation,Magically transports the caster,None,3.0,2.0,3.0,2.0,4.0,8.0,,9.0,5.0,14.0,5.0,34.0,3.0,17.0
+Apparition,None,Transportation,Magically transports the caster,None,3.0,2.0,3.0,2.0,2.0,8.0,,9.0,1.0,14.0,1.0,34.0,3.0,17.0
 Aqua Eructo Charm,Aqua Eructo,Charm,Jet of water,Ice Blue,,,,,,,,,,,,,,
 Spider repelling spell,Arania Exumai,Spell,Repels spiders,Blue,,,,,,,,,,,,,,
 Slowing Charm,Arresto Momentum,Charm,Slows or stops target's velocity,None,,,,,,,,,,,,,,
 Arrow-shooting spell,Unknown,Conjuration,Fires arrows from the caster's wand,,,,,,,,,,,,,,,
 Ascendio,Ascendio,Charm,Lifts caster,None,,,,,,,,,,,,,,
-Killing Curse,Avada Kedavra,Curse,Instantaneous death,Green,,,,,,,,9.0,,2.0,1.0,6.0,4.0,18.0
+Killing Curse,Avada Kedavra,Curse,Instantaneous death,Green,,,,,,,,9.0,,2.0,5.0,6.0,2.0,18.0
 Avifors Spell,Avifors ,Transfiguration,Transforms the target into a bird.,Blue,,,,,,,,,,,,,,
 Avenseguim,Avenseguim,Charm,Turns object into tracking device,Orange,,,,,,,,,,,,,,
 Bird-Conjuring Charm,Avis,Conjuration,Conjures birds,Blue,,,,,,,,2.0,,,,,,
@@ -52,7 +52,7 @@ Caterwauling Charm,Unknown,Charm,Sets off a high-pitched shriek if entered,,,,,,
 Cauldron to Sieve,Unknown,Transfiguration,Turns a cauldron into a sieve,,,,,,,,,,,,,,,
 Cauldron to badger,Unknown,Transformation,Transforms a cauldron into a badger.,,,,,,,,,,,,,,,
 Cave inimicum,Cave inimicum,Charm,Concealment,None,,,,,,,,,,,,,,
-Cheering Charm,Unknown,Charm,Creates joy,None,,,,,3.0,7.0,,,,1.0,,,,
+Cheering Charm,Unknown,Charm,Creates joy,,,,,,3.0,7.0,,,,1.0,,,,
 Circumrota,Circumrota,Charm,Rotates an object,,,,,,,,,,,,,,,
 Cistem Aperio,Cistem Aperio,Charm,Opens chests,White,,,,,,,,,,,,,,
 Locking Spell,Colloportus,Charm,Locks doors,None,,,,,,,,,,3.0,,,,
@@ -65,7 +65,7 @@ Cornflake skin spell,Unknown,Dark charm,Makes skin appear like cornflakes,,,,,,,
 Cracker Jinx,Unknown,Jinx,Conjures exploding Wizard Crackers,,,,,,,,,,,,,,,
 Cribbing Spell,Unknown,Spell,Assists the caster in cheating on written papers.,,,,,,,,,,,,,,,
 Crinus Muto,Crinus Muto,Transfiguration,Transforms hair,White,,,,,,,,,,,,,,
-Cruciatus Curse,Crucio,Curse,Excruciating pain,Red or None,,,,,,,2.0,15.0,,7.0,,3.0,,7.0
+Cruciatus Curse,Crucio,Curse,Excruciating pain,Red or None,,,,,,,4.0,15.0,,7.0,,3.0,,7.0
 Gouging Spell,Defodio,Charm,Carves through material,,,,,,,,,,,,,,,1.0
 Eradication Spell,Deletrius,Charm,Erases image from Reverse Spell,None,,,,,,,,2.0,,,,,,
 Eradication Spell,Deletrius,Counter-charm,Erases image from Reverse Spell,None,,,,,,,,2.0,,,,,,
@@ -95,10 +95,10 @@ Entrail-Expelling Curse,Unknown,Curse,Expels entrails,,,,,,,,,,,,,,,
 Epoximise,Epoximise,Transfiguration,Bonds two objects,,,,,,,,,,,,,,,
 Erecto,Erecto,Charm,Erects a structure,None,,,,,,,,,,,,,,1.0
 Evanesce,Evanesce,Transfiguration,Vanishes objects,Bluish-white,,,,,,,,,,,,,,
-Vanishing Spell,Evanesco,Transfiguration,Vanishes things,None,,,,1.0,,,,,2.0,9.0,,,,
+Vanishing Spell,Evanesco,Transfiguration,Vanishes things,None,,,,1.0,,,,,4.0,9.0,,,,
 Everte Statum,Everte Statum,Charm,"Makes opponent stumble, Causes sharp pain",Orange,,,,,,,,,,,,,,
 Patronus Charm,Expecto Patronum,Charm,Conjures a spirit guardian,Silver,,,,,,1.0,,,,6.0,,,,3.0
-Disarming Charm,Expelliarmus,Charm,Disarms an opponent,Scarlet,,,4.0,4.0,1.0,4.0,,3.0,,8.0,,2.0,,8.0
+Disarming Charm,Expelliarmus,Charm,Disarms an opponent,Scarlet,,,2.0,4.0,5.0,4.0,,3.0,,8.0,,2.0,,8.0
 Expulso Curse,Expulso,Curse,Blows things up,Blue,,,,,,,,,,,,,,1.0
 Extinguishing Spell,Unknown,Charm,Extinguishes fires,,,,,,,,,1.0,,,,,,
 False memory charm,Unknown,Charm,Implants a false memory in the victim,,,,,,,,,,,,,,,
@@ -153,7 +153,7 @@ Hurling Hex,Unknown,Hex,"Unclear, possibly causes a broomstick to attempt to hur
 Illegibilus,Illegibilus,Charm,Makes text illegible,,,,,,,,,,,,,,,
 Freezing Charm,Immobulus,Charm,Stops movement and actions of the target,Blue,,,,1.0,,1.0,,,,,,2.0,,
 Impediment Jinx,Impedimenta,Jinx,Hinders movement,Turquoise,,,,,,,,3.0,,9.0,,3.0,,1.0
-Imperius Curse,Imperio,Curse,Total control over the victim,None,,,,,,,4.0,18.0,1.0,9.0,2.0,9.0,,9.0
+Imperius Curse,Imperio,Curse,Total control over the victim,None,,,,,,,2.0,18.0,5.0,9.0,4.0,9.0,,9.0
 Imperturbable Charm,Unknown,Charm,Invisible barrier,,,,,,,,,,,2.0,,,,
 Impervius Charm,Impervius ,Charm,Waterproofs an object,None,,,,,,,,,,1.0,,,,1.0
 Inanimatus Conjurus Spell,Unknown,Transfiguration,Presumably conjuresinanimate objects,,,,,,,,,,,,,,,
@@ -178,8 +178,8 @@ Legilimency Spell,Legilimens,Charm,Lets caster see into the mind of another pers
 Levicorpus,Levicorpus,Jinx,Suspends people by the ankles,Green,,,,,,,,,,,,5.0,,1.0
 Liberacorpus,Liberacorpus,Counter-jinx,Counteracts Levicorpus,None,,,,,,,,,,,,1.0,,1.0
 Locomotion Charm,Locomotor,Charm,Moves objects in midair,None,,1.0,,,,,,,,2.0,,,,1.0
-Leg-Locker Curse,Locomotor Mortis,Curse,Sticks legs together,Purple,4.0,3.0,,,,,,,,,,1.0,,
-Wand-Lighting Charm,Lumos,Charm,Illuminates the wand tip,White,,,1.0,2.0,2.0,4.0,,3.0,,3.0,,3.0,,6.0
+Leg-Locker Curse,Locomotor Mortis,Curse,Sticks legs together,Purple,2.0,3.0,,,,,,,,,,1.0,,
+Wand-Lighting Charm,Lumos,Charm,Illuminates the wand tip,White,,,5.0,2.0,4.0,4.0,,3.0,,3.0,,3.0,,6.0
 Wand-Lighting Charm Duo,Lumos Duo,Charm,Focused beam of light,White,,,,,,,,,,,,,,
 Lumos Maxima,Lumos Maxima,Charm,Produces bright light,White,,,,,,,,,,,,,,
 Lumos Solem Spell,Lumos Solem,Charm,Produces sunlight,Bright yellow,,,,,,,,,,,,,,
@@ -192,8 +192,8 @@ Ministry of Magic Fog,Unknown,Charm,Produces special fog (for concealment of cer
 Mobiliarbus,Mobiliarbus,Charm,Levitates wooden things,Blue,,,,,,1.0,,,,,,,,
 Mobilicorpus,Mobilicorpus,Charm,Moves bodies,None,,,,,,1.0,,,,,,,,
 Cushioning Charm,Molliare,Charm,Invisible cushion,,,,,,,,,,,,,,,1.0
-Dark Mark,Morsmordre,Curse,Conjures Dark Mark,Green,,,,,,,5.0,28.0,,1.0,4.0,14.0,,4.0
-Curse of the Bogies,Mucus ad Nauseam,Curse,Nasty cold & runny nose,Green,2.0,2.0,,,,,,,,,,,,
+Dark Mark,Morsmordre,Curse,Conjures Dark Mark,Green,,,,,,,1.0,28.0,,1.0,2.0,14.0,,4.0
+Curse of the Bogies,Mucus ad Nauseam,Curse,Nasty cold & runny nose,Green,4.0,2.0,,,,,,,,,,,,
 Muffliato Charm,Muffliato ,Charm,Conceals sound,None,,,,,,,,,,,,3.0,,4.0
 Multicorfors Spell,Multicorfors ,Transfiguration,Changes clothes,Red,,,,,,,,,,,,,,
 Mutatio Skullus,Mutatio Skullus,Hex,Grows extra heads,,,,,,,,,,,,,,,
@@ -201,7 +201,7 @@ Wand-Extinguishing Charm,Nox,Charm,Extinguishes wandlight,,,,,,,1.0,,,,,,,,1.0
 Nebulus,Nebulus,Charm,Conjures fog,Grey,,,,,,,,,,,,,,
 Oculus Reparo,Oculus Reparo,Charm,Repairs glasses,None,,,,,,,,,,,,,,
 Obliteration Charm,Unknown,Charm,Removes footprints,,,,,,,,,,,1.0,,,,
-Memory Charm,Obliviate ,Charm,Erases memories,Green,,,5.0,5.0,,,,2.0,,,,,,1.0
+Memory Charm,Obliviate ,Charm,Erases memories,Green,,,1.0,5.0,,,,2.0,,,,,,1.0
 Obscuro,Obscuro,Conjuration,Blindfolds target,None,,,,,,,,,,,,,,1.0
 Oppugno Jinx,Oppugno ,Jinx,Assaults target with directed object(s),None,,,,,,,,,,,,,,
 Orbis Jinx,Orbis,Jinx,Sucks the target into the ground,Blue,,,,,,,,,,,,,,
@@ -223,7 +223,7 @@ Four-Point Spell,Point Me,Spell,Wand points due north,None,,,,,,,,5.0,,,,,,
 Portus,Portus,Charm,Turns object into Portkey,Blue,,,,,,,,,,2.0,,,,
 Reverse Spell,Prior Incantato,Charm,Shows the previous spells cast by a wand,Gold,,,,,,,,2.0,,,,,,
 Protean Charm,Unknown,Charm,Links objects,,,,,,,,,,,2.0,,,,
-Shield Charm,Protego,Charm,Reflects spells and blocks physical forces,"Invisible on its own, reflects light of spell",,,,,,,,2.0,,6.0,,4.0,1.0,13.0
+Shield Charm,Protego,Charm,Reflects spells and blocks physical forces,"Invisible on its own, reflects light of spell",,,,,,,,2.0,,6.0,,4.0,5.0,13.0
 Protego Diabolica,Protego Diabolica,Dark Arts,Ring of protective black fire that only burns the caster's enemies whilst leaving their allies unharmed,,,,,,,,,,,,,,,
 Protego horribilis,Protego horribilis,Charm,Summons a powerful protective barrier,,,,,,,,,,,,,,,
 Protego Maxima,Protego Maxima,Charm,Summons a large protective barrier,White,,,,,,,,,,,,,,
@@ -246,8 +246,8 @@ Mending Charm,Reparo,Charm,Fixes broken objects,None,,,,,,,,1.0,,3.0,,4.0,,2.0
 Muggle-Repelling Charm,Repello Muggletum,Charm,Repels Muggles,None (haze),,,,,,,,,,,,,,1.0
 Repello Inimicum,Repello Inimicum,Charm,"Repels enemies. If used with Protego Maxima and Fianto Duri, it disintegrates anything that comes in contact with the barrier.",Blueish white,,,,,,,,,,,,,,
 Revelio Charm,Revelio,Charm,Reveals secrets about a person or object,Blue,,,,,,,,,,,,2.0,,
-Tickling Charm,Rictusempra,Charm,Tickles and weakens,Silver,,,2.0,2.0,,,,,,,,,,
-Boggart-Banishing Spell,Riddikulus,Charm,Turns a Boggart into something amusing,None,,,,,5.0,9.0,,1.0,,2.0,,,,
+Tickling Charm,Rictusempra,Charm,Tickles and weakens,Silver,,,4.0,2.0,,,,,,,,,,
+Boggart-Banishing Spell,Riddikulus,Charm,Turns a Boggart into something amusing,None,,,,,1.0,9.0,,1.0,,2.0,,,,
 Rose Growth,Unknown,Charm,Accelerates the growth of a rosebush,,,,,,,,,,,,,,,
 Rose Growth,Unknown,Transfiguration,Accelerates the growth of a rosebush,,,,,,,,,,,,,,,
 Rowboat spell,Unknown,Charm,Causes a rowboat to propel itself.,,,,,,,,,,,,,,,
@@ -279,7 +279,7 @@ Steleus,Steleus,Hex,Causes target to sneeze,Green,,,,,,,,,,,,,,
 Stinging Jinx,Unknown,Jinx,Stings flesh,White,,,,,,,,,,,,,,2.0
 Stinging Jinx,Unknown,Hex,Stings flesh,White,,,,,,,,,,,,,,2.0
 Stretching Jinx,Unknown,Jinx,Expands the target,,,,,,,,,,,,,1.0,,
-Stunning Spell,Stupefy,Charm,Knocks out target,Red,,,,,,,1.0,10.0,3.0,11.0,,1.0,5.0,21.0
+Stunning Spell,Stupefy,Charm,Knocks out target,Red,,,,,,,5.0,10.0,3.0,11.0,,1.0,1.0,21.0
 Supersensory Charm,Unknown,Charm,Superior perception,,,,,,,,,,,,,,,1.0
 Surgito,Surgito,Counter-charm,Removes enchantments,,,,,,,,,,,,,,,
 Switching Spell,Unknown,Transfiguration,Switches two objects,White,,,,,,,,2.0,,1.0,,,,
@@ -315,7 +315,7 @@ Vulnera Sanentur,Vulnera Sanentur,Healing spell,"Slows blood flow, Clears residu
 Vulnera Sanentur,Vulnera Sanentur,Counter-curse,"Slows blood flow, Clears residue, Knits wounds",None,,,,,,,,,,,,,,
 Waddiwasi,Waddiwasi,Jinx,Propels wad at the target,None,,,,,,1.0,,,,,,,,
 Washing up spell,Unknown,Charm,Cleans dishes,None,,,,,,,,,,,,,,
-Levitation Charm,Wingardium Leviosa,Charm,Makes objects fly,None,5.0,3.0,,,,,,,,1.0,,,,2.0
+Levitation Charm,Wingardium Leviosa,Charm,Makes objects fly,None,1.0,3.0,,,,,,,,1.0,,,,2.0
 White sparks,Unknown,Charm,Jet of white sparks,White,,,,,,,,,,,,,,
 Episkey,Episkey,Healing spell,Heals minor injuries,None,,,,,,,,,,,,4.0,,
 Episkey,Episkey,Charm,Heals minor injuries,None,,,,,,,,,,,,4.0,,

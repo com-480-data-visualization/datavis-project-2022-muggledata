@@ -117,8 +117,8 @@ def spells_sorting():
         # for s in list(spellCounter.keys()):
         #     print(len(list(spellCounter)) - list(spellCounter).index(s))
         for (s, c) in spellCounter.items():
-            pos = 5 - list(spellCounter).index(s)
-            if pos <= 0:
+            pos = list(spellCounter).index(s) + 1
+            if pos >= 6:
                 pos = None
             spell_book_counter.append([s, pos,  c])
         df = pd.DataFrame(spell_book_counter, columns=['Name', 'Book' + nb, 'Book' + nb + 'count'])

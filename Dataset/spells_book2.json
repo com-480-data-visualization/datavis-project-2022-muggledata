@@ -1,58 +1,58 @@
 [
     {
         "book": "Book1",
-        "Unlocking Charm: Alohomora": 1,
+        "Unlocking Charm: Alohomora": 5,
         "Apparition: None": 3,
-        "Leg-Locker Curse: Locomotor Mortis": 4,
-        "Curse of the Bogies: Mucus ad Nauseam": 2,
-        "Levitation Charm: Wingardium Leviosa": 5
+        "Leg-Locker Curse: Locomotor Mortis": 2,
+        "Curse of the Bogies: Mucus ad Nauseam": 4,
+        "Levitation Charm: Wingardium Leviosa": 1
     },
     {
         "book": "Book2",
         "Apparition: None": 3,
-        "Disarming Charm: Expelliarmus": 4,
-        "Wand-Lighting Charm: Lumos": 1,
-        "Memory Charm: Obliviate ": 5,
-        "Tickling Charm: Rictusempra": 2
+        "Disarming Charm: Expelliarmus": 2,
+        "Wand-Lighting Charm: Lumos": 5,
+        "Memory Charm: Obliviate ": 1,
+        "Tickling Charm: Rictusempra": 4
     },
     {
         "book": "Book3",
-        "Apparition: None": 4,
+        "Apparition: None": 2,
         "Cheering Charm: Unknown": 3,
-        "Disarming Charm: Expelliarmus": 1,
-        "Wand-Lighting Charm: Lumos": 2,
-        "Boggart-Banishing Spell: Riddikulus": 5
+        "Disarming Charm: Expelliarmus": 5,
+        "Wand-Lighting Charm: Lumos": 4,
+        "Boggart-Banishing Spell: Riddikulus": 1
     },
     {
         "book": "Book4",
         "Summoning Charm: Accio": 3,
-        "Cruciatus Curse: Crucio": 2,
-        "Imperius Curse: Imperio": 4,
-        "Dark Mark: Morsmordre": 5,
-        "Stunning Spell: Stupefy": 1
+        "Cruciatus Curse: Crucio": 4,
+        "Imperius Curse: Imperio": 2,
+        "Dark Mark: Morsmordre": 1,
+        "Stunning Spell: Stupefy": 5
     },
     {
         "book": "Book5",
-        "Summoning Charm: Accio": 4,
-        "Apparition: None": 5,
-        "Vanishing Spell: Evanesco": 2,
-        "Imperius Curse: Imperio": 1,
+        "Summoning Charm: Accio": 2,
+        "Apparition: None": 1,
+        "Vanishing Spell: Evanesco": 4,
+        "Imperius Curse: Imperio": 5,
         "Stunning Spell: Stupefy": 3
     },
     {
         "book": "Book6",
         "Water-Making Spell: Aguamenti": 3,
-        "Apparition: None": 5,
-        "Killing Curse: Avada Kedavra": 1,
-        "Imperius Curse: Imperio": 2,
-        "Dark Mark: Morsmordre": 4
+        "Apparition: None": 1,
+        "Killing Curse: Avada Kedavra": 5,
+        "Imperius Curse: Imperio": 4,
+        "Dark Mark: Morsmordre": 2
     },
     {
         "book": "Book7",
-        "Summoning Charm: Accio": 2,
+        "Summoning Charm: Accio": 4,
         "Apparition: None": 3,
-        "Killing Curse: Avada Kedavra": 4,
-        "Shield Charm: Protego": 1,
-        "Stunning Spell: Stupefy": 5
+        "Killing Curse: Avada Kedavra": 2,
+        "Shield Charm: Protego": 5,
+        "Stunning Spell: Stupefy": 1
     }
 ]

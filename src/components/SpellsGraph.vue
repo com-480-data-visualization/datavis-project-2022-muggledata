@@ -48,11 +48,18 @@ export default {
           pinchZoomX:true
         })
       );
-      chart.get("colors").set("colors", [
-        am5.color(0xffffff),
-        am5.color(0xf00fff),
-        am5.color(0xfff00f),
-      ]);
+      // chart.get("colors").set("colors", [
+      //   am5.color(0xffffff),
+      //   am5.color(0xfffff0),
+      //   am5.color(0xffff0f),
+      //   am5.color(0xfff0ff),
+      //   am5.color(0xff0fff),
+      //   am5.color(0xf0ffff),
+      //   am5.color(0x0fffff),
+      //   am5.color(0xffff00),
+      //   am5.color(0xff00ff),
+      //   am5.color(0x00ffff),
+      // ]);
 
       // Add cursor
       // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
@@ -68,7 +75,7 @@ export default {
       xRenderer.labels.template.setAll({
         location: 0.5,
         multiLocation: 0.5,
-        fill: am5.color(0xffffff)
+        fill: am5.color(0xffffff),
       });
 
       var xAxis = chart.xAxes.push(
@@ -85,7 +92,7 @@ export default {
         console.log("Error loading " + result.xhr.responseURL);
       })
 
-      var yRenderer = am5xy.AxisRendererY.new(root2, {});
+      var yRenderer = am5xy.AxisRendererY.new(root2, {inversed: true});
       yRenderer.grid.template.set("location", 0.5);
       yRenderer.labels.template.setAll({
         location: 0.5,
@@ -97,8 +104,9 @@ export default {
         am5xy.ValueAxis.new(root2, {
           maxPrecision: 0,
           renderer: yRenderer,
-          min: 0,
-          //max: 6
+          min: 0.5,
+          max: 5.5,
+          strictMinMax: true,
         })
       );
 
