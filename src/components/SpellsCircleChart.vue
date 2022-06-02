@@ -127,11 +127,12 @@ export default {
 
 <style scoped>
 #spells_circle_chart {
-  width: 70%;
+  width: 68%;
   height: 1100px;
   margin-left: 50px;
   background-color: rgb(0, 0, 0, 0.6);
   border-radius: 10px;
+  z-index: -1;
 }
 
 #spelltextbox {
@@ -147,6 +148,7 @@ export default {
   text-align: justify;
   margin-bottom: 100px;
   font-family: fantasy;
+  overflow: scroll;
 }
 p {
   font-family: 'Harry Potter', sans-serif;
@@ -163,6 +165,5 @@ h2 {
   font-size: large;
   font-family:fantasy;
   background-color: rgb(0, 0, 0, 0.8);
-
 }
 </style>

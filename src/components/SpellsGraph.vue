@@ -178,7 +178,7 @@ export default {
       // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
       chart.set("scrollbarX", am5.Scrollbar.new(root2, {
         orientation: "horizontal",
-        marginBottom: 20
+        marginBottom: 20,
       }));
 
       var legend = chart.children.push(
@@ -213,12 +213,13 @@ export default {
 
 <style scoped>
 #spells_graph {
-  width: 67%;
+  width: 65%;
   height: 700px;
   margin-left: 30%;
   background-color: rgb(0, 0, 0, 0.5);
   margin-right: 50px;
   border-radius: 10px;
+  padding-left: 50px;
 }
 
 #spelltextbox {
@@ -234,6 +235,7 @@ export default {
   text-align: justify;
   margin-bottom: 50px;
   font-family:fantasy;
+  overflow: scroll;
 }
 
 p {

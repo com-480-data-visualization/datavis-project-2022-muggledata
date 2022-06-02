@@ -70,6 +70,7 @@
   text-align: justify;
   margin-bottom: 100px;
   font-family: fantasy;
+  overflow: scroll;
 }
 #gramselector {
   margin-right: 30%;
