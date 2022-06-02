@@ -25,8 +25,6 @@ export default {
   props: {},
   mounted(){
     am5.ready(function() {
-      //document.getElementById("spelltextbox").textContent += "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
-
       var root = am5.Root.new("spells_circle_chart");
       root.setThemes([
         am5themes_Animated.new(root)
@@ -44,27 +42,59 @@ export default {
         initialDepth: 1,
         valueField: "value",
         categoryField: "name",
-        childDataField: "children"
+        childDataField: "children",
       }));
 
+      series.get("colors").set("colors", [
+        am5.color(0x106080),
+        am5.color(0x095256),
+        am5.color(0x087f8c),
+        am5.color(0x5aaa95),
+        am5.color(0x86a873),
+        am5.color(0x86a830),
+        am5.color(0x095256),
+        am5.color(0x087f8c),
+        am5.color(0x5aaa95),
+        am5.color(0x86a873),
+        am5.color(0xbb9f06)
+      ]);
+
       // series.get("colors").set("colors", [
-      //   am5.color(0x202020),
-      //   am5.color(0xAE0001),
-      //   am5.color(0xD3A625),
-      //   am5.color(0xEEBA30),
-      //   am5.color(0x740001),
-      //   am5.color(0x639112),
-      //   am5.color(0x810293),
+
+      //   // am5.color(0x202124),
+      //   // am5.color(0x9c1203),
+      //   // am5.color(0x340601),
+      //   // am5.color(0x680C02),
+      //   // am5.color(0xe3a000),
+      //   // am5.color(0x97C000),
+      //   // am5.color(0x4BE000),
+      //   // am5.color(0x033807),
+      //   // am5.color(0x0112AD),
+      //   // am5.color(0x02255A),
+      //   // am5.color(0x00165e),
+      //   // am5.color(0x000774),
+      //   // am5.color(0x000EEA),
+      //   // am5.color(0x2d004d),
+      //   // am5.color(0x0F0019),
+      //   // am5.color(0x1E0034),
+      //   // am5.color(0x000034),
+      //   // am5.color(0x639112),
+      //   // am5.color(0x810293),
       // ]);
 
       // series.set("heatRules", [{
       //   target: series.circles.template,
       //   dataField: "value",
-      //   min: am5.color(0xAE0001),
-      //   max: am5.color(0xD3A625),
+      //   // min: am5.color(0xAE0001),
+      //   // max: am5.color(0xD3A625),
       //   minValue: 0,
       //   maxValue: 50,
-      //   key: "fill"
+      //   customFunction: function(sprite, min, max, value) {
+      //     let color_min = new am5.Color("white")
+      //     let color_max = new am5.Color("red")
+      //     let range = am5.Color.interpolate(null, color_min, color_max)
+      //     sprite.set("fill", );
+      //   }
       // }]);
 
       // var maxValue = 100;
@@ -84,12 +114,13 @@ export default {
         fillOpacity: 1,
         strokeWidth: 1,
         strokeOpacity: 1,
+        minHeight: 1000
       });
       
       series.labels.template.setAll({
         fontSize: 20,
         fill: am5.color(0xFFFFFF),
-        text: "{category}"
+        text: "{category}",
       });
     });
   }

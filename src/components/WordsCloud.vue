@@ -50,7 +50,7 @@
 <!-- Styles -->
 <style scoped>
 #chartdiv {
-  width: 70%;
+  width: 80%;
   height: 1100px;
   margin-right: 20%;
   margin-left: 50px;
