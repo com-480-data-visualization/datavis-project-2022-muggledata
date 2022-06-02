@@ -42,13 +42,6 @@
   margin-right: 20%;
   margin-left: 50px;
 }
-#switchbtn {
-  width: 20%;
-  float: right;
-  padding: 2.5em 0em;
-  text-align: center;
-  color: white;
-}
 #spelltextbox {
   margin-left: 70%;
   color: var(--light_silver);
@@ -130,13 +123,13 @@ body {
   margin: auto;
   width: 10px;
   height: 10px;
-  background-color: #ffffff;
+  background-color: var(--navbar_background);
   display: inline-block;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  border-color: #79c5ff;
+  border-color: var(--light_silver);
   border-style: solid;
   border-width: 8px;
   transition: background-color 0.6s, border-width 0.4s, width 0.6s, height 0.6s, left 0.6s;
@@ -145,7 +138,7 @@ body {
   box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75);
 }
 .wrap .Radio:checked + label::after {
-  background-color: #61416e;
+  background-color:#944141;
   width: 20px;
   height: 20px;
   left: -47px;
@@ -160,7 +153,7 @@ body {
   height: 57px;
   width: 8px;
   display: inline-block;
-  background-color: hsl(206, 100%, 74%);
+  background-color: var(--light_silver);
   -webkit-box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.25);
   z-index: -1;
