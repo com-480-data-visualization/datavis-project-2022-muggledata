@@ -44,28 +44,52 @@ export default {
         initialDepth: 1,
         valueField: "value",
         categoryField: "name",
-        childDataField: "children"
+        childDataField: "children",
       }));
 
       // series.get("colors").set("colors", [
-      //   am5.color(0x202020),
-      //   am5.color(0xAE0001),
-      //   am5.color(0xD3A625),
-      //   am5.color(0xEEBA30),
-      //   am5.color(0x740001),
-      //   am5.color(0x639112),
-      //   am5.color(0x810293),
+
+      //   // am5.color(0x202124),
+      //   // am5.color(0x9c1203),
+      //   // am5.color(0x340601),
+      //   // am5.color(0x680C02),
+      //   // am5.color(0xe3a000),
+      //   // am5.color(0x97C000),
+      //   // am5.color(0x4BE000),
+      //   // am5.color(0x033807),
+      //   // am5.color(0x0112AD),
+      //   // am5.color(0x02255A),
+      //   // am5.color(0x00165e),
+      //   // am5.color(0x000774),
+      //   // am5.color(0x000EEA),
+      //   // am5.color(0x2d004d),
+      //   // am5.color(0x0F0019),
+      //   // am5.color(0x1E0034),
+      //   // am5.color(0x000034),
+      //   // am5.color(0x639112),
+      //   // am5.color(0x810293),
       // ]);
 
-      // series.set("heatRules", [{
-      //   target: series.circles.template,
-      //   dataField: "value",
-      //   min: am5.color(0xAE0001),
-      //   max: am5.color(0xD3A625),
-      //   minValue: 0,
-      //   maxValue: 50,
-      //   key: "fill"
-      // }]);
+      series.set("heatRules", [{
+        target: series.circles.template,
+        dataField: "value",
+        // min: am5.color(0xffcccc),
+        // max: am5.color(0xff5555),
+        // minValue: 60,
+        // maxValue: 70,
+        customFunction: function(sprite, min, max, value) {
+          let color_min = new Color("white")
+          let color_max = new Color("red")
+          let gradient = color_min.range(color_max)
+          if (value < 20) {
+            sprite.set("fill", am5.color(0xff0000));
+          }
+          else {
+            sprite.set("fill", am5.color(0x00ff00));
+          }
+        },
+        key: "fill"
+      }]);
 
       // var maxValue = 100;
 
