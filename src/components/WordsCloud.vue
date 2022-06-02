@@ -1,6 +1,19 @@
 <!-- HTML -->
 <template>
   <div id="chartdiv">
+    <div id="bookselector">
+      <form>
+        <div class="radio-group">
+          <input type="radio" checked id="option-0" name="selector"><label for="option-0">Harry Potter and <br> the Philosophers Stone</label>
+          <input type="radio" id="option-1" name="selector"><label for="option-1">Harry Potter and <br> the Chamber of Secrets</label>
+          <input type="radio" id="option-2" name="selector"><label for="option-2">Harry Potter and <br> the Prisoner of Azkaban</label>
+          <input type="radio" id="option-3" name="selector"><label for="option-3">Harry Potter and <br> the Goblet of Fire</label>
+          <input type="radio" id="option-4" name="selector"><label for="option-4">Harry Potter and <br> the Order of the Phoenix</label>
+          <input type="radio" id="option-5" name="selector"><label for="option-5">Harry Potter and <br> the Half Blood Prince</label>
+          <input type="radio" id="option-6" name="selector"><label for="option-6">Harry Potter and <br> the Deathly Hallows</label>
+        </div>
+      </form>
+    </div>
     <div  id="gramselector">  
       <div class="wrap">
         <div class="RadioBtnsWrap">
@@ -62,7 +75,7 @@
   position: absolute;
   z-index: 300;
 }
-body,
+#gramselector body,
 html {
   margin: 0;
   height: 100%;
@@ -73,7 +86,7 @@ html {
   color: white;
   font-weight: bold;
 }
-body {
+#gramselector body {
   background: #092756;
   background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
   background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), -webkit-linear-gradient(top, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%, #092756 100%);
@@ -81,16 +94,16 @@ body {
   background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), -ms-linear-gradient(top, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4) 100%), -ms-linear-gradient(-45deg, #670d10 0%, #092756 100%);
   background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4) 100%), linear-gradient(135deg, #670d10 0%, #092756 100%);
 }
-.wrap {
+#gramselector .wrap {
   display: table-cell;
   vertical-align: middle;
 }
-.wrap .RadioBtnsWrap {
+#gramselector .wrap .RadioBtnsWrap {
   display: inline-block;
   position: relative;
   width: 140px;
 }
-.wrap .RadioBtnsWrap label {
+#gramselector .wrap .RadioBtnsWrap label {
   display: inline-block;
   position: relative;
   margin-left: 40px;
@@ -100,10 +113,10 @@ body {
   min-width: 100px;
   font-size: 16px;
 }
-.wrap .RadioBtnsWrap label:not(:nth-of-type(1)) {
+#gramselector .wrap .RadioBtnsWrap label:not(:nth-of-type(1)) {
   margin-top: 17px;
 }
-.wrap .Radio {
+#gramselector .wrap .Radio {
   -webkit-appearance: none;
   height: 0;
   width: 0;
@@ -113,7 +126,7 @@ body {
   outline: 0;
   border: none;
 }
-.wrap .RadioBtnsWrap label::after {
+#gramselector .wrap .RadioBtnsWrap label::after {
   content: "x";
   color: transparent;
   position: absolute;
@@ -137,7 +150,7 @@ body {
   -webkit-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75);
 }
-.wrap .Radio:checked + label::after {
+#gramselector .wrap .Radio:checked + label::after {
   background-color:#944141;
   width: 20px;
   height: 20px;
@@ -146,7 +159,7 @@ body {
   -webkit-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75), inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75), inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
 }
-.wrap .RadioBtnsWrap label:not(:nth-of-type(1))::before {
+#gramselector .wrap .RadioBtnsWrap label:not(:nth-of-type(1))::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -158,13 +171,55 @@ body {
   box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.25);
   z-index: -1;
 }
-.wrap .RadioBtnsWrap label::before {
+#gramselector .wrap .RadioBtnsWrap label::before {
   bottom: 28px;
 }
-.wrap .Radio:checked + label + input + label::before {
+#gramselector .wrap .Radio:checked + label + input + label::before {
   height: 52px;
   transition: height 0s linear 0.3s;
   -webkit-transition: height 0s linear 0.3s;
+}
+#bookselector {
+  position: absolute;
+  width: 60%;
+  z-index: 300;
+}
+#bookselector body {
+  background: #332f35;
+}
+
+#bookselector input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+#bookselector label {
+  color: var(--light_silver);
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+  background: var(--navbar_background);
+}
+
+#bookselector input[type=radio]:checked + label {
+  color: var(--light_silver);
+  background: #675f6b;
+}
+
+#bookselector label + input[type=radio] + label {
+  border-left: solid 3px #675f6b;
+
+}
+
+#bookselector .radio-group {
+  border: solid 3px #675f6b;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 10px;
 }
 
 </style>
@@ -197,15 +252,6 @@ export default {
       // root.setThemes([
       //   am5themes_Animated.new(root)
       // ]);
-
-
-      // Add wrapper container
-      var container = root.container.children.push(am5.Container.new(root, {
-        width: am5.percent(80),
-        height: am5.percent(100),
-        //layout: root.verticalLayout,
-        layout: root.verticalLayout
-      }));
 
       var container_cloud = root.container.children.push(am5.Container.new(root, {
         width: am5.percent(80),
@@ -259,64 +305,20 @@ export default {
       
 
       var book_state = 0
-      function buttons(book_nb) {
-        let button = container.children.push(am5.Button.new(root, {
-          label: am5.Label.new(root, {
-            text: books_name[book_nb],
-            textAlign: "center",
-            marginLeft: -10,
-            marginRight: -10,
-            fontSize: 12,
-            width: 150
-          }),
-          y: 50,
-        }));
-        button.set("x",  button.get("label").get("width") * book_nb)
-        button.set("width", button.get("label").get("width"))
-        button.get("background").setAll({
-          fill: am5.color(0xFFCCCC - book_nb * 0x002222),
-          fillOpacity: 0.6,
-        })
-        button.get("background").states.create("hover", {}).setAll({
-          fill: button.get("background").get("fill"),
-          fillOpacity: 0.8,
-        });
-        button.get("background").states.create("active", {}).setAll({
-          fill: button.get("background").get("fill"),
-          fillOpacity: 1.,
-        });
-        // if (button.isHover()) {
-        //   button.get("background").setAll({
-        //     fill: am5.color(0xffff0f),
-        //     fillOpacity: 1.,
-        //   })
-        button.events.on("click", function() {
-          book_state = book_nb
-          am5.net.load("./data/"+switchState.toString()+"_gram/"+switchState.toString()+"_gram_words_specific_book" + (book_nb + 1) + ".json").then(function(result) {
-            series.data.setAll(am5.JSONParser.parse(result.response));
-          }).catch(function(result) {
-            // This gets executed if there was an error loading URL
-            // ... handle error
-            console.log("Error loading " + result.xhr.responseURL);
-          });
-        });
-        return button;
+
+      for (let book_id = 0; book_id < 7; book_id++) {
+        document.getElementById("option-"+book_id.toString()).addEventListener('change', function () {
+            book_state = book_id;
+            am5.net.load("./data/"+switchState.toString()+"_gram/"+switchState.toString()+"_gram_words_specific_book" + (book_state + 1) + ".json").then(function(result) {
+              series.data.setAll(am5.JSONParser.parse(result.response));
+            }).catch(function(result) {
+              // This gets executed if there was an error loading URL
+              // ... handle error
+              console.log("Error loading " + result.xhr.responseURL);
+            })
+          })
       }
 
-      let books_name = ["Harry Potter and \n the Philosophers Stone",
-                        "Harry Potter and \n the Chamber of Secrets",
-                        "Harry Potter and \n the Prisoner of Azkaban",
-                        "Harry Potter and \n the Goblet of Fire",
-                        "Harry Potter and \n the Order of the Phoenix",
-                        "Harry Potter and \n the Half Blood Prince",
-                        "Harry Potter and \n the Deathly Hallows"];
-      buttons(0);
-      buttons(1);
-      buttons(2);
-      buttons(3);
-      buttons(4);
-      buttons(5);
-      buttons(6);
       
       // Add series
       // https://www.amcharts.com/docs/v5/charts/word-cloud/
