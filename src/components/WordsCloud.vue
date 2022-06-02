@@ -1,24 +1,7 @@
 <!-- HTML -->
 <template>
-  <div id="chartdiv">
-    <div  id="gramselector">  
-      <div class="wrap">
-        <div class="RadioBtnsWrap">
-          <input type="radio" name="radio1" checked id="radio11" class="Radio" />
-          <label for="radio11">1-Gram</label>
-
-          <input type="radio" name="radio1" id="radio12" class="Radio" />
-          <label  for="radio12">2-Grams</label>
-
-          <input type="radio" name="radio1" id="radio13" class="Radio" />
-          <label  for="radio13">3-Grams</label>
-          
-          <input type="radio" name="radio1" id="radio14" class="Radio" />
-          <label  for="radio14">4-Grams</label>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div id="switchbtn"></div>
+  <div id="chartdiv"></div>
   <div id="spelltextbox">
     <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Spell Graph</h1>
     Here we put the explanation of the spell graph. <br><br>
@@ -37,7 +20,7 @@
 <!-- Styles -->
 <style scoped>
 #chartdiv {
-  width: 70%;
+  width: 80%;
   height: 1100px;
   margin-right: 20%;
   margin-left: 50px;
