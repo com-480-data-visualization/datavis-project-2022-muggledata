@@ -21,24 +21,24 @@ export default {
     am5.ready(function() {
       // Create root element
       // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-      var root2 = am5.Root.new("spells_graph");
+      var root = am5.Root.new("spells_graph");
 
       // Set themes
       // https://www.amcharts.com/docs/v5/concepts/themes/
-      root2.setThemes([
-        am5themes_Animated.new(root2)
+      root.setThemes([
+        am5themes_Animated.new(root)
       ]);
-      root2.interfaceColors.set("grid", am5.color(0xffffff))
+      root.interfaceColors.set("grid", am5.color(0xffffff))
 
       // Create chart
       // https://www.amcharts.com/docs/v5/charts/xy-chart/
-      var chart = root2.container.children.push(
-        am5xy.XYChart.new(root2, {
+      var chart = root.container.children.push(
+        am5xy.XYChart.new(root, {
           panX: true,
           panY: true,
           wheelX: "panX",
           wheelY: "zoomX",
-          layout: root2.verticalLayout,
+          layout: root.verticalLayout,
           pinchZoomX:true
         })
       );
@@ -57,14 +57,14 @@ export default {
 
       // Add cursor
       // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
-      var cursor = chart.set("cursor", am5xy.XYCursor.new(root2, {
+      var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
         behavior: "none"
       }));
       cursor.lineY.set("visible", false);
 
       // Create axes
       // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
-      var xRenderer = am5xy.AxisRendererX.new(root2, {});
+      var xRenderer = am5xy.AxisRendererX.new(root, {});
       xRenderer.grid.template.set("location", 0.5);
       xRenderer.labels.template.setAll({
         location: 0.5,
@@ -73,10 +73,10 @@ export default {
       });
 
       var xAxis = chart.xAxes.push(
-        am5xy.CategoryAxis.new(root2, {
+        am5xy.CategoryAxis.new(root, {
           categoryField: "book",
           renderer: xRenderer,
-          tooltip: am5.Tooltip.new(root2, {})
+          tooltip: am5.Tooltip.new(root, {})
         })
       );
       am5.net.load("./data/spells_book2.json").then(function(result) {
@@ -86,7 +86,7 @@ export default {
         console.log("Error loading " + result.xhr.responseURL);
       })
 
-      var yRenderer = am5xy.AxisRendererY.new(root2, {inversed: true});
+      var yRenderer = am5xy.AxisRendererY.new(root, {inversed: true});
       yRenderer.grid.template.set("location", 0.5);
       yRenderer.labels.template.setAll({
         location: 0.5,
@@ -95,7 +95,7 @@ export default {
       });
 
       var yAxis = chart.yAxes.push(
-        am5xy.ValueAxis.new(root2, {
+        am5xy.ValueAxis.new(root, {
           maxPrecision: 0,
           renderer: yRenderer,
           min: 0.5,
@@ -109,23 +109,22 @@ export default {
 
       function createSeries(name, field) {
         var series = chart.series.push(
-          am5xy.LineSeries.new(root2, {
+          am5xy.LineSeries.new(root, {
             name: name,
             xAxis: xAxis,
             yAxis: yAxis,
             valueYField: field,
             categoryXField: "book",
-            tooltip: am5.Tooltip.new(root2, {
+            tooltip: am5.Tooltip.new(root, {
               pointerOrientation: "horizontal",
               labelText: "[bold]{name}[/]\n{categoryX}: {valueY}"
             })
           })
         );
 
-
         series.bullets.push(function() {
-          return am5.Bullet.new(root2, {
-            sprite: am5.Circle.new(root2, {
+          return am5.Bullet.new(root, {
+            sprite: am5.Circle.new(root, {
               radius: 5,
               fill: series.get("fill")
             })
@@ -176,13 +175,13 @@ export default {
 
       // Add scrollbar
       // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
-      chart.set("scrollbarX", am5.Scrollbar.new(root2, {
+      chart.set("scrollbarX", am5.Scrollbar.new(root, {
         orientation: "horizontal",
         marginBottom: 20,
       }));
 
       var legend = chart.children.push(
-        am5.Legend.new(root2, {
+        am5.Legend.new(root, {
           centerX: am5.p50,
           x: am5.p50,
           forceHidden: true
@@ -195,6 +194,10 @@ export default {
       legend.itemContainers.template.events.on("pointerover", function(e) {
         e.target.dataItem.dataContext.hover();
       });
+      legend.itemContainers.template.events.on("pointerout", function(e) {
+        e.target.dataItem.dataContext.unhover();
+      });
+
       legend.itemContainers.template.events.on("pointerout", function(e) {
         e.target.dataItem.dataContext.unhover();
       });
