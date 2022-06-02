@@ -219,10 +219,12 @@ export default {
 
 <style scoped>
 #spells_graph {
-  width: 68%;
+  width: 67%;
   height: 700px;
-  margin-left: 32%;
+  margin-left: 30%;
+  background-color: rgb(0, 0, 0, 0.5);
   margin-right: 50px;
+  border-radius: 10px;
 }
 
 #spelltextbox {
