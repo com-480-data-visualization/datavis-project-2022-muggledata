@@ -1,7 +1,7 @@
 <template>
   <div id="spells_circle_chart"></div>
   <div id="spelltextbox">
-    <h1 style="text-align: center; color: var(--light_silver);"> Bubble Chart</h1>
+    <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Bubble Chart</h1>
     Here we put the explanation of the bubble chart. <br><br>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

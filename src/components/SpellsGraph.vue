@@ -1,7 +1,7 @@
 <template>
   <div id="spells_graph"></div>
   <div id="spelltextbox">
-    <h1 style="text-align: center; color: var(--light_silver);"> Spell Graph</h1>
+    <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Spell Graph</h1>
     Here we put the explanation of the spell graph. <br><br>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
