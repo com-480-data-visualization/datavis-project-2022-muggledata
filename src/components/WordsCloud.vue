@@ -31,7 +31,6 @@
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
   </div>
-  <div id="switchbtn"></div>
   
 </template>
 
@@ -250,29 +249,21 @@ export default {
       // })
       var switchState = 1;
       const switchStates = [1, 2, 3, 4]
-      const group = document.querySelector("#switchbtn");
-      group.innerHTML = switchStates
-          .map(
-            (state) => `<div>
-                          <input type="radio" name="state" value="${state}">
-                          <switchbtn for="${state}">${state}-gram words</label>
-                        </div>`
-          )
-          .join(' ');
-      const switchbtns = document.querySelectorAll('input[name="state"]');
-      for(const switchbtn of switchbtns){
-          switchbtn.addEventListener('change', function () {
-            switchState = this.value;
-            am5.net.load("./data/"+this.value.toString()+"_gram/"+this.value.toString()+"_gram_words_specific_book" + (book_state + 1) + ".json").then(function(result) {
+
+      // add listener on each option
+      switchStates.forEach(x => {
+        document.getElementById("radio1"+x.toString()).addEventListener('change', function () {
+            switchState = x;
+            am5.net.load("./data/"+switchState.toString()+"_gram/"+switchState.toString()+"_gram_words_specific_book" + (book_state + 1) + ".json").then(function(result) {
               series.data.setAll(am5.JSONParser.parse(result.response));
             }).catch(function(result) {
               // This gets executed if there was an error loading URL
               // ... handle error
               console.log("Error loading " + result.xhr.responseURL);
             })
-          });
-      }
-
+          })
+      })
+      
 
       var book_state = 0
       function buttons(book_nb) {
