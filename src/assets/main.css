@@ -19,13 +19,6 @@
     font-weight: 400;
     src: local('Harry Potter'), url('./fonts/HARRP___.woff') format('woff');
 }
-@font-face {
-    font-family: 'custom fantasy';
-	font-style: normal;
-	font-size: x-large;
-    font-weight: 400;
-    src: local('custom fantasy'), url('./fonts/Papyrus.woff') format('woff');
-}
 
 @font-face {
     font-family: 'Fantasy';
@@ -48,9 +41,12 @@ html, body, figure {
 body {
 	font-family: sans-serif;
 	font-size: 1.1rem;
-	/* background-color: var(--body_background); */
 	padding-top: 70px;
-	background-image: url("../../public/hogwarts.jpg");
+	background-image: url("../../public/dark_hogwarts.jpg");
+	background-attachment: fixed;
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+	background-position: 0% 45%
 }
 
 /*

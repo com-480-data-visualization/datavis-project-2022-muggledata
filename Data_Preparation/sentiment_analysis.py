@@ -1,6 +1,4 @@
 import json
-import math
-import matplotlib.pyplot as plt
 from numpy import maximum
 import pandas as pd
 
@@ -76,7 +74,7 @@ for nb in book_list:
         })
     j.append(book)
 
-with open('../Dataset/sentiment_analysis.json', 'w') as outfile:
+with open('../public/data/sentiment_analysis.json', 'w') as outfile:
     outfile.write(json.dumps(j, indent=4))
 
 

@@ -13,9 +13,6 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-    cursor: pointer;
-}
 /*
 	TOP Navigation Bar
 */

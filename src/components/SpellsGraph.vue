@@ -2,8 +2,9 @@
   <div id="spells_graph"></div>
   <div id="spelltextbox">
     <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Spell Graph</h1>
-    On this graph, you can see the evolution of the popularity of different through books. For each book, we took the 
-    top five spells and order them such that the top 1 is above the 2 and so on. The dots that are not connected to 
+    On this graph, you can see the evolution of the popularity of different through books. 
+    <br><br>For each book, we took the top five spells and order them such that the top 1 is above the 2 and so on. 
+     <br><br>The dots that are not connected to 
     other mean that they appear to be on the top 5 in only one book.
   </div>
 </template>
@@ -19,39 +20,29 @@ export default {
   mounted(){
     am5.ready(function() {
       // Create root element
-      // https://www.amcharts.com/docs/v5/getting-started/#Root_element
       var root = am5.Root.new("spells_graph");
 
       // Set themes
-      // https://www.amcharts.com/docs/v5/concepts/themes/
       root.setThemes([
         am5themes_Animated.new(root)
       ]);
       root.interfaceColors.set("grid", am5.color(0xffffff))
 
       // Create chart
-      // https://www.amcharts.com/docs/v5/charts/xy-chart/
       var chart = root.container.children.push(
         am5xy.XYChart.new(root, {
-          panX: true,
-          panY: true,
-          wheelX: "panX",
-          wheelY: "zoomX",
           layout: root.verticalLayout,
           pinchZoomX:true
         })
       );
 
-
       // Add cursor
-      // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
       var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
         behavior: "none"
       }));
       cursor.lineY.set("visible", false);
 
       // Create axes
-      // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
       var xRenderer = am5xy.AxisRendererX.new(root, {});
       xRenderer.grid.template.set("location", 0.5);
       xRenderer.labels.template.setAll({
@@ -67,12 +58,6 @@ export default {
           tooltip: am5.Tooltip.new(root, {})
         })
       );
-      am5.net.load("./data/spells_book2.json").then(function(result) {
-        xAxis.data.setAll(am5.JSONParser.parse(result.response));
-      }).catch(function(result) {
-
-        console.log("Error loading " + result.xhr.responseURL);
-      })
 
       var yRenderer = am5xy.AxisRendererY.new(root, {inversed: true});
       yRenderer.grid.template.set("location", 0.5);
@@ -92,9 +77,15 @@ export default {
         })
       );
 
-      // Add series
-      // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+      // Load xAxis categories
+      am5.net.load("./data/spells_book2.json").then(function(result) {
+        xAxis.data.setAll(am5.JSONParser.parse(result.response));
+      }).catch(function(result) {
 
+        console.log("Error loading " + result.xhr.responseURL);
+      })
+
+      // Add series
       function createSeries(name, field) {
         var series = chart.series.push(
           am5xy.LineSeries.new(root, {
@@ -119,17 +110,7 @@ export default {
           });
         });
 
-        // create hover state for series and for mainContainer, so that when series is hovered,
-        // the state would be passed down to the strokes which are in mainContainer.
-        series.set("setStateOnChildren", true);
-        series.states.create("hover", {});
-
-        series.mainContainer.set("setStateOnChildren", true);
-        series.mainContainer.states.create("hover", {});
-
-        series.strokes.template.states.create("hover", {
-          strokeWidth: 4
-        });
+        // Load data
         am5.net.load("./data/spells_book2.json").then(function(result) {
           series.data.setAll(am5.JSONParser.parse(result.response));
         }).catch(function(result) {
@@ -140,6 +121,8 @@ export default {
         //series.data.setAll(data2);
         series.appear(1000);
       }
+
+      // Create series
       const spells = new Set();
       am5.net.load("./data/spells_book2.json").then(function(result) {
         am5.JSONParser.parse(result.response).forEach(function(k){
@@ -147,27 +130,14 @@ export default {
           keys.forEach(k => spells.add(k))
         });
         spells.delete("book")
-
         spells.forEach(function(item){
-          //console.log(item);
           createSeries(item.toString(), item.toString());
         });
       }).catch(function(result) {
-        // This gets executed if there was an error loading URL
-        // ... handle error
         console.log("Error loading " + result.xhr.responseURL);
       })
 
-      // createSeries("Stunning Spell", "Stunning Spell");
-      // createSeries("Killing Curse", "Killing Curse");
-
-      // Add scrollbar
-      // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
-      chart.set("scrollbarX", am5.Scrollbar.new(root, {
-        orientation: "horizontal",
-        marginBottom: 20,
-      }));
-
+      // Setup legend
       var legend = chart.children.push(
         am5.Legend.new(root, {
           centerX: am5.p50,
@@ -176,41 +146,24 @@ export default {
         }),
       );
 
-      // Make series change state when legend item is hovered
-      legend.itemContainers.template.states.create("hover", {});
-
-      legend.itemContainers.template.events.on("pointerover", function(e) {
-        e.target.dataItem.dataContext.hover();
-      });
-      legend.itemContainers.template.events.on("pointerout", function(e) {
-        e.target.dataItem.dataContext.unhover();
-      });
-
-      legend.itemContainers.template.events.on("pointerout", function(e) {
-        e.target.dataItem.dataContext.unhover();
-      });
-
       legend.data.setAll(chart.series.values);
 
       // Make stuff animate on load
-      // https://www.amcharts.com/docs/v5/concepts/animations/
       chart.appear(1000, 100);
     });
   }
 }
-
 </script>
 
 
 <style scoped>
 #spells_graph {
-  width: 65%;
+  width: 68%;
   height: 700px;
   margin-left: 30%;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.7);
   margin-right: 50px;
   border-radius: 10px;
-  padding-left: 50px;
 }
 
 #spelltextbox {

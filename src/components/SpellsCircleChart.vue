@@ -3,8 +3,8 @@
   <div id="spelltextbox">
     <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Bubble Chart</h1>
     In this bubble chart, you see the popularity of each spells that appear in all Harry Potter's books.
-    The first bubble are the tye of spell, bigger are the number of different spell of this type, the bigger is the
-    bubble. By clicking on them, you could see every different spells of this particular type and the bigger they are
+    <br><br>The first bubbles are the types of spell, bigger are the number of different spells of this type, the bigger is the
+    bubble. By clicking on them, you can see every different spells of this particular type and the bigger they are
     , the more they are used in the book.
   </div>
 </template>
@@ -19,18 +19,20 @@ export default {
   name: 'SpellsCircleChart',
   mounted(){
     am5.ready(function() {
-
+      // Create root
       var root = am5.Root.new("spells_circle_chart");
       root.setThemes([
         am5themes_Animated.new(root)
       ]);
 
+      // Create container
       var container = root.container.children.push(am5.Container.new(root, {
         width: am5.percent(100),
         height: am5.percent(100),
         layout: root.verticalLayout,
       }));
 
+      // Create series
       var series = container.children.push(am5hierarchy.Pack.new(root, {
         singleBranchOnly: false,
         downDepth: 1,
@@ -40,6 +42,7 @@ export default {
         childDataField: "children",
       }));
 
+      // Set series colors
       series.get("colors").set("colors", [
         am5.color(0x106080),
         am5.color(0x095256),
@@ -54,32 +57,27 @@ export default {
         am5.color(0xbb9f06)
       ]);
 
-      // series.set("heatRules", [{
-      //   target: series.circles.template,
-      //   dataField: "value",
-      //   min: am5.color(0xFFCCCC),
-      //   max: am5.color(0xFF0000),
-      //   key: "fill",
-      //     minValue: 10,
-      //     maxValue: 100,
-      // }]);
-
+      // Load data
       am5.net.load("./data/spells.json").then(function(result) {
         series.data.setAll(am5.JSONParser.parse(result.response));
       }).catch(function(result) {
         console.log("Error loading " + result.xhr.responseURL);
       })
 
+      // Set selected
       series.set("selectedDataItem", series.dataItems[0]);
+
+      // Set nodes tooltip
       series.nodes.template.set("tooltipText", "{name}");
 
-      
+      // Set circle sprites parameters
       series.circles.template.setAll({
         fillOpacity: 1,
         strokeWidth: 1,
         strokeOpacity: 1,
       });
       
+      // Set labels parameters
       series.labels.template.setAll({
         fontSize: 15,
         fill: am5.color(0xFFFFFF),
@@ -97,7 +95,7 @@ export default {
   width: 68%;
   height: 1100px;
   margin-left: 50px;
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.7);
   border-radius: 10px;
   z-index: -1;
 }
@@ -133,6 +131,6 @@ h1 {
 h2 {
   font-family: 'Fantasy';
   font-size: 35px;
-  background-color: rgb(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0, 0.7);
 }
 </style>

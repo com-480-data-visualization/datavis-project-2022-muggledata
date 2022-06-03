@@ -103,7 +103,7 @@ def book_specification(book):
     reduce_words_book = pd.DataFrame(reduce_words_book, columns=['Words', 'Count'])
     #reduce_words_book = words_book[~words_book['Words'].isin(all_words[:100]['Words'])]
     print(reduce_words_book[:20])
-    with open("../Dataset/Books/1_gram/1_gram_words_specific_book"+book+'.json', 'w') as f:
+    with open("./public/data/1_gram/1_gram_words_specific_book"+book+'.json', 'w') as f:
         json.dump(reduce_words_book[:50].to_json(orient='records'), f)
         
 #n_gram_words()
