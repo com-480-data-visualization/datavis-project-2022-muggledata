@@ -81,8 +81,8 @@ export default {
         am5xy.ValueAxis.new(root, {
           maxPrecision: 0,
           renderer: yRenderer,
-          min: -1,
-          max: 101,
+          min: -51,
+          max: 51,
           strictMinMax: true,
         })
       );

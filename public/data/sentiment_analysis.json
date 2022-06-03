@@ -1,385 +1,385 @@
 [
     {
-        "book": "Book1",
+        "book": "Book 1",
         "data": [
             {
-                "part": "Part0",
-                "count": 70,
-                "description": "Test"
-            },
-            {
-                "part": "Part1",
-                "count": 0,
-                "description": "Test2"
-            },
-            {
-                "part": "Part2",
-                "count": 100,
-                "description": null
-            },
-            {
-                "part": "Part3",
-                "count": 87,
-                "description": null
-            },
-            {
-                "part": "Part4",
-                "count": 61,
-                "description": null
-            },
-            {
-                "part": "Part5",
-                "count": 42,
-                "description": null
-            },
-            {
-                "part": "Part6",
-                "count": 90,
-                "description": null
-            },
-            {
-                "part": "Part7",
-                "count": 55,
-                "description": null
-            },
-            {
-                "part": "Part8",
-                "count": 19,
-                "description": null
-            },
-            {
-                "part": "Part9",
-                "count": 66,
-                "description": null
-            }
-        ]
-    },
-    {
-        "book": "Book2",
-        "data": [
-            {
-                "part": "Part0",
-                "count": 70,
-                "description": null
-            },
-            {
-                "part": "Part1",
-                "count": 70,
-                "description": null
-            },
-            {
-                "part": "Part2",
-                "count": 43,
-                "description": null
-            },
-            {
-                "part": "Part3",
-                "count": 100,
-                "description": null
-            },
-            {
-                "part": "Part4",
-                "count": 53,
-                "description": null
-            },
-            {
-                "part": "Part5",
-                "count": 0,
-                "description": null
-            },
-            {
-                "part": "Part6",
-                "count": 43,
-                "description": null
-            },
-            {
-                "part": "Part7",
-                "count": 30,
-                "description": null
-            },
-            {
-                "part": "Part8",
-                "count": 17,
-                "description": null
-            },
-            {
-                "part": "Part9",
-                "count": 99,
-                "description": null
-            }
-        ]
-    },
-    {
-        "book": "Book3",
-        "data": [
-            {
-                "part": "Part0",
-                "count": 49,
-                "description": null
-            },
-            {
-                "part": "Part1",
-                "count": 66,
-                "description": null
-            },
-            {
-                "part": "Part2",
-                "count": 100,
-                "description": null
-            },
-            {
-                "part": "Part3",
-                "count": 43,
-                "description": null
-            },
-            {
-                "part": "Part4",
-                "count": 25,
-                "description": null
-            },
-            {
-                "part": "Part5",
-                "count": 88,
-                "description": null
-            },
-            {
-                "part": "Part6",
-                "count": 89,
-                "description": null
-            },
-            {
-                "part": "Part7",
-                "count": 45,
-                "description": null
-            },
-            {
-                "part": "Part8",
-                "count": 0,
-                "description": null
-            },
-            {
-                "part": "Part9",
-                "count": 92,
-                "description": null
-            }
-        ]
-    },
-    {
-        "book": "Book4",
-        "data": [
-            {
-                "part": "Part0",
-                "count": 12,
-                "description": null
-            },
-            {
-                "part": "Part1",
-                "count": 48,
-                "description": null
-            },
-            {
-                "part": "Part2",
-                "count": 26,
-                "description": null
-            },
-            {
-                "part": "Part3",
-                "count": 100,
-                "description": null
-            },
-            {
-                "part": "Part4",
-                "count": 72,
-                "description": null
-            },
-            {
-                "part": "Part5",
-                "count": 81,
-                "description": null
-            },
-            {
-                "part": "Part6",
-                "count": 50,
-                "description": null
-            },
-            {
-                "part": "Part7",
-                "count": 0,
-                "description": null
-            },
-            {
-                "part": "Part8",
-                "count": 28,
-                "description": null
-            },
-            {
-                "part": "Part9",
-                "count": 99,
-                "description": null
-            }
-        ]
-    },
-    {
-        "book": "Book5",
-        "data": [
-            {
-                "part": "Part0",
-                "count": 0,
-                "description": null
-            },
-            {
-                "part": "Part1",
-                "count": 100,
-                "description": null
-            },
-            {
-                "part": "Part2",
-                "count": 84,
-                "description": null
-            },
-            {
-                "part": "Part3",
-                "count": 100,
-                "description": null
-            },
-            {
-                "part": "Part4",
-                "count": 66,
-                "description": null
-            },
-            {
-                "part": "Part5",
-                "count": 53,
-                "description": null
-            },
-            {
-                "part": "Part6",
-                "count": 68,
-                "description": null
-            },
-            {
-                "part": "Part7",
-                "count": 98,
-                "description": null
-            },
-            {
-                "part": "Part8",
-                "count": 68,
-                "description": null
-            },
-            {
-                "part": "Part9",
-                "count": 79,
-                "description": null
-            }
-        ]
-    },
-    {
-        "book": "Book6",
-        "data": [
-            {
-                "part": "Part0",
-                "count": 43,
-                "description": null
-            },
-            {
-                "part": "Part1",
-                "count": 80,
-                "description": null
-            },
-            {
-                "part": "Part2",
-                "count": 90,
-                "description": null
-            },
-            {
-                "part": "Part3",
-                "count": 28,
-                "description": null
-            },
-            {
-                "part": "Part4",
-                "count": 97,
-                "description": null
-            },
-            {
-                "part": "Part5",
-                "count": 82,
-                "description": null
-            },
-            {
-                "part": "Part6",
-                "count": 79,
-                "description": null
-            },
-            {
-                "part": "Part7",
-                "count": 100,
-                "description": null
-            },
-            {
-                "part": "Part8",
-                "count": 55,
-                "description": null
-            },
-            {
-                "part": "Part9",
-                "count": 0,
-                "description": null
-            }
-        ]
-    },
-    {
-        "book": "Book7",
-        "data": [
-            {
-                "part": "Part0",
-                "count": 58,
-                "description": null
-            },
-            {
-                "part": "Part1",
-                "count": 89,
-                "description": null
-            },
-            {
-                "part": "Part2",
-                "count": 52,
-                "description": null
-            },
-            {
-                "part": "Part3",
-                "count": 31,
-                "description": null
-            },
-            {
-                "part": "Part4",
+                "part": "Part 0",
                 "count": 20,
                 "description": null
             },
             {
-                "part": "Part5",
-                "count": 44,
+                "part": "Part 1",
+                "count": -50,
                 "description": null
             },
             {
-                "part": "Part6",
-                "count": 21,
+                "part": "Part 2",
+                "count": 50,
                 "description": null
             },
             {
-                "part": "Part7",
-                "count": 32,
+                "part": "Part 3",
+                "count": 37,
                 "description": null
             },
             {
-                "part": "Part8",
+                "part": "Part 4",
+                "count": 11,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": -8,
+                "description": null
+            },
+            {
+                "part": "Part 6",
+                "count": 40,
+                "description": null
+            },
+            {
+                "part": "Part 7",
+                "count": 5,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": -31,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": 16,
+                "description": null
+            }
+        ]
+    },
+    {
+        "book": "Book 2",
+        "data": [
+            {
+                "part": "Part 0",
+                "count": 20,
+                "description": null
+            },
+            {
+                "part": "Part 1",
+                "count": 20,
+                "description": null
+            },
+            {
+                "part": "Part 2",
+                "count": -7,
+                "description": null
+            },
+            {
+                "part": "Part 3",
+                "count": 50,
+                "description": null
+            },
+            {
+                "part": "Part 4",
+                "count": 3,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": -50,
+                "description": null
+            },
+            {
+                "part": "Part 6",
+                "count": -7,
+                "description": null
+            },
+            {
+                "part": "Part 7",
+                "count": -20,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": -33,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": 49,
+                "description": null
+            }
+        ]
+    },
+    {
+        "book": "Book 3",
+        "data": [
+            {
+                "part": "Part 0",
+                "count": -1,
+                "description": null
+            },
+            {
+                "part": "Part 1",
+                "count": 16,
+                "description": null
+            },
+            {
+                "part": "Part 2",
+                "count": 50,
+                "description": null
+            },
+            {
+                "part": "Part 3",
+                "count": -7,
+                "description": null
+            },
+            {
+                "part": "Part 4",
+                "count": -25,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": 38,
+                "description": null
+            },
+            {
+                "part": "Part 6",
+                "count": 39,
+                "description": null
+            },
+            {
+                "part": "Part 7",
+                "count": -5,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": -50,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": 42,
+                "description": null
+            }
+        ]
+    },
+    {
+        "book": "Book 4",
+        "data": [
+            {
+                "part": "Part 0",
+                "count": -38,
+                "description": null
+            },
+            {
+                "part": "Part 1",
+                "count": -2,
+                "description": null
+            },
+            {
+                "part": "Part 2",
+                "count": -24,
+                "description": null
+            },
+            {
+                "part": "Part 3",
+                "count": 50,
+                "description": null
+            },
+            {
+                "part": "Part 4",
+                "count": 22,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": 31,
+                "description": null
+            },
+            {
+                "part": "Part 6",
                 "count": 0,
                 "description": null
             },
             {
-                "part": "Part9",
-                "count": 100,
+                "part": "Part 7",
+                "count": -50,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": -22,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": 49,
+                "description": null
+            }
+        ]
+    },
+    {
+        "book": "Book 5",
+        "data": [
+            {
+                "part": "Part 0",
+                "count": -50,
+                "description": null
+            },
+            {
+                "part": "Part 1",
+                "count": 50,
+                "description": null
+            },
+            {
+                "part": "Part 2",
+                "count": 34,
+                "description": null
+            },
+            {
+                "part": "Part 3",
+                "count": 50,
+                "description": null
+            },
+            {
+                "part": "Part 4",
+                "count": 16,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": 3,
+                "description": null
+            },
+            {
+                "part": "Part 6",
+                "count": 18,
+                "description": null
+            },
+            {
+                "part": "Part 7",
+                "count": 48,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": 18,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": 29,
+                "description": null
+            }
+        ]
+    },
+    {
+        "book": "Book 6",
+        "data": [
+            {
+                "part": "Part 0",
+                "count": -7,
+                "description": null
+            },
+            {
+                "part": "Part 1",
+                "count": 30,
+                "description": null
+            },
+            {
+                "part": "Part 2",
+                "count": 40,
+                "description": null
+            },
+            {
+                "part": "Part 3",
+                "count": -22,
+                "description": null
+            },
+            {
+                "part": "Part 4",
+                "count": 47,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": 32,
+                "description": null
+            },
+            {
+                "part": "Part 6",
+                "count": 29,
+                "description": null
+            },
+            {
+                "part": "Part 7",
+                "count": 50,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": 5,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": -50,
+                "description": null
+            }
+        ]
+    },
+    {
+        "book": "Book 7",
+        "data": [
+            {
+                "part": "Part 0",
+                "count": 8,
+                "description": null
+            },
+            {
+                "part": "Part 1",
+                "count": 39,
+                "description": null
+            },
+            {
+                "part": "Part 2",
+                "count": 2,
+                "description": null
+            },
+            {
+                "part": "Part 3",
+                "count": -19,
+                "description": null
+            },
+            {
+                "part": "Part 4",
+                "count": -30,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": -6,
+                "description": null
+            },
+            {
+                "part": "Part 6",
+                "count": -29,
+                "description": null
+            },
+            {
+                "part": "Part 7",
+                "count": -18,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": -50,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": 50,
                 "description": null
             }
         ]
