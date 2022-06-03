@@ -146,6 +146,10 @@ export default {
         });
       }
 
+      chart.set("cursor", am5xy.XYCursor.new(root, {
+        behavior: "none",
+      }));
+
       // Load data
       am5.net.load("./data/sentiment_analysis.json").then(function(result) {
         am5.JSONParser.parse(result.response).forEach(function(item){
