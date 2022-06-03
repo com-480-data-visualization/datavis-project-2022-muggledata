@@ -146,6 +146,7 @@ export default {
         });
       }
 
+      // Set cursor
       chart.set("cursor", am5xy.XYCursor.new(root, {
         behavior: "none",
       }));
