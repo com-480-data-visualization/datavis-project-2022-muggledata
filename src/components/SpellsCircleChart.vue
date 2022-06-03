@@ -97,7 +97,6 @@ export default {
   margin-left: 50px;
   background-color: rgb(0, 0, 0, 0.7);
   border-radius: 10px;
-  z-index: -1;
 }
 
 #spelltextbox {
