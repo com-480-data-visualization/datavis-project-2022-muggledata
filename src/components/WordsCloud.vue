@@ -35,7 +35,8 @@
   <div id="spelltextbox">
     <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> WordCloud</h1>
     Here we intended to reproduce a certain ambiance in each book. We wanted to kind of summarize each book in a simple
-    word cloud.
+    word cloud. It display the most specific word of each book. The button on the left allows you to choose which book you want to display. And on the right, you can 
+    choose how many consecutive words you want. 
   </div>
   
 </template>
@@ -373,19 +374,6 @@ export default {
         tooltipText: "'{category}' appear {value} time in the book",
         tooltipPosition: "pointer"
       });
-
-
-      // Add click event on words
-      // https://www.amcharts.com/docs/v5/charts/word-cloud/#Events
-      series.labels.template.events.on("click", function(ev) {
-        const category = ev.target.dataItem.get("category");
-        window.open("https://fr.wikipedia.org/wiki/" + encodeURIComponent(category));
-      });
-      // series.labels.template.events.on("hover", function(ev) {
-      //   const value = ev.target.dataItem.get("value");
-      //   window;
-      // });
-
       }); // end am5.ready()
     }
   }
