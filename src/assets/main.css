@@ -20,6 +20,14 @@
     src: local('Harry Potter'), url('./fonts/HARRP___.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Fantasy';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fantasy'), url('./fonts/PAPYRUS.woff') format('woff');
+}
+
+
 html, body, figure {
 	width: 100%;
 	padding: 0;
