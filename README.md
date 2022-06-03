@@ -6,9 +6,9 @@
 | David Desboeufs   | 287441 |david.desboeufs@epfl.ch|
 | Jérémie Frei      | 247316 |jeremie.frei@epfl.ch|
 
-**[Website](#https://com-480-data-visualization.github.io/datavis-project-2022-muggledata/index.html)**
+[Website](#https://com-480-data-visualization.github.io/datavis-project-2022-muggledata/index.html)
 
-[Milestone 1](#milestone-1-friday-8th-april-5pm) • [Milestone 2](#milestone-2-friday-6th-may-5pm) • [Milestone 3]
+[Milestone 1](#milestone-1-friday-8th-april-5pm) • [Milestone 2](#milestone-2-friday-6th-may-5pm) • [Milestone 3](#milestone-3-friday-3rd-june-5pm)
 
 # Milestone 1 (Friday 8th April, 5pm)
 
@@ -101,6 +101,7 @@ Here we want to display the amount of word occurrence in books. In our sketch, o
 
 * **d3.js**: For our third visualization, we will use the d3 library for a tag cloud visualization based on the lecture *Text Viz* (2 May - 8 May). *Post scriptum*: we found out that amCharts will be easier to use for the last task.
 
+# Milestone 3 (Friday 3rd June, 5pm)
 
 
 
