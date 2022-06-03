@@ -6,7 +6,7 @@
 | David Desboeufs   | 287441 |david.desboeufs@epfl.ch|
 | Jérémie Frei      | 247316 |jeremie.frei@epfl.ch|
 
-**[Website](#https://com-480-data-visualization.github.io/datavis-project-2022-muggledata/public/index.html)**
+**[Website](#https://com-480-data-visualization.github.io/datavis-project-2022-muggledata/)**
 
 [Milestone 1](#milestone-1-friday-8th-april-5pm) • [Milestone 2](#milestone-2-friday-6th-may-5pm) • [Milestone 3](#milestone-3-friday-3rd-june-5pm)
 
