@@ -15,7 +15,7 @@
             {
                 "part": "Part 3",
                 "count": 50,
-                "description": null
+                "description": "Welcome to Hogwarts"
             },
             {
                 "part": "Part 4",
@@ -45,12 +45,12 @@
             {
                 "part": "Part 9",
                 "count": -31,
-                "description": null
+                "description": "Battle for the Philosophers stone"
             },
             {
                 "part": "Part 10",
                 "count": 16,
-                "description": null
+                "description": "Gryffindor wins the house cup"
             }
         ]
     },
@@ -60,17 +60,17 @@
             {
                 "part": "Part 1",
                 "count": 20,
-                "description": null
+                "description": "aunt Marge"
             },
             {
                 "part": "Part 2",
                 "count": 20,
-                "description": null
+                "description": "Magic bus"
             },
             {
                 "part": "Part 3",
                 "count": -7,
-                "description": null
+                "description": "Lockhart's first lesson"
             },
             {
                 "part": "Part 4",
@@ -80,12 +80,12 @@
             {
                 "part": "Part 5",
                 "count": 3,
-                "description": null
+                "description": "The chamber of secret has been open"
             },
             {
                 "part": "Part 6",
                 "count": -50,
-                "description": null
+                "description": "Polyjuice potion"
             },
             {
                 "part": "Part 7",
@@ -100,7 +100,7 @@
             {
                 "part": "Part 9",
                 "count": -33,
-                "description": null
+                "description": "Basilic battle"
             },
             {
                 "part": "Part 10",
@@ -115,7 +115,7 @@
             {
                 "part": "Part 1",
                 "count": -1,
-                "description": null
+                "description": "Sirius Black escaped"
             },
             {
                 "part": "Part 2",
@@ -135,7 +135,7 @@
             {
                 "part": "Part 5",
                 "count": -25,
-                "description": null
+                "description": "Patronus training"
             },
             {
                 "part": "Part 6",
@@ -145,7 +145,7 @@
             {
                 "part": "Part 7",
                 "count": 39,
-                "description": null
+                "description": "Quiditch final"
             },
             {
                 "part": "Part 8",
@@ -155,7 +155,7 @@
             {
                 "part": "Part 9",
                 "count": -50,
-                "description": null
+                "description": "Werewolf's battle"
             },
             {
                 "part": "Part 10",
@@ -170,17 +170,17 @@
             {
                 "part": "Part 1",
                 "count": -38,
-                "description": null
+                "description": "The Riddle's house"
             },
             {
                 "part": "Part 2",
                 "count": -2,
-                "description": null
+                "description": "The Quidditch World Cup"
             },
             {
                 "part": "Part 3",
                 "count": -24,
-                "description": null
+                "description": "The dark mark"
             },
             {
                 "part": "Part 4",
@@ -190,7 +190,7 @@
             {
                 "part": "Part 5",
                 "count": 22,
-                "description": null
+                "description": "The first task"
             },
             {
                 "part": "Part 6",
@@ -205,12 +205,12 @@
             {
                 "part": "Part 8",
                 "count": -50,
-                "description": null
+                "description": "Voldemort resurrect"
             },
             {
                 "part": "Part 9",
                 "count": -22,
-                "description": null
+                "description": "Cedric death"
             },
             {
                 "part": "Part 10",
@@ -225,7 +225,7 @@
             {
                 "part": "Part 1",
                 "count": -50,
-                "description": null
+                "description": "The Hearing"
             },
             {
                 "part": "Part 2",
@@ -235,12 +235,12 @@
             {
                 "part": "Part 3",
                 "count": 34,
-                "description": null
+                "description": "Professor Umbridge"
             },
             {
                 "part": "Part 4",
                 "count": 50,
-                "description": null
+                "description": "Dumbeldor's army"
             },
             {
                 "part": "Part 5",
@@ -250,7 +250,7 @@
             {
                 "part": "Part 6",
                 "count": 3,
-                "description": null
+                "description": "Occlumency lessons"
             },
             {
                 "part": "Part 7",
@@ -265,7 +265,7 @@
             {
                 "part": "Part 9",
                 "count": 18,
-                "description": null
+                "description": "The Department of Mysteries"
             },
             {
                 "part": "Part 10",
@@ -280,7 +280,7 @@
             {
                 "part": "Part 1",
                 "count": -7,
-                "description": null
+                "description": "Horace Slughorn"
             },
             {
                 "part": "Part 2",
@@ -295,7 +295,7 @@
             {
                 "part": "Part 4",
                 "count": -22,
-                "description": null
+                "description": "The cursed neckless"
             },
             {
                 "part": "Part 5",
@@ -310,7 +310,7 @@
             {
                 "part": "Part 7",
                 "count": 29,
-                "description": null
+                "description": "Horace Slughorn's memory"
             },
             {
                 "part": "Part 8",
@@ -320,12 +320,12 @@
             {
                 "part": "Part 9",
                 "count": 5,
-                "description": null
+                "description": "Finding the locket Horcruxes"
             },
             {
                 "part": "Part 10",
                 "count": -50,
-                "description": null
+                "description": "Dumbeldor's death"
             }
         ]
     },
@@ -335,12 +335,12 @@
             {
                 "part": "Part 1",
                 "count": 8,
-                "description": null
+                "description": "The Dark Lord Ascending"
             },
             {
                 "part": "Part 2",
                 "count": 39,
-                "description": null
+                "description": "The Wedding"
             },
             {
                 "part": "Part 3",
@@ -355,7 +355,7 @@
             {
                 "part": "Part 5",
                 "count": -30,
-                "description": null
+                "description": "Godric's Hollow"
             },
             {
                 "part": "Part 6",
@@ -375,12 +375,12 @@
             {
                 "part": "Part 9",
                 "count": -50,
-                "description": null
+                "description": "The Battle of Hogwarts"
             },
             {
                 "part": "Part 10",
                 "count": 50,
-                "description": null
+                "description": "Harry's family"
             }
         ]
     }

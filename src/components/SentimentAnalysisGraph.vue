@@ -4,7 +4,7 @@
     <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Sentiment Analysis</h1>
     We performed a sentiment analysis of each book to easily grasp the evolution of the script.  <br><br>
     The legend allows to select each book separately and show the evolution of sentiment (higher the happiest) along the parts of the book. 
-     <br><br>Try hovering some bullets to get an insight of what happens in the book !
+     <br><br>[Spoiler Alert]<br>Try hovering some bullets to get an insight of what happens in the book !
     <br>
   </div>
 </template>
@@ -118,12 +118,15 @@ export default {
             visible: visible,
           })
         );
+        series.strokes.template.setAll({
+          strokeWidth: 4,
+        })
 
         // Add bullets
         series.bullets.push(function() {
           return am5.Bullet.new(root, {
             sprite: am5.Circle.new(root, {
-              radius: 5,
+              radius: 7,
               fill: series.get("fill"),
             })
           });
@@ -158,7 +161,7 @@ export default {
       }));
 
       // Load data
-      am5.net.load("./data/sentiment_analysis.json").then(function(result) {
+      am5.net.load("./data/sentiment_analysis_with_descriptions.json").then(function(result) {
         am5.JSONParser.parse(result.response).forEach(function(item){
           if(item["book"] == "Book 1"){
             console.log("AAAAAAAAAA")
