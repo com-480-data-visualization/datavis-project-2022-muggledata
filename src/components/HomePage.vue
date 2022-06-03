@@ -5,7 +5,7 @@
       beggining of the 21's century.It is a series of seven novels that 
       chronicle the life a Harry Potter, a young wizard and his friends
       Hermione Granger and Ron Weasly that learn magic in the famous 
-      <p>School of Witchcraft and Wizardy Hogwarts</p>. In this website, 
+      School of Witchcraft and Wizardy <p>Hogwarts</p>. In this website, 
       you will explore one fantasy part of this universe : the spells.
       What are the most common spell and their evolution during the 
       history. Also, you will found some visualisation that intend to 
@@ -20,7 +20,6 @@ export default {
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #introduction {
   width: 60%;
@@ -30,9 +29,10 @@ export default {
   text-align: justify;
   font-family: 'Fantasy';
   font-size: 22px;
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.7);
   border-radius: 10px;
 }
+
 p {
   font-family: 'Harry Potter', sans-serif;
   font-size: smaller;

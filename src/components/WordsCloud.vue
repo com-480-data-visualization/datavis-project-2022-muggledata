@@ -41,6 +41,99 @@
   
 </template>
 
+<!-- Chart code -->
+<script>
+import * as am5 from "@amcharts/amcharts5";
+import * as am5wc from "@amcharts/amcharts5/wc";
+
+export default {
+  name: 'WordsCloud',
+  mounted(){
+    am5.ready(function() {
+      // Create root element
+      var root = am5.Root.new("chartdiv");
+
+      // Create container
+      var container_cloud = root.container.children.push(am5.Container.new(root, {
+        width: am5.percent(80),
+        height: am5.percent(100),
+        layout: root.verticalLayout
+      }));
+
+      var switchState = 1;
+      const switchStates = [1, 2, 3, 4]
+
+      // add listener on each option
+      switchStates.forEach(x => {
+        document.getElementById("radio1"+x.toString()).addEventListener('change', function () {
+            switchState = x;
+            am5.net.load("./data/"+switchState.toString()+"_gram/"+switchState.toString()+"_gram_words_specific_book" + (book_state + 1) + ".json").then(function(result) {
+              series.data.setAll(am5.JSONParser.parse(result.response));
+            }).catch(function(result) {
+              // This gets executed if there was an error loading URL
+              // ... handle error
+              console.log("Error loading " + result.xhr.responseURL);
+            })
+          })
+      })
+      
+      // Load data
+      var book_state = 0
+      for (let book_id = 0; book_id < 7; book_id++) {
+        document.getElementById("option-"+book_id.toString()).addEventListener('change', function () {
+            book_state = book_id;
+            am5.net.load("./data/"+switchState.toString()+"_gram/"+switchState.toString()+"_gram_words_specific_book" + (book_state + 1) + ".json").then(function(result) {
+              series.data.setAll(am5.JSONParser.parse(result.response));
+            }).catch(function(result) {
+              console.log("Error loading " + result.xhr.responseURL);
+            })
+          })
+      }
+
+      // Add series
+      var series = container_cloud.children.push(am5wc.WordCloud.new(root, {
+        categoryField: "Words",
+        valueField: "Count",
+        calculateAggregates: true, // this is needed for heat rules to work
+        legendLabelText: "legends",
+        minFontSize: 15,
+        maxFontSize: 50 - 3 * switchState,
+        angles: 0,
+        randomness: 0.1
+      }));
+
+      // Set series data
+      am5.net.load("./data/1_gram/1_gram_words_specific_book1.json").then(function(result) {
+            series.data.setAll(am5.JSONParser.parse(result.response));
+      }).catch(function(result) {
+        console.log("Error loading " + result.xhr.responseURL);
+      });
+
+      // Set up heat rules
+      series.set("heatRules", [{
+        target: series.labels.template,
+        dataField: "value",
+        min: am5.color(0xFFCCCC),
+        max: am5.color(0xFF0000),
+        key: "fill"
+      }]);
+
+      // Configure labels
+      series.labels.template.setAll({
+        paddingTop: 5,
+        paddingBottom: 5,
+        paddingLeft: 5,
+        paddingRight: 5,
+        fontFamily: "Courier New",
+        cursorOverStyle: "pointer",
+        tooltipText: "'{category}' appears {value} time in the book",
+        tooltipPosition: "pointer"
+      });
+      }); 
+    }
+  }
+</script>
+
 <!-- Styles -->
 <style scoped>
 #chartdiv {
@@ -232,150 +325,4 @@ h1 {
   font-size: xx-large;
   font-family: 'Harry Potter', sans-serif;
 }
-
 </style>
-
-<!-- Resources -->
-<!-- <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/wc.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script> -->
-
-<!-- Chart code -->
-<script>
-import * as am5 from "@amcharts/amcharts5";
-// import * as am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import * as am5wc from "@amcharts/amcharts5/wc";
-
-export default {
-  name: 'WordsCloud',
-  mounted(){
-    //import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
-    am5.ready(function() {
-
-      // Create root element
-      // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-      var root = am5.Root.new("chartdiv");
-
-
-      // Set themes
-      // https://www.amcharts.com/docs/v5/concepts/themes/
-      // root.setThemes([
-      //   am5themes_Animated.new(root)
-      // ]);
-
-      var container_cloud = root.container.children.push(am5.Container.new(root, {
-        width: am5.percent(80),
-        height: am5.percent(100),
-        layout: root.verticalLayout
-      }));
-
-
-      // Add chart title
-      // var title = container.children.push(am5.Label.new(root, {
-      //   text: "Most popular languages on StackOverflow",
-      //   fontSize: 20,
-      //   x: am5.percent(50),
-      //   centerX: am5.percent(50)
-      // }));
-
-
-      /**
-       * TODO 
-       * 
-       */
-      // let slider = container_cloud.children.push(am5.Slider.new(root, {
-      //   orientation: "horizontal",
-      //   start: 0,
-      //   width: am5.percent(20),
-      //   centerY: am5.p50,
-      //   centerX: am5.p50,
-      //   x: am5.percent(15),
-      // }))
-
-      // slider.events.on("rangechanged", function() {
-      //   var sliderPosition = slider.get("start");
-      //   console.log(sliderPosition)
-      // })
-      var switchState = 1;
-      const switchStates = [1, 2, 3, 4]
-
-      // add listener on each option
-      switchStates.forEach(x => {
-        document.getElementById("radio1"+x.toString()).addEventListener('change', function () {
-            switchState = x;
-            am5.net.load("./data/"+switchState.toString()+"_gram/"+switchState.toString()+"_gram_words_specific_book" + (book_state + 1) + ".json").then(function(result) {
-              series.data.setAll(am5.JSONParser.parse(result.response));
-            }).catch(function(result) {
-              // This gets executed if there was an error loading URL
-              // ... handle error
-              console.log("Error loading " + result.xhr.responseURL);
-            })
-          })
-      })
-      
-
-      var book_state = 0
-
-      for (let book_id = 0; book_id < 7; book_id++) {
-        document.getElementById("option-"+book_id.toString()).addEventListener('change', function () {
-            book_state = book_id;
-            am5.net.load("./data/"+switchState.toString()+"_gram/"+switchState.toString()+"_gram_words_specific_book" + (book_state + 1) + ".json").then(function(result) {
-              series.data.setAll(am5.JSONParser.parse(result.response));
-            }).catch(function(result) {
-              // This gets executed if there was an error loading URL
-              // ... handle error
-              console.log("Error loading " + result.xhr.responseURL);
-            })
-          })
-      }
-
-      
-      // Add series
-      // https://www.amcharts.com/docs/v5/charts/word-cloud/
-      var series = container_cloud.children.push(am5wc.WordCloud.new(root, {
-        categoryField: "Words",
-        valueField: "Count",
-        calculateAggregates: true, // this is needed for heat rules to work
-        legendLabelText: "legends",
-        minFontSize: 15,
-        maxFontSize: 50 - 3 * switchState,
-        angles: 0,
-        randomness: 0.1
-      }));
-
-      series.animate
-
-      am5.net.load("./data/1_gram/1_gram_words_specific_book1.json").then(function(result) {
-            series.data.setAll(am5.JSONParser.parse(result.response));
-      }).catch(function(result) {
-        // This gets executed if there was an error loading URL
-        // ... handle error
-        console.log("Error loading " + result.xhr.responseURL);
-      });
-
-      // Set up heat rules
-      // https://www.amcharts.com/docs/v5/charts/word-cloud/#Via_heat_rules
-      series.set("heatRules", [{
-        target: series.labels.template,
-        dataField: "value",
-        min: am5.color(0xFFCCCC),
-        max: am5.color(0xFF0000),
-        key: "fill"
-      }]);
-
-
-      // Configure labels
-      series.labels.template.setAll({
-        paddingTop: 5,
-        paddingBottom: 5,
-        paddingLeft: 5,
-        paddingRight: 5,
-        fontFamily: "Courier New",
-        cursorOverStyle: "pointer",
-        tooltipText: "'{category}' appear {value} time in the book",
-        tooltipPosition: "pointer"
-      });
-      }); // end am5.ready()
-    }
-  }
-</script>
