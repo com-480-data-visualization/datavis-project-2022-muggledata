@@ -132,6 +132,10 @@ export default {
         // Set series and legend data
         series.data.setAll(data);
         legend.data.push(series);
+
+        if(!visible){
+          series.hide()
+        }
         
         // Define visible function callback
         series.on("visible", function(visible, target) {
