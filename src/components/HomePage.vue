@@ -29,7 +29,8 @@ export default {
   padding: 50px;
   color: var(--light_silver);
   text-align: justify;
-  font-family: fantasy;
+  font-family: 'Fantasy';
+  font-size: 22px;
   background-color: rgb(0, 0, 0, 0.6);
   border-radius: 10px;
 }

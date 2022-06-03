@@ -207,6 +207,9 @@ export default {
   margin-left: 50px;
   border-radius: 10px;
   text-align: justify;
+  font-family: 'Fantasy';
+  font-size: 22px;
+  overflow: scroll;
   margin-bottom: 50px;
 }
 </style>

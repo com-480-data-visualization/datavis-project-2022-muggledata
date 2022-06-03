@@ -226,7 +226,8 @@ export default {
   border-radius: 10px;
   text-align: justify;
   margin-bottom: 50px;
-  font-family:fantasy;
+  font-family: 'Fantasy';
+  font-size: 22px;
   overflow: scroll;
 }
 

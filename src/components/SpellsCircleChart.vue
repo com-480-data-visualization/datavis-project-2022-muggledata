@@ -118,7 +118,8 @@ export default {
   border-radius: 10px;
   text-align: justify;
   margin-bottom: 100px;
-  font-family: fantasy;
+  font-family: 'Fantasy';
+  font-size: 22px;
   overflow: scroll;
 }
 p {
@@ -133,8 +134,8 @@ h1 {
 }
 
 h2 {
-  font-size: large;
-  font-family:fantasy;
+  font-family: 'Fantasy';
+  font-size: 35px;
   background-color: rgb(0, 0, 0, 0.8);
 }
 </style>

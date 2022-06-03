@@ -62,7 +62,8 @@
   border-radius: 10px;
   text-align: justify;
   margin-bottom: 100px;
-  font-family: fantasy;
+  font-family: 'Fantasy';
+  font-size: 22px;
   overflow: scroll;
 }
 #gramselector {
@@ -216,8 +217,8 @@ html {
   margin: 20px;
   border-radius: 10px;
   overflow: hidden;
-  font-size: 12px;
-  font-family: fantasy;
+  font-family: 'Fantasy';
+  font-size: 16px;
 }
 
 p {
