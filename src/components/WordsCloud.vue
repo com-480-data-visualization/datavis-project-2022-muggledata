@@ -247,7 +247,6 @@ import * as am5wc from "@amcharts/amcharts5/wc";
 
 export default {
   name: 'WordsCloud',
-  props: {},
   mounted(){
     //import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
     am5.ready(function() {
@@ -338,8 +337,9 @@ export default {
         calculateAggregates: true, // this is needed for heat rules to work
         legendLabelText: "legends",
         minFontSize: 15,
-        maxFontSize: 50 - 5 * switchState,
-        angles: 0
+        maxFontSize: 50 - 3 * switchState,
+        angles: 0,
+        randomness: 0.1
       }));
 
       series.animate

@@ -54,7 +54,7 @@ def getSentimentCounter(allLines):
 
     minimum = min(total_counter)
     maximum = max(total_counter)
-    return [round(100*(c-minimum)/(maximum-minimum)) for c in total_counter]
+    return [round(100*(c-minimum)/(maximum-minimum)) - 50 for c in total_counter]
 
 j = []
 for nb in book_list:
@@ -65,12 +65,12 @@ for nb in book_list:
     counters = getSentimentCounter(allLines)
     print(counters)
     book = {
-        "book": "Book"+nb,
+        "book": "Book "+nb,
         "data": []
     }
     for i in range(len(counters)):
         book["data"].append({
-            "part": "Part"+str(i),
+            "part": "Part "+str(i),
             "count": counters[i],
             "description": None
         })

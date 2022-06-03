@@ -15,7 +15,6 @@ export default {
     SpellsCircleChart,
     SpellsGraph,
   },
-  props: {},
 }
 </script>
 

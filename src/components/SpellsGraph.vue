@@ -16,7 +16,6 @@ import * as am5xy from "@amcharts/amcharts5/xy"
 
 export default {
   name: 'SpellsGraph',
-  props: {},
   mounted(){
     am5.ready(function() {
       // Create root element

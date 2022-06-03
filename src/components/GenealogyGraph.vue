@@ -11,7 +11,6 @@ import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 
 export default {
   name: 'GenealogyGraph',
-  props: {},
   async mounted() {
     am5.ready(function() {
 
