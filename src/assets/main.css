@@ -42,8 +42,11 @@ body {
 	font-family: sans-serif;
 	font-size: 1.1rem;
 	padding-top: 70px;
-	background-image: url("../../public/hogwarts.jpg");
+	background-image: url("../../public/dark_hogwarts.jpg");
 	background-attachment: fixed;
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+	background-position: center
 }
 
 /*
