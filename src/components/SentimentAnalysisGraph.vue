@@ -2,7 +2,9 @@
   <div id="sentiment_analysis_graph"></div>
   <div id="sentiment_analysis_textbox">
     <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Sentiment Analysis</h1>
-    We performed a sentiment analysis of each book to easily grasp the evolution of the script.   <br><br>
+    We performed a sentiment analysis of each book to easily grasp the evolution of the script.  <br><br>
+    The legend allows to select each book separately and show the evolution of sentiment (higher the happiest) along the parts of the book. 
+     <br><br>Try hovering some bullets to get an insight of what happens in the book !
     <br>
   </div>
 </template>
