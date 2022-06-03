@@ -48,11 +48,20 @@ export default {
           pinchZoomX:true
         })
       );
-      chart.get("colors").set("colors", [
-        am5.color(0xffffff),
-        am5.color(0xf00fff),
-        am5.color(0xfff00f),
-      ]);
+      // Add cursor
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+      var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
+        behavior: "none",
+      }));
+      cursor
+      //cursor.selection.set("visible", true)
+      //cursor.lineY.set("visible", false);
+
+      // chart.get("colors").set("colors", [
+      //   am5.color(0xffffff),
+      //   am5.color(0xf00fff),
+      //   am5.color(0xfff00f),
+      // ]);
 
       // Create axes
       var xRenderer = am5xy.AxisRendererX.new(root, {});
@@ -67,7 +76,7 @@ export default {
         am5xy.CategoryAxis.new(root, {
           categoryField: "part",
           renderer: xRenderer,
-          tooltip: am5.Tooltip.new(root, {})
+          //tooltip: am5.Tooltip.new(root, {})
         })
       );
 
@@ -75,7 +84,6 @@ export default {
         let data = am5.JSONParser.parse(result.response)
         xAxis.data.setAll(data[0]["data"]);
       }).catch(function(result) {
-
         console.log("Error loading " + result.xhr.responseURL);
       })
 
@@ -98,7 +106,7 @@ export default {
         am5.Legend.new(root, {
           centerX: am5.p50,
           x: am5.p50,
-          layout: root.horizontalLayout
+          layout: root.horizontalLayout,
         })
       );
 
@@ -111,9 +119,12 @@ export default {
             yAxis: yAxis,
             valueYField: field,
             categoryXField: "part",
+            //categoryYField: "description",
+            valueField : "description",
             tooltip: am5.Tooltip.new(root, {
               pointerOrientation: "horizontal",
-              labelText: "[bold]{name}[/]\n{categoryX}: {valueY}"
+              labelText: "{value}",
+              visible: visible
             }),
             visible: visible
           })
@@ -123,10 +134,18 @@ export default {
           return am5.Bullet.new(root, {
             sprite: am5.Circle.new(root, {
               radius: 5,
-              fill: series.get("fill")
+              fill: series.get("fill"),
             })
           });
         });
+
+        // create hover state for series and for mainContainer, so that when series is hovered,
+        // the state would be passed down to the strokes which are in mainContainer.
+        series.set("setStateOnChildren", visible);
+        series.states.create("hover", {});
+
+        series.mainContainer.set("setStateOnChildren", visible);
+        series.mainContainer.states.create("hover", {});
 
         series.data.setAll(data);
         legend.data.push(series);
@@ -136,10 +155,12 @@ export default {
             chart.series.each(function(series) {
               if (series !== target) {
                 series.set("visible", false);
+                series.get("tooltip").set("visible", false)
               }
             });
           }
         });
+        series.appear(1000)
       }
 
       var first = true;

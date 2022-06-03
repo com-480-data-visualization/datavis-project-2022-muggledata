@@ -42,18 +42,7 @@ export default {
           pinchZoomX:true
         })
       );
-      // chart.get("colors").set("colors", [
-      //   am5.color(0xffffff),
-      //   am5.color(0xfffff0),
-      //   am5.color(0xffff0f),
-      //   am5.color(0xfff0ff),
-      //   am5.color(0xff0fff),
-      //   am5.color(0xf0ffff),
-      //   am5.color(0x0fffff),
-      //   am5.color(0xffff00),
-      //   am5.color(0xff00ff),
-      //   am5.color(0x00ffff),
-      // ]);
+
 
       // Add cursor
       // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/

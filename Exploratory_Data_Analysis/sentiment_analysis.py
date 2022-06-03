@@ -71,7 +71,8 @@ for nb in book_list:
     for i in range(len(counters)):
         book["data"].append({
             "part": "Part"+str(i),
-            "count": counters[i]
+            "count": counters[i],
+            "description": None
         })
     j.append(book)
 
