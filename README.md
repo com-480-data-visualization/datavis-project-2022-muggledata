@@ -105,6 +105,12 @@ Here we want to display the amount of word occurrence in books. In our sketch, o
 
 # Milestone 3 (Friday 3rd June, 5pm)
 
+## Muggle Data Website
+
+Click [here](https://com-480-data-visualization.github.io/datavis-project-2022-muggledata/) to see our project prototype.
+
+## Process Book
 DataViz_Milestone_3.pdf
 
-
+## ScreenCast
+[Video Presentation](https://drive.google.com/file/d/1K9oJwqP2n7q3xZJgooUO4NJtyNswgtfp/view?usp=sharing)
