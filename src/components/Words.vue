@@ -15,7 +15,6 @@ export default {
     WordsCloud,
     SentimentAnalysisGraph,
   },
-  props: {},
 }
 </script>
 

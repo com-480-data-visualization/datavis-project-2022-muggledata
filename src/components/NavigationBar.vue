@@ -9,9 +9,6 @@
 <script>
 export default {
 	name: "NavigationBar",
-	props: {
-		msg: String,
-	},
 };
 </script>
 

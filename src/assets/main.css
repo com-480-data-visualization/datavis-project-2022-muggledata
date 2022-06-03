@@ -19,6 +19,13 @@
     font-weight: 400;
     src: local('Harry Potter'), url('./fonts/HARRP___.woff') format('woff');
 }
+@font-face {
+    font-family: 'custom fantasy';
+	font-style: normal;
+	font-size: x-large;
+    font-weight: 400;
+    src: local('custom fantasy'), url('./fonts/Papyrus.woff') format('woff');
+}
 
 @font-face {
     font-family: 'Fantasy';

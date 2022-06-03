@@ -17,7 +17,6 @@ import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 
 export default {
   name: 'SpellsCircleChart',
-  props: {},
   mounted(){
     am5.ready(function() {
 
@@ -68,8 +67,6 @@ export default {
       am5.net.load("./data/spells.json").then(function(result) {
         series.data.setAll(am5.JSONParser.parse(result.response));
       }).catch(function(result) {
-        // This gets executed if there was an error loading URL
-        // ... handle error
         console.log("Error loading " + result.xhr.responseURL);
       })
 
@@ -81,7 +78,6 @@ export default {
         fillOpacity: 1,
         strokeWidth: 1,
         strokeOpacity: 1,
-        
       });
       
       series.labels.template.setAll({
@@ -122,6 +118,7 @@ export default {
   font-size: 22px;
   overflow: scroll;
 }
+
 p {
   font-family: 'Harry Potter', sans-serif;
   font-size: smaller;
