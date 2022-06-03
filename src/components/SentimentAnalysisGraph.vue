@@ -34,7 +34,7 @@ export default {
       root.setThemes([
         am5themes_Animated.new(root)
       ]);
-      root.interfaceColors.set("grid", am5.color(0xffffff))
+      root.interfaceColors.set("grid", am5.color(0xff0000))
 
       // Create chart
       // https://www.amcharts.com/docs/v5/charts/xy-chart/
@@ -55,7 +55,8 @@ export default {
       xRenderer.labels.template.setAll({
         location: 0.5,
         multiLocation: 0.5,
-        fill: am5.color(0xffffff),
+        fill: am5.color(0xd6d6d7),
+        
       });
 
       var xAxis = chart.xAxes.push(
@@ -78,7 +79,7 @@ export default {
       yRenderer.labels.template.setAll({
         location: 0.5,
         multiLocation: 0.5,
-        fill: am5.color(0xffffff),
+        fill: am5.color(0xd6d6d7),
       });
 
       var yAxis = chart.yAxes.push(
@@ -183,10 +184,12 @@ export default {
 
 <style scoped>
 #sentiment_analysis_graph {
-  width: 68%;
+  width: 67%;
   height: 700px;
-  margin-left: 32%;
+  margin-left: 30%;
   margin-right: 50px;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 
 #sentiment_analysis_textbox {
