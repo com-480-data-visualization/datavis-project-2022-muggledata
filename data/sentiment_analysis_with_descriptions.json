@@ -1,0 +1,387 @@
+[
+    {
+        "book": "Book 1",
+        "data": [
+            {
+                "part": "Part 1",
+                "count": 20,
+                "description": null
+            },
+            {
+                "part": "Part 2",
+                "count": -50,
+                "description": "Harry's closet"
+            },
+            {
+                "part": "Part 3",
+                "count": 50,
+                "description": "Welcome to Hogwarts"
+            },
+            {
+                "part": "Part 4",
+                "count": 37,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": 11,
+                "description": null
+            },
+            {
+                "part": "Part 6",
+                "count": -8,
+                "description": null
+            },
+            {
+                "part": "Part 7",
+                "count": 40,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": 5,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": -31,
+                "description": "Battle for the Philosophers stone"
+            },
+            {
+                "part": "Part 10",
+                "count": 16,
+                "description": "Gryffindor wins the house cup"
+            }
+        ]
+    },
+    {
+        "book": "Book 2",
+        "data": [
+            {
+                "part": "Part 1",
+                "count": 20,
+                "description": "aunt Marge"
+            },
+            {
+                "part": "Part 2",
+                "count": 20,
+                "description": "Magic bus"
+            },
+            {
+                "part": "Part 3",
+                "count": -7,
+                "description": "Lockhart's first lesson"
+            },
+            {
+                "part": "Part 4",
+                "count": 50,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": 3,
+                "description": "The chamber of secret has been open"
+            },
+            {
+                "part": "Part 6",
+                "count": -50,
+                "description": "Polyjuice potion"
+            },
+            {
+                "part": "Part 7",
+                "count": -7,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": -20,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": -33,
+                "description": "Basilic battle"
+            },
+            {
+                "part": "Part 10",
+                "count": 49,
+                "description": null
+            }
+        ]
+    },
+    {
+        "book": "Book 3",
+        "data": [
+            {
+                "part": "Part 1",
+                "count": -1,
+                "description": "Sirius Black escaped"
+            },
+            {
+                "part": "Part 2",
+                "count": 16,
+                "description": null
+            },
+            {
+                "part": "Part 3",
+                "count": 50,
+                "description": null
+            },
+            {
+                "part": "Part 4",
+                "count": -7,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": -25,
+                "description": "Patronus training"
+            },
+            {
+                "part": "Part 6",
+                "count": 38,
+                "description": null
+            },
+            {
+                "part": "Part 7",
+                "count": 39,
+                "description": "Quiditch final"
+            },
+            {
+                "part": "Part 8",
+                "count": -5,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": -50,
+                "description": "Werewolf's battle"
+            },
+            {
+                "part": "Part 10",
+                "count": 42,
+                "description": null
+            }
+        ]
+    },
+    {
+        "book": "Book 4",
+        "data": [
+            {
+                "part": "Part 1",
+                "count": -38,
+                "description": "The Riddle's house"
+            },
+            {
+                "part": "Part 2",
+                "count": -2,
+                "description": "The Quidditch World Cup"
+            },
+            {
+                "part": "Part 3",
+                "count": -24,
+                "description": "The dark mark"
+            },
+            {
+                "part": "Part 4",
+                "count": 50,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": 22,
+                "description": "The first task"
+            },
+            {
+                "part": "Part 6",
+                "count": 31,
+                "description": null
+            },
+            {
+                "part": "Part 7",
+                "count": 0,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": -50,
+                "description": "Voldemort resurrect"
+            },
+            {
+                "part": "Part 9",
+                "count": -22,
+                "description": "Cedric death"
+            },
+            {
+                "part": "Part 10",
+                "count": 49,
+                "description": null
+            }
+        ]
+    },
+    {
+        "book": "Book 5",
+        "data": [
+            {
+                "part": "Part 1",
+                "count": -50,
+                "description": "The Hearing"
+            },
+            {
+                "part": "Part 2",
+                "count": 50,
+                "description": null
+            },
+            {
+                "part": "Part 3",
+                "count": 34,
+                "description": "Professor Umbridge"
+            },
+            {
+                "part": "Part 4",
+                "count": 50,
+                "description": "Dumbeldor's army"
+            },
+            {
+                "part": "Part 5",
+                "count": 16,
+                "description": null
+            },
+            {
+                "part": "Part 6",
+                "count": 3,
+                "description": "Occlumency lessons"
+            },
+            {
+                "part": "Part 7",
+                "count": 18,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": 48,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": 18,
+                "description": "The Department of Mysteries"
+            },
+            {
+                "part": "Part 10",
+                "count": 29,
+                "description": null
+            }
+        ]
+    },
+    {
+        "book": "Book 6",
+        "data": [
+            {
+                "part": "Part 1",
+                "count": -7,
+                "description": "Horace Slughorn"
+            },
+            {
+                "part": "Part 2",
+                "count": 30,
+                "description": null
+            },
+            {
+                "part": "Part 3",
+                "count": 40,
+                "description": null
+            },
+            {
+                "part": "Part 4",
+                "count": -22,
+                "description": "The cursed neckless"
+            },
+            {
+                "part": "Part 5",
+                "count": 47,
+                "description": null
+            },
+            {
+                "part": "Part 6",
+                "count": 32,
+                "description": null
+            },
+            {
+                "part": "Part 7",
+                "count": 29,
+                "description": "Horace Slughorn's memory"
+            },
+            {
+                "part": "Part 8",
+                "count": 50,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": 5,
+                "description": "Finding the locket Horcruxes"
+            },
+            {
+                "part": "Part 10",
+                "count": -50,
+                "description": "Dumbeldor's death"
+            }
+        ]
+    },
+    {
+        "book": "Book 7",
+        "data": [
+            {
+                "part": "Part 1",
+                "count": 8,
+                "description": "The Dark Lord Ascending"
+            },
+            {
+                "part": "Part 2",
+                "count": 39,
+                "description": "The Wedding"
+            },
+            {
+                "part": "Part 3",
+                "count": 2,
+                "description": null
+            },
+            {
+                "part": "Part 4",
+                "count": -19,
+                "description": null
+            },
+            {
+                "part": "Part 5",
+                "count": -30,
+                "description": "Godric's Hollow"
+            },
+            {
+                "part": "Part 6",
+                "count": -6,
+                "description": null
+            },
+            {
+                "part": "Part 7",
+                "count": -29,
+                "description": null
+            },
+            {
+                "part": "Part 8",
+                "count": -18,
+                "description": null
+            },
+            {
+                "part": "Part 9",
+                "count": -50,
+                "description": "The Battle of Hogwarts"
+            },
+            {
+                "part": "Part 10",
+                "count": 50,
+                "description": "Harry's family"
+            }
+        ]
+    }
+]
