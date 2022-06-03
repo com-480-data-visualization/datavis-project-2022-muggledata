@@ -8,6 +8,8 @@
 
 [Website](https://com-480-data-visualization.github.io/datavis-project-2022-muggledata/)
 
+[Video Presentation](https://drive.google.com/file/d/1K9oJwqP2n7q3xZJgooUO4NJtyNswgtfp/view?usp=sharing)
+
 [Milestone 1](#milestone-1-friday-8th-april-5pm) • [Milestone 2](#milestone-2-friday-6th-may-5pm) • [Milestone 3](#milestone-3-friday-3rd-june-5pm)
 
 # Milestone 1 (Friday 8th April, 5pm)
@@ -103,5 +105,6 @@ Here we want to display the amount of word occurrence in books. In our sketch, o
 
 # Milestone 3 (Friday 3rd June, 5pm)
 
+DataViz_Milestone_3.pdf
 
 
