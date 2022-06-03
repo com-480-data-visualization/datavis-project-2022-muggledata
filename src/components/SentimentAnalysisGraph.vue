@@ -70,7 +70,7 @@ export default {
       );
 
       // Set xAxis categories
-      am5.net.load("./data/sentiment_analysis.json").then(function(result) {
+      am5.net.load("./data/sentiment_analysis_with_descriptions.json").then(function(result) {
         let data = am5.JSONParser.parse(result.response)
         xAxis.data.setAll(data[0]["data"]);
       }).catch(function(result) {

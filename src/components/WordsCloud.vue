@@ -34,8 +34,10 @@
   </div>
   <div id="spelltextbox">
     <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> WordCloud</h1>
-    Here we intended to reproduce a certain ambiance in each book. We wanted to kind of summarize each book in a simple
-    word cloud. It display the most specific word of each book. The button on the left allows you to choose which book you want to display. And on the right, you can 
+    Here we intended to reproduce a certain ambiance in each book. We wanted to summarize each book in a simple
+    word cloud.
+    <br><br>It display the most specific word of each book. 
+     <br><br>The button on the left allows you to choose which book you want to display. On the right, you can 
     choose how many consecutive words you want. 
   </div>
   

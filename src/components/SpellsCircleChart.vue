@@ -3,7 +3,7 @@
   <div id="spelltextbox">
     <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Bubble Chart</h1>
     In this bubble chart, you see the popularity of each spells that appear in all Harry Potter's books.
-    The first bubbles are the types of spell, bigger are the number of different spells of this type, the bigger is the
+    <br><br>The first bubbles are the types of spell, bigger are the number of different spells of this type, the bigger is the
     bubble. By clicking on them, you can see every different spells of this particular type and the bigger they are
     , the more they are used in the book.
   </div>

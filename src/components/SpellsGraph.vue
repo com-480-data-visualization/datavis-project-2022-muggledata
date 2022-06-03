@@ -2,8 +2,9 @@
   <div id="spells_graph"></div>
   <div id="spelltextbox">
     <h1 style="text-align: center; color: var(--light_silver); font-family: 'Harry Potter', sans-serif;"> Spell Graph</h1>
-    On this graph, you can see the evolution of the popularity of different through books. For each book, we took the 
-    top five spells and order them such that the top 1 is above the 2 and so on. The dots that are not connected to 
+    On this graph, you can see the evolution of the popularity of different through books. 
+    <br><br>For each book, we took the top five spells and order them such that the top 1 is above the 2 and so on. 
+     <br><br>The dots that are not connected to 
     other mean that they appear to be on the top 5 in only one book.
   </div>
 </template>
