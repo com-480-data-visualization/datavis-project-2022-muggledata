@@ -121,6 +121,7 @@ export default {
   font-family: fantasy;
   overflow: scroll;
 }
+
 p {
   font-family: 'Harry Potter', sans-serif;
   font-size: smaller;

@@ -40,20 +40,6 @@ export default {
           pinchZoomX:true
         })
       );
-      // Add cursor
-      // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
-      var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
-        behavior: "none",
-      }));
-      cursor
-      //cursor.selection.set("visible", true)
-      //cursor.lineY.set("visible", false);
-
-      // chart.get("colors").set("colors", [
-      //   am5.color(0xffffff),
-      //   am5.color(0xf00fff),
-      //   am5.color(0xfff00f),
-      // ]);
 
       // Create axes
       var xRenderer = am5xy.AxisRendererX.new(root, {minGridDistance: 10});
@@ -132,12 +118,10 @@ export default {
             yAxis: yAxis,
             valueYField: field,
             categoryXField: "part",
-            //categoryYField: "description",
             valueField : "description",
             tooltip: am5.Tooltip.new(root, {
               pointerOrientation: "horizontal",
               labelText: "{value}",
-              visible: visible
             }),
             visible: visible,
           })
@@ -168,13 +152,25 @@ export default {
             chart.series.each(function(series) {
               if (series !== target) {
                 series.set("visible", false);
-                series.get("tooltip").set("visible", false)
+                series.hide();
+              } else {
+                series.show();
               }
             });
           }
         });
         series.appear(1000)
       }
+
+      // Add cursor
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+      // var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
+      //   behavior: "none",
+      // }));
+      // cursor
+      chart.set("cursor", am5xy.XYCursor.new(root, {
+        behavior: "none",
+      }));
 
       var first = true;
       am5.net.load("./data/sentiment_analysis.json").then(function(result) {
